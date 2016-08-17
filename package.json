@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Leeds City Council eServices",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
