@@ -1,0 +1,278 @@
+// headerTop.scss
+
+@import 'variables';
+
+/**********
+TOP NAV
+*********/
+
+
+#header-top{
+
+    .nav-top{
+        margin:0;
+        background:$utilitiesSection-background;
+        border:0;
+        height:58px;
+
+    
+        .navbar-brand {
+
+            padding: 8px 0px;
+            font-size: 18px;
+            line-height: 20px;
+            background:url(../img/lccLogo.png) center center no-repeat;
+            display:inline-block;
+            height:58px;
+            width:120px;
+                     }
+            }
+
+}
+
+#header-bottom{
+    position:relative;
+
+    #nav-search{
+    width:100%;
+
+    .input-group{
+    margin-top:55px;
+    width:100%;
+}
+
+.container{
+    padding:0;
+}
+}
+
+.sectionHeader {
+    padding: 30px 0px;
+
+//Start sharpoint search snippet overrides 
+.ms-srch-sb>input
+{
+	width:245px;
+	margin:0 -1px 0 0;
+	padding-left:5px;
+	float:left;
+	min-height:40px;
+    line-height:2em;
+	background:#fff;
+	border: 1px solid #ccc;
+	
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink {
+    font-weight: bold;
+    display:inline-block;
+    border: none;
+    background: none;
+    padding: 6px 15px 0px 15px;
+    margin: 0px;
+    line-height:2em;
+    cursor: pointer;
+    width: auto;
+    overflow: visible;
+	border: none;
+    background: #0072BC;
+    color: #fff;
+	font-size: 13px;
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink:hover, .ms-srch-sb > .ms-srch-sb-searchLink:focus  {
+
+    background: #333;
+    text-decoration:none;
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink img
+{
+	display:none;
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink:before
+{
+  font-family: "Glyphicons Halflings";
+  content: "\e003";
+  font-size:25px;
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink {
+    margin-left: -1px;
+    height: auto;
+    width: auto;
+}
+
+.ms-srch-sb-border,  .ms-srch-sb-border:hover {
+    border: none;
+}
+//End sharpoint search snippet overrides 
+
+}
+}
+
+
+       .logo{
+        margin-left:auto;
+        margin-right:auto;
+        float:left;
+        height:150px;
+        width:280px;
+        background:url(../img/logo.png) center center no-repeat;
+    }
+
+
+
+
+
+#navbar .container{
+    padding:0;
+}
+
+
+ul.menu{
+    margin:0 0 -10px;
+    padding:0;
+
+    li{
+    display:inline-block;
+    margin:-1px 0 0 -5px;
+    padding:0;
+
+
+    a {
+    float:right;
+    font-size:24px;
+    padding:9px 15px;
+    color:$menu-link-color;
+
+    &:hover, &:focus
+    {
+      background:#0D2B62;
+      color:#fff;
+      text-decoration:none;
+}  
+    .glyphicon{
+    line-height:40px;
+}
+
+ &.active .glyphicon{
+    color:#fff;
+}
+
+
+ &.main-menu,&.search{
+    display:none;
+}
+
+&.utilities:hover,
+&.utilities:focus,
+&.utilities.active{
+    background:$utilities-background-color;
+}
+
+
+&.search.active,
+&.search:hover,
+&.search:focus{
+    background:#bdc3c7;
+
+        .glyphicon{
+            color:#333;
+        }
+}
+
+
+&.main-menu:hover,
+&.main-menu:focus,
+&.main-menu.active{
+    background:#133E8D;
+}
+
+
+    }
+}
+}
+
+
+
+
+a.utilities.active .utilities-open,  a.search.active .search-open{
+    display:none;
+}
+
+a.utilities .utilities-close, a.search .search-close, a.main-menu .menu-close{
+    display:none;
+}
+
+a.utilities.active .utilities-close, a.search.active .search-close{
+    display:block;
+}
+
+
+
+@media (max-width: 991px){
+
+#header-bottom .sectionHeader .ms-srch-sb > input
+{
+	width:Auto;
+	
+}
+
+}
+
+@media (max-width: 767px){
+
+   #header-top {
+        display:block;
+    }
+    
+    #nav-search{
+        display:none;
+        position:absolute;
+        top:0px;
+        left:0px;
+        background:#bdc3c7;
+        padding:10px;
+        height:auto;
+
+         &.active{
+        display:block;
+         }
+
+       &.input-group{
+        margin:0 !important;
+        }
+    }
+    
+ 
+    
+  
+    
+   ul.menu li a.main-menu,
+    ul.menu li a.search{
+        display:block;
+   }
+    
+    a.main-menu.active .menu-open{
+        display:none;
+    }
+
+    a.main-menu.active .menu-close{
+        display:block;
+    }
+    
+	.logo{
+		float:none;
+	}
+
+}
+
+@media (max-width: 600px){
+
+    ul.menu li a{
+        padding:9px;
+    }
+    
+}

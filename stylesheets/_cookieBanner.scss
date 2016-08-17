@@ -1,0 +1,59 @@
+// cookieBanner.scss
+
+#containerSiteStatement{
+    background:#2c3e50;
+
+     #siteStatement .container{
+     padding:25px;
+
+            p{
+            color:#fff;
+            margin:0 0 20px;
+                }
+
+
+           a{
+            color:#fff;
+            text-decoration:underline;
+            display:inline-block;
+           } 
+
+            a:hover, a:focus
+            {
+            color:#ddd;
+            text-decoration:underline;
+            }  
+
+            a#ck_acpt
+            {
+            background:#c0392b;
+            border-radius:0;
+            padding:12px 20px;
+            color:#fff;
+            text-decoration:none;
+            }
+
+            a#ck_acpt:hover, a#ck_acpt:focus
+            {
+                background:#e74c3c;
+                text-decoration:none;
+            }
+
+}
+}
+
+@media (max-width: 767px){
+
+    #containerSiteStatement #siteStatement p{
+        font-size:13px;
+        line-height:1.4em;
+    }
+    
+    #containerSiteStatement #siteStatement a#ck_acpt{
+        font-size:14px;
+        display:block;
+        text-align:center;
+        line-height:1.4em;
+    }
+    
+}

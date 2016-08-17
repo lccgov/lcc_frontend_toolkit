@@ -1,0 +1,160 @@
+// mainNav.scss
+
+@import 'variables';
+
+
+/***********
+MAIN MENU
+*********/
+
+#main-menu{
+    background:#133E8D;
+
+
+ ul li{
+ 
+  &.active a{
+   background:#0D2B62;
+}
+
+ a{
+    color:#fff;
+    padding: 20px 18px;
+    font-family: 'Oswald', sans-serif;
+    font-size:20px;
+    font-weight:400;
+    text-transform: capitalize;
+}
+
+ a:hover,    a:focus{
+    background:#0D2B62;
+    text-decoration:none;
+}
+
+ a.selected{
+    background:#0D2B62;
+}
+
+}
+
+ul ul  {
+    display: none;
+    margin: 0;
+    padding: 2px;
+    margin-left:2px;
+    position: absolute;
+    width: 300px;
+    z-index: 10000 !important;
+    border: solid 1px #0D2B62;
+    background:#0D2B62;
+    
+}
+
+ul ul li {
+width:100%;  
+}
+
+ ul ul li a {
+background: #0D2B62;
+color: #fff;
+display:block;
+margin:0px;    
+}
+
+ul ul li a:hover,  ul ul li a:focus {
+background:rgba(255,255,255, 0.2);  
+}
+
+ li:hover > ul {
+    display: block;
+}
+
+}
+
+/*sharepoint styles overide*/
+
+.ms-core-listMenu-root
+{
+    padding:0px;
+}
+
+.s4-tn li.static > .menu-item {
+  border: none;
+  height: auto;
+}
+
+.ms-core-navigation {
+    font-family: Arial;
+}
+
+.ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item {
+    margin-right: 0px;
+    border: none;
+}
+
+
+.s4-tn li.static > .menu-item {
+    border: none;
+    height: auto;
+}
+
+/*sharepoint styles overide*/
+
+@media (max-width: 767px){
+
+    #main-menu{
+        position:absolute;
+        left:-1000px;
+        top:0px;
+        z-index:10;
+        min-height:640px;
+        width:100%;
+            -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+         -o-transition:all ease .5s;
+        transition: all ease .5s;
+        padding-top:15px;
+    
+    
+    &.active{
+        left:0px;
+    }
+    
+   ul li {
+   
+    a{
+        padding: 15px 18px;
+    
+    &:focus{
+        text-decoration:underline;
+        background:transparent;
+    }
+    }
+    
+     &.selected a:focus{
+        background:#0D2B62;
+    }
+
+    }
+
+    }
+    
+}
+
+
+@media (max-width: 767px){
+
+    
+    .menu-horizontal {
+        width: 100%;
+    }
+
+    .ms-core-listMenu-horizontalBox, .ms-core-listMenu-horizontalBox ul {
+    display:block;
+    }
+    
+    .ms-core-listMenu-horizontalBox li.static, .ms-core-listMenu-horizontalBox  a.static, .ms-core-listMenu-horizontalBox span.static {
+        width: 100%;
+    }
+    
+}
