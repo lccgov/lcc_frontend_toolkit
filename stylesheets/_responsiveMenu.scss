@@ -1,0 +1,135 @@
+// reponsive menu for mainmenu and search, also standard links such as sign in 
+
+
+ul.menu{
+    margin:0;
+    padding:0;
+    float:left;
+    list-style:none;
+
+    li{
+    float:left;
+    margin:0;
+    padding:0;
+
+
+    a {
+    font-size:17px;
+    font-weight:bold;
+    padding:10px 15px;
+    color:$menu-link-color;
+    line-height:40px;
+    min-height:60px;
+    display:block;
+
+    &:hover, &:focus
+    {
+      background:lighten(#000, 87%);
+      text-decoration:none;
+}  
+
+ &.main-menu, &.search{
+    display:none;
+    background:#fff;
+    &:before {
+
+        font-family: "FontAwesome";
+        font-size:25px;
+        float:right; 
+}
+
+}
+
+&.search{
+
+    background:lighten(gray, 30%);
+
+&:before {
+
+        content: "\f002";
+   
+}
+
+
+        &.active:before{
+             content: "\f00d";
+             padding:0 2px;
+        }
+
+}
+ 
+&.search.active,
+&.search:hover,
+&.search:focus{
+    background:#bdc3c7;
+}
+
+&.main-menu {
+
+       background:$main-nav-background;
+       color:#fff;
+
+        &:before{
+        content: "\f0c9";
+        padding-left:5px;
+       
+        }
+        &.active:before{
+             content: "\f00d";
+             padding-left:7px;
+        }
+}
+
+&.main-menu:hover,
+&.main-menu:focus,
+&.main-menu.active{
+    background:darken($main-nav-background, 8%);
+
+    
+}
+
+
+    }
+}
+}
+
+
+@media (max-width: 767px){
+
+    ul.menu li a.main-menu,
+    ul.menu li a.search{
+        display:block;
+   }
+
+}
+
+
+@media (max-width: 600px){
+
+    ul.menu li a{
+        padding:9px 9px;
+    }
+    
+}
+
+
+
+@media (max-width: 500px){
+
+ul.menu li  a.signin {
+       display:none;
+    }
+ul.menu li  a.myAccount
+{
+span{
+    display:none;
+}
+&:after {
+        font-family: "FontAwesome";
+        content: "\f007";
+        font-size:23px;
+    }
+
+}
+
+}

@@ -1,0 +1,24 @@
+// masterHead.scss
+
+@import 'variables';
+@import 'responsiveMenu';
+
+
+
+
+
+.masterhead{
+    background: $head-background;
+    width:100%;
+    position:relative;
+
+    a.navbar-brand {
+    background: url(../img/lccLogo.svg) center center no-repeat;
+    display: inline-block;
+    height: 58px;
+    width: 120px;}
+
+
+}
+
+
