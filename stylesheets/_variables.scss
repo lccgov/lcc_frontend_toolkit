@@ -1,8 +1,54 @@
+
 // utilitiesSection.scss
 
-$utilitiesSection-background: #f4f4f4;
-$utilitiesSection-border-color: #dfdfdf;
-$utilities-background-color:#337ab7;
+$head-background: #f4f4f4 !default;
 
-// headerTop.scss
-$menu-link-color:#337ab7;
+
+// headerTop.scss -- responsive icons color
+$menu-link-color:#337ab7 !default;
+
+
+//base.scss
+$base-font-size:16px !default;
+$base-font:arial !default;
+$base-font-color:#333 !default;
+$base-link-color:#133E8D !default;
+
+//headerTop
+$search-link-background:#337ab7 !default;
+$search-link:#fff !default;
+
+// mainNav.scss
+$main-nav-background:#133E8D !default;
+$main-nav-active-background:#0D2B62 !default;
+$main-nav-link:#fff !default;
+$main-nav-selected-link: #fff !default;
+$main-nav-background-hover:#0D2B62 !default;
+$main-nav-link-background:#133E8D !default;
+$main-nav-flyout-link-background:#133E8D !default;
+$main-nav-flyout-background:#133E8D !default;
+$main-nav-flyout-link:#fff !default;
+
+//footer.scss
+$footer-font-color:#fff !default;
+$footer-nav-selected-link:#133E8D !default;
+$footer-list-item-width:23%  !default;
+$footer-gutter-width:0 1% !default;
+
+// sectionSubsite.scss - socialamedia.scss
+$section-Background:#efefef !default;
+
+//  socialamedia.scss
+$social-link-color:#337ab7 !default;
+
+//  sideNavigation.scss
+$side-nav-active-background:#133E8D !default;
+
+//  carousel.scss
+$carousel-active-background:#000 !default;
+$carousel-indicators-active-background:#ccc !default;
+
+// blocklinks.scss
+
+$block-link-back:#f6f6f6 !default;
+$block-link-back-hover:#3380A4 !default;
