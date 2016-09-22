@@ -1,0 +1,61 @@
+ul.accordionWP {
+
+  
+         list-style: none;
+         padding:0px;
+         margin:0px 0 $base-margin-bottom 0;
+
+         li{
+           
+            border-bottom:1px solid #dedede;
+
+            h3.accordion {
+                margin:0px;
+                font-size:20px;
+            a{
+                display:block;
+                padding:15px 40px 15px 15px;
+                position: relative;
+
+                &:hover, &:focus
+                {
+                  background:rgba(0,0,0,0.05);
+                }
+
+
+                    &:after
+                            {
+                            font-family: FontAwesome;
+                            font-size:18px;
+                            content: "\f078";
+                            position:absolute;
+                            right:10px;
+
+                            }      
+
+            }   
+             &.active{
+
+                    a:after
+                            {
+                            content: "\f077"; 
+                            }      
+
+             }
+            }
+
+            div div {
+                padding:15px;
+
+                li{
+                    border:none;
+                }
+
+            }
+         }
+ 
+
+   
+
+     border-top:1px solid #dedede;
+}

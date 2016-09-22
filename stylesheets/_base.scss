@@ -1,0 +1,296 @@
+@import 'variables1';
+
+body{
+  font-size:$base-font-size;
+  font-family:$font-primary;
+  color:$base-font-color;
+  background-color:$base-background-color;
+}
+
+
+ //h1,h2,h3,h4,h5
+//{
+//   &.ms-rteElement-H2
+ //  {
+ //       font-family:$base-font;
+ //       color:$base-font-color;
+ //       font-weight:400;
+ //  }
+//
+//       font-family:$base-font;
+//       color:$base-font-color;
+ //      font-weight:400;
+
+//}
+
+
+
+ul.cbs-List {
+    display:block;
+    margin: 0px;
+}
+
+.ms-webpart-zone, .ms-webpart-chrome-vertical, .ms-webpart-cell-vertical
+{
+    display:block;
+}
+
+
+
+
+.ms-rtestate-field
+{
+  h1,h2,h3,h4,h5
+{
+   &.ms-rteElement-H2
+   {
+        font-family:$font-primary;
+        color:$base-font-color;
+        font-weight:400;
+   }
+
+       font-family:$font-primary;
+       color:$base-font-color;
+       font-weight:400;
+
+}
+    
+}
+
+#s4-bodyContainer{
+  padding-bottom:0px;
+}
+
+
+
+/*overide bootstrap*/
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    min-height: 0px;
+}
+
+
+.header-nav-container {
+  position:relative;
+}
+
+/**********************
+BACK TO THE TOP
+********************/
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  -o-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+    z-index:999;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  -o-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: rgba(0, 0, 0, 1.0);
+  opacity: 1;
+}
+@media only screen and (min-width: 767px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+/*BACK TO TOP END*/
+
+
+
+/*link styles*/
+
+a[rel]:after{
+        font-family: FontAwesome;
+        padding:0 5px;
+}
+
+
+a[rel="xl"]:after {
+      content: "\f1c3"; 
+
+
+}
+
+a[rel="pdf"]:after {
+    content: "\f1c1";
+
+}
+
+a[rel="doc"]:after {
+  content: "\f1c2"; 
+}
+
+a[rel="pp"]:after {
+  content: "\f1c4"; 
+
+}
+
+a[rel="external"]:after {
+    content: "\f08e"; 
+}
+// space for the top of  pagelayouts
+.spacer
+{
+    padding-top:20px;
+    display:block;
+}
+
+.clearfix{
+  clear:both;
+}
+
+
+.btn, .button {
+  padding:15px 20px;
+  border-radius:0px;
+}
+
+
+.btn-primary, .button
+{
+  background:$btn-background-color;
+  border:1px solid;
+  box-shadow: inset 0 1px 1px lighten($btn-background-color,10%);
+    &:hover{
+      background:darken($btn-background-color,10%);
+    }
+}
+
+
+
+ .btn, .button
+    {
+      border-color:$btn-background-color;
+      position:relative;
+      padding-right:55px;
+      color:#fff;
+
+      &.btn-default, &.alt
+{
+  border-color:$btn-background-color;
+  border:1px solid;
+  box-shadow:none;
+  color:$btn-background-color;
+  background:transparent;
+  &:hover{
+     background:darken($btn-background-color,10%);
+     color:#fff;
+  }
+}
+
+      &:after{
+                            font-family: FontAwesome;
+                            font-size:18px;
+                            line-height:2.8em;
+                            content: "\f105";
+                            position:absolute;
+                            right:0px;
+                            height:100%;
+                            background:rgba(0,0,0,0.1);
+                            padding:0 13px !important;
+                            top:0px;
+    }
+
+    }
+
+
+
+/*BOOTSTRAP OVERIDES*/
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.container-fluid{
+    max-width:$base-container-width;
+}
+
+.container-fluid.full{
+    max-width:100%;
+}
+
+
+.content-block {
+    max-width: 48em;
+    padding-bottom: 2.5em;
+}
+
+
+/*SKIP LINKS*/
+a.skip {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+
+a.skip:focus, a.skip:active{
+    left: 0.625em;
+    top: 0.625em;
+    width:auto;
+    height: auto;
+    overflow:auto;
+    z-index:999;
+    padding:0.625em;
+}
+
+/*SKIP LINKS END*/
+
+.sectionOne{
+  background:darken($base-background-color, 5%)
+}
+
+.sectionTwo{
+  background:darken($base-background-color, 10%)
+}
+
+.sectionThree{
+  background:lighten($base-background-color, 3%)
+}
+
+
+.sectionFour{
+  background:lighten($base-background-color, 5%)
+}

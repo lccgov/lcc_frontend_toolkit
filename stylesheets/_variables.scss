@@ -1,18 +1,27 @@
 
-// utilitiesSection.scss
+// masterhead.scss
 
 $head-background: #f4f4f4 !default;
 
 
-// headerTop.scss -- responsive icons color
+// mainMenu.scss -- responsive icons color
 $menu-link-color:#337ab7 !default;
 
 
 //base.scss
+
+$base-background-color:#fff !default;
 $base-font-size:16px !default;
-$base-font:arial !default;
 $base-font-color:#333 !default;
 $base-link-color:#133E8D !default;
+$base-container-width:1500px !default;
+$btn-background-color:green !default;
+$font-primary: Arial !default; // main font
+$font-secondary: Arial !default; // secondary font
+
+
+// global used on all partials to get a uniform spacing between elements
+$base-margin-bottom:1.875em !default;
 
 //headerTop
 $search-link-background:#337ab7 !default;
@@ -47,8 +56,27 @@ $side-nav-active-background:#133E8D !default;
 //  carousel.scss
 $carousel-active-background:#000 !default;
 $carousel-indicators-active-background:#ccc !default;
+$carousel-caption-background: rgba(0,0,0,0.6) !default;
+$carousel-caption-font-color:#fff !default;
+
 
 // blocklinks.scss
 
 $block-link-back:#f6f6f6 !default;
 $block-link-back-hover:#3380A4 !default;
+
+$promo-group-border:1px solid #fff !default; 
+$promo-group-background:#EDF2F5 !default; 
+$promo-group-li-background:#EDF2F5 !default;
+$promo-group-link-color:#216486 !default;
+
+
+//promolist webpart
+$link-font-color:#fff;
+$span-info-color:#222E3C;
+$span-info-hover:#131A22;
+$span-info-secondary-color:#E6CC26;
+$span-arrow-base:#131A22;
+$span-third-info-base:#fff;
+$third-info-font-color:#333;
+$font-secondary-color:#fff;

@@ -1,0 +1,129 @@
+//Start sharpoint search snippet overrides 
+.ms-srch-sb>input
+{
+	width:100%;
+    min-width: 300px;
+	margin:0 -1px 0 0;
+	padding-left:5px;
+	min-height:40px;
+    line-height:2em;
+	background:#fff;
+	border: 1px solid #fff;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+	
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink {
+
+	border: none;
+    background:$search-link-background;
+    color: $search-link;
+	font-size: 13px;
+    position:absolute;
+    right:-1px;
+    top:0px;
+    width: 60px;
+    height: 40px;   
+    min-height:40px;
+    padding:0 15px;
+    display: block;
+
+
+
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink:hover, .ms-srch-sb > .ms-srch-sb-searchLink:focus  {
+
+    background: #333;
+    text-decoration:none;
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink img
+{
+	display:none;
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink:before
+{
+  font-family: "Glyphicons Halflings";
+  content: "\e003";
+  font-size:25px;
+}
+
+
+.ms-srch-sb-border,  .ms-srch-sb-border:hover {
+    border: none;
+    width:100%;
+}
+
+#nav-search {
+    float:left;
+    margin:10px;
+
+
+}
+
+
+
+
+@media (max-width: 767px){
+
+    
+    #nav-search{
+    
+        position:absolute;
+        top:62px;
+        left:0px;
+        background:#bdc3c7;
+        padding:20px 25px 15px 25px;
+        margin:0px;
+        height:auto;
+        width:100%;
+        z-index: 10;
+        display:none;
+
+         &.active{
+        display:block;
+    
+         }
+
+       .input-group{
+        margin:0 !important;
+        width:100%;
+        }
+
+        .ms-srch-sb>input
+{
+
+    min-width: 250px;
+	
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink {
+    height: 43px;   
+    min-height:43px;
+}
+    }
+}
+
+// iphone overide for images
+select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+}
+
+

@@ -1,7 +1,7 @@
 // masterHead.scss
 
 @import 'variables';
-@import 'responsiveMenu';
+@import 'responsiveMenu1';
 
 
 
@@ -13,12 +13,15 @@
     position:relative;
 
     a.navbar-brand {
-    background: url(../img/lccLogo.svg) center center no-repeat;
+    background: url(../../img/lcclogo.svg) center center no-repeat;
     display: inline-block;
     height: 58px;
     width: 120px;}
 
-
+   @media (max-width: 767px){
+    .container-fluid
+    {
+        padding-right:0px;
+    }
 }
-
-
+}

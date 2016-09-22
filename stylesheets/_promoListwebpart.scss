@@ -1,0 +1,723 @@
+ 
+
+
+
+.promoListWebpart {   // start promo list webpart
+ 
+
+    
+h2
+{
+    text-align: center;
+}
+
+
+ ul     // start ul
+{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+
+
+
+ li   // start Li
+{
+    float:left;
+    padding:15px;
+    
+
+
+
+  a  // start A
+{
+    position:relative;
+    overflow: hidden;
+    height:170px;
+    display:block;
+    color:$link-font-color;
+    background-size:cover !important ; // important needed to overide in page style="background:ur('');
+    background-position: 0px enter !important; // important needed to overide in page style="background:ur('');
+
+    
+    
+    
+    
+   span
+{
+    position:absolute;
+}
+
+ .info
+{
+    position:absolute;
+    display:inline-block;
+    bottom:0px;
+    right:0px;
+    padding:20px;
+    background:$span-info-color;
+    width:100%;
+    opacity: 0.90;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+    line-height: 1.42857;
+    font-weight:300;
+
+}
+    
+ img
+{
+    position:absolute;
+} 
+    
+    
+ 
+
+&:hover span.info, &:focus span.info
+{
+    background:$span-info-hover;
+    text-decoration: none;
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+
+.secondaryInfo
+{
+    font-family: $font-secondary;
+    color:$span-info-secondary-color;
+    width:70%;
+    display:block;
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+    position: relative;
+
+}
+    
+
+
+
+ .arrow
+{
+    position: absolute;
+    right:0px;
+    bottom:0px;
+    padding:30px 0;
+    width:15%;
+    display:block;
+    background:$span-arrow-base;
+    height:100%;
+    text-align:center;
+
+    
+        &:after{
+       font-family: FontAwesome;
+    font-size:35px;
+    content: "\f105";
+    color:$span-info-secondary-color;
+    position:absolute;
+    display:inline-block;
+    vertical-align: middle;
+    right:0px;
+    width:100%;
+    top:50%;
+    margin:-25px 0 0 -36px;
+    }
+
+    
+
+}  
+
+    
+    
+        
+ span.thirdInfo
+{
+    background: $span-third-info-base;
+    right:0px;
+    color:$third-info-font-color;
+    width:33.3%;
+    min-width:220px;
+    max-width:100%;
+    text-align: center;
+    line-height: 60px;
+    font-size:$base-font-size * 1.2;
+}
+   
+    
+}// End A
+    
+    
+  &.heightTwo a
+{
+  height:370px;
+}   
+    
+ &.one  {
+   
+     span.thirdInfo
+    {
+        width:100%;
+        min-width: 100%;
+        
+        
+  
+    }
+     
+
+}    
+    
+} // End li
+    
+   
+    
+    
+    
+} // End Ul
+
+
+
+
+
+
+
+
+
+
+
+/* change of style for info span on larger features -------------------------------------------------------- */
+
+
+
+    
+    li.six a span.info
+{
+    font-size: $base-font-size * 2.5;
+}
+    
+ 
+ .six a span.secondaryInfo
+{
+     font-size: $base-font-size * 1.3;
+    display:block;
+}
+
+
+ .two a span.info,  .four a span.info
+{
+   font-size: $base-font-size * 1.5;
+   padding:20px 80px 20px 20px;   
+}
+
+ .two a span.secondaryInfo, .four a span.secondaryInfo
+{
+   font-size:$base-font-size;
+}
+
+
+ .three a,  .four.heightTwo a
+{
+      font-size: $base-font-size * 2.3;
+}
+
+    
+    
+ @media screen and (max-width: 1000px) {   
+    
+         li.three a span.info,  li.four.heightTwo a span.info, li.six a span.info
+{
+      font-size: $base-font-size * 1.5;
+
+}
+     
+              li.three a span.secondaryInfo,  li.four.heightTwo a span.secondaryInfo, li.six a span.secondaryInfo
+{
+      font-size: $base-font-size *1.2;
+}
+    
+     
+     
+ }
+
+
+@media screen and (min-width: 1000px) {  // different style for larger screens on Four and Six width listwebparts 
+ li.six a span.info, li.four a span.info
+{
+    bottom:0px;
+    top:0px;
+    right:0px;
+    padding:20px;
+    text-align: center;
+    width:33.3%;
+    min-width:220px;
+}
+    
+    
+     li.six a span.info, li.four.heightTwo a span.info
+{
+    padding:80px 20px 20px 20px;
+
+         .arrow{
+          height:80px;
+      }
+}
+
+.four a span.secondaryInfo,
+.six a span.secondaryInfo
+{
+   text-align: center;
+  width:100% 
+}
+    
+
+}
+
+    
+    
+ 
+
+ li.promoImage a span
+{
+    display:none;
+}
+
+
+
+.imgRight a   //  align an image right
+{
+    background-position: 0px right !important; // important needed to overide in page style="background:ur('');
+}
+
+    
+.imgBottom a   //  align an image bottom
+{
+     background-position:bottom !important; // important needed to overide in page style="background:ur('');
+}
+
+ .imgCenter a // center an image
+{
+
+
+    background-position: center center !important; // important needed to overide in page style="background:ur('');
+
+}
+    
+
+
+ .contentLink {   // Start contentLink Style
+
+    position:relative;
+    color:#fff;
+    font-weight:100;
+    padding-bottom:100px;
+    height:200px;
+
+h2
+     {
+         font-size:$base-font-size * 2.2;
+     }
+     
+
+
+     
+     
+&.color{
+    
+    p{
+        color:#fff;
+    }
+
+    div
+    {
+    background: $span-info-color; 
+    padding:15px 15px 30px 15px; 
+    
+    }
+    
+       &.lighter
+    {
+        div
+        {
+            background: lighten($span-info-color, 7%); 
+        }
+    }
+    
+          &.darker
+    {
+        div
+        {
+            background: darken($span-info-color, 7%); 
+        }
+    }
+    
+   @media only screen and (max-width: 1200px) and (min-width:601px) {
+     div {
+       display:table-cell;
+       vertical-align: middle;      
+      height:305px;   
+       width:inherit;      
+    }
+   }
+    
+    a{
+        border:none;
+        margin:0px;
+        width:100%;
+        
+   
+        
+        .info{
+            background:#fff;
+            color:#333;
+            border:none;
+            opacity: 1;
+            
+            
+             &:hover, &:focus
+        {
+            color:#fff;
+            
+        }
+            
+            .arrow{
+                background-color:$span-arrow-base;
+            }
+        }
+    }
+} 
+     
+    
+     
+&.heightAuto
+     {
+         height:auto;
+         padding-bottom:0px;
+         
+         a{
+             position: relative;
+         }
+     }     
+
+&.heightTwo 
+{
+    height:400px;
+}
+
+    
+ &.heightTwo a,  a   // start contentLink a
+{
+    position:absolute;
+    z-index: auto;
+    bottom:15px;
+    margin: 0 4.4%;
+    left:0px;
+    height:80px;
+    width:91.8%;
+    background-color:transparent;
+
+
+    
+
+span.info
+{
+    background-color:transparent;
+    border-top:1px solid #fff;
+}
+
+
+span.arrow
+{
+    background-color:transparent;
+}
+    
+    
+&:hover span.info, &:focus span.info
+{
+    background:$span-info-hover;
+
+}
+    
+}   // end  contentLink a
+
+ p
+{
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+
+
+
+ strong
+{
+    text-align: center;
+    font-family:oswald, serif;
+    line-height: 30px;
+    font-size: 30px;
+    margin-top:20px;
+    display: block;
+}
+}
+
+&.heightTwo p strong
+{
+
+    font-size: 50px;
+    line-height: 50px;
+    margin-top:40px;
+
+}
+     
+
+
+@media only screen and (max-width: 600px) {
+&.heightTwo 
+{
+    height:auto;
+}
+    
+p strong
+{
+    margin-top:10px;
+}   
+    
+}
+
+
+}  // end content Link Style
+    
+    
+    
+
+ .content{   // Start content Style
+
+    position:relative;
+    color:$font-secondary-color;
+    font-weight:100;
+    padding-bottom:100px;
+    height:200px;
+     
+     
+    &.color
+     {
+         
+    div
+    {
+    background: $span-info-color; 
+    padding:15px 15px 30px 15px; 
+    
+    }
+    
+       &.lighter
+    {
+        div
+        {
+            background: lighten($span-info-color, 10%); 
+        }
+    }
+    
+          &.darker
+    {
+        div
+        {
+            background: darken($span-info-color, 20%); 
+        }
+    }
+     }
+     
+
+&.heightAuto
+     {
+         height:auto;
+         padding-bottom:0px;
+     }
+
+&.heightTwo 
+{
+    height:400px;
+}
+
+    
+ &.heightTwo a,  a   // start content a
+{
+  display:none;  
+    
+&.button
+ {
+       display:block; 
+       height: auto;
+       float: left;
+       font-size: 20px;
+       margin-right: 15px;
+    }
+  
+}   // end  contentLink a
+
+ p
+{
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+
+
+
+ strong
+{
+    text-align: center;
+    font-family:oswald, serif;
+    line-height: 30px;
+    font-size: 30px;
+    margin-top:20px;
+    display: block;
+}
+}
+
+&.heightTwo p strong
+{
+
+    font-size: 50px;
+    line-height: 50px;
+    margin-top:40px;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+&.heightTwo 
+{
+    height:auto;
+}
+    
+p strong
+{
+    margin-top:10px;
+}   
+    
+}
+
+
+}  // end content Style    
+    
+    
+    
+    
+.promo
+    {
+        .info
+        {
+            left:-10000em;
+        }
+    }
+
+}   // end promo list webpart
+
+
+
+.one
+{
+    width:16.6667%;
+}
+
+
+.two
+{
+    width:33.33333%;
+}
+
+
+.three
+{
+    width:50%;
+}
+
+
+.four
+{
+    width:66.66666%
+}
+
+
+.six
+{
+    width:100%;
+    
+}
+
+
+@media only screen and (max-width: 1200px) {
+    
+    
+  .one, .two, .four
+{
+    width:50%;
+    
+}
+
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    
+  .one, .two, .three, .four
+{
+    width:100%;
+}
+
+    
+}
+
+.promoListWebpart ul li.catergory {
+  
+padding: 15px 15px 0 15px;  
+    
+img {
+    margin-top:10px;
+}
+
+    
+a
+   {
+       
+    
+       
+    .info {
+    background:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    opacity: 1; 
+    border-top:1px solid #999;
+    font-size:18px;
+    text-transform: uppercase;
+    text-align: center ;   
+        
+     .arrow {
+        background: transparent "url(../img/spanArrowOne.png) no-repeat scroll 50% 50% !important";
+         }
+    }
+}
+    
+ &.heightAuto
+    {
+        a
+   
+        
+        {
+            border:1px solid #999;    
+            height: auto; 
+            display:table;
+            float:left;
+            width:100%; 
+         
+
+                .info {
+                        opacity: 1; 
+                        position:relative;
+                        border:none;
+                        vertical-align: middle;
+                        display:table-cell;
+                        height:auto; 
+
+                }
+         }
+    }
+    
+}
+
