@@ -1,0 +1,16 @@
+// URL Helpers
+
+$path: false !default;
+
+// A function which can either output a asset_path to be used with the Mincer
+// Asset Pipeline or a plain url which is prefixed with a defined
+// path variable.
+@function file-url($file) {
+  $url: '';
+  @if $path {
+    $url: url($path + $file);
+  } @else {
+    $url: "url('<%= asset_path('" + $file + "') %>')"
+  }
+  @return $url;
+}

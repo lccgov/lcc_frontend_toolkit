@@ -9,7 +9,7 @@
     position:relative;
 
     a.navbar-brand {
-    background: url(../../img/lcclogo.svg) center center no-repeat;
+    background: file-url('lcclogo.svg') center center no-repeat;
     display: inline-block;
     height: 58px;
     width: 120px;}
