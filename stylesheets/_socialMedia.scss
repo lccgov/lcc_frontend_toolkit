@@ -1,0 +1,79 @@
+
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+.socialBookmarks
+{
+    background:$section-Background;
+    padding:20px;
+    margin-bottom:20px;
+
+    h2 {
+        margin:0px;
+        font-size:22px;
+    }
+
+ ul {
+    display: block;
+    list-style: none outside none;
+    padding: 0;
+    margin:0px;
+
+ li {
+    display:inline-block;
+    margin:0 5px 0 0;
+    padding: 0;
+
+ a {
+      
+   
+      
+      display:block;
+     
+     span{
+         display:none;
+         height:0px;
+     }
+
+    &.facebook:after, &.twitter:after, &.youtube:after
+    {
+    font-family: FontAwesome;
+    font-size:25px;
+    border-radius:50%;
+    border:1px solid $social-link-color;
+    width:42px;
+    height:42px;
+    display:block;
+    text-align: center;
+    padding-top:3px;
+    color:$social-link-color;
+
+     
+    }
+
+      &:hover:after{
+          background:$social-link-color;
+          color:#fff;
+          text-decoration:none;
+       }
+
+
+     &.facebook:after {
+    content: "\f09a"; 
+
+ }
+
+      &.twitter:after {
+    content: "\f099"; 
+
+ }
+
+      &.youtube:after {
+    content: "\f167"; 
+  
+ }
+}
+}
+}
+}
+
+

@@ -79,4 +79,11 @@ $span-info-secondary-color:#E6CC26;
 $span-arrow-base:#131A22;
 $span-third-info-base:#fff;
 $third-info-font-color:#333;
-$font-secondary-color:#fff;
+
+// section backgrounds
+$sectionHeader-background-color:lighten($base-background-color, 3%) !default;
+$sectionOne-background-color:darken($base-background-color, 5%) !default;
+$sectionTwo-background-color:darken($base-background-color, 10%) !default;
+$sectionThree-background-color:lighten($base-background-color, 3%) !default;
+$sectionFour-background-color:lighten($base-background-color, 5%) !default;
+$sectionFive-background-color:darken($base-background-color, 5%) !default;

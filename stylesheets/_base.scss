@@ -279,19 +279,24 @@ a.skip:focus, a.skip:active{
 
 /*SKIP LINKS END*/
 
+.sectionHeader{
+  background:$sectionHeader-background-color;
+}
+
 .sectionOne{
-  background:darken($base-background-color, 5%)
 }
 
 .sectionTwo{
-  background:darken($base-background-color, 10%)
 }
 
 .sectionThree{
-  background:lighten($base-background-color, 3%)
 }
 
 
 .sectionFour{
-  background:lighten($base-background-color, 5%)
+}
+
+
+.sectionFive{
+  background:$sectionFive-background-color;
 }

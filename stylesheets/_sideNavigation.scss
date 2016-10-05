@@ -1,0 +1,45 @@
+
+
+.sideNav
+{
+
+
+
+
+#sideNavBox {
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom:20px;
+
+   
+
+
+
+
+.ms-core-listMenu-verticalBox > .ms-core-listMenu-item, .ms-core-listMenu-verticalBox li.static > .ms-core-listMenu-item {
+     padding: 15px 10px;
+    border-bottom: 1px solid #E0E0E0;
+    margin: -1px 1px 0 0;
+    color: #006DA5;
+    display: block;
+    font-weight: normal;
+    font-size: 18px;
+
+    &.selected 
+    {
+        color:'#fff'
+    }
+
+
+}
+
+
+.ms-core-listMenu-selected:link, .ms-core-listMenu-selected:visited, .ms-core-listMenu-selected {
+    background-color: $side-nav-active-background;
+    color:#fff;
+}
+
+}
+}
