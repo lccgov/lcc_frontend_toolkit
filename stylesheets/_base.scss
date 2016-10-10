@@ -300,3 +300,71 @@ a.skip:focus, a.skip:active{
 .sectionFive{
   background:$sectionFive-background-color;
 }
+
+/* Sharepoint edit mode overrides ---------------------------------------------------------------*/
+h1.ms-core-pageTitle{
+  margin:-12px 0 0 0;
+  font-size:30px;
+}
+
+
+
+.ms-breadcrumb-box a, #sideNavBox a, #LeftNavigationAreaCell a {
+  color:#0072c6 !important;
+  background:none !important;
+  padding-right:5px !important;
+
+}
+
+.ms-breadcrumb-box a:hover, #sideNavBox a:hover, #LeftNavigationAreaCell a:hover {
+  color:#004d85 !important;
+}
+
+h1.ms-core-pageTitle a {
+   color:#262626 !important;
+}
+
+#DeltaPlaceHolderSearchArea .ms-srch-sb > input {
+    display: inline-block !important;
+    outline-style: none !important;
+    height: 18px !important;
+    margin: 0px 0px 0px 5px!important;
+    padding: 0px 1px 0px 5px !important;
+    width: 200px !important;
+    background-color: transparent !important;
+    border:1px solid #ababab;
+    position:relative;
+}
+
+#DeltaPlaceHolderSearchArea .ms-srch-sb > .ms-srch-sb-searchLink {
+ display: inline-block;
+cursor: pointer;
+vertical-align: top;
+background-color: transparent;
+border: 1px solid transparent;
+overflow: hidden;
+padding:0px;
+background:transparent;
+width:20px;
+height:20px;
+min-height:20px;
+top:10px;
+right:10px;
+}
+
+#DeltaPlaceHolderSearchArea .ms-srch-sb > .ms-srch-sb-searchLink::before {
+    font-family: "Glyphicons Halflings";
+    content: "";
+    font-size: 25px;
+    display:none;
+}
+
+#DeltaPlaceHolderSearchArea .ms-srch-sb > .ms-srch-sb-searchLink img {
+    display:block;
+}
+
+#DeltaPlaceHolderSearchArea #SearchBox {
+  position:relative;
+}
+
+/* End sharepoint edit mode overrides --------------------------------------------------------*/
