@@ -222,12 +222,12 @@ padding:1.875em 0;
    }
 }
 .logo-footer span {
-    background: url(/public/img/lcc-logo-white-01.svg) center center no-repeat;
+    background: file-url('lcc-logo-white-01.svg') center center no-repeat;
     background-size:100%;
     width: 150px;
     height: 45px;
     display: block;
-    margin: 0 0 1.875em;
+    margin: 1.875em 0;
 }
 
 
