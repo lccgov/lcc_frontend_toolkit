@@ -1,0 +1,361 @@
+$main-nav-background:red;
+/*********************************************
+Base.sass variables
+*********************************************/
+
+body{
+  font-size:$base-font-size;
+  font-family:$font-primary;
+  color:$base-font-color;
+  background-color:$base-background-color;
+}
+
+.ms-rtestate-field
+{
+  h1,h2,h3,h4,h5
+{
+   &.ms-rteElement-H2
+   {
+        font-family:$font-primary;
+        color:$base-font-color;
+   }
+}    
+}
+
+.btn-primary, .button
+{
+  background:$btn-background-color;
+  box-shadow: inset 0 1px 1px lighten($btn-background-color,10%);
+    &:hover{
+      background:darken($btn-background-color,10%);
+    }
+}
+
+
+
+ .btn, .button
+    {
+      border-color:$btn-background-color;
+      color:#fff;
+
+      &.btn-default, &.alt
+{
+  border-color:$btn-background-color;
+  color:$btn-background-color;
+  &:hover{
+     background:darken($btn-background-color,10%);
+     color:#fff;
+  }
+}
+
+
+    }
+
+.container-fluid{
+    max-width:$base-container-width;
+}
+
+
+
+.sectionHeader{
+  background:$sectionHeader-background-color;
+}
+
+.sectionOne{
+}
+
+.sectionTwo{
+}
+
+.sectionThree{
+}
+
+
+.sectionFour{
+}
+
+
+.sectionFive{
+  background:$sectionFive-background-color;
+}
+
+/*********************************************
+ End Base.sass variables
+*********************************************/
+
+/*********************************************
+ globhalSearch.sass variables
+*********************************************/
+
+.ms-srch-sb > .ms-srch-sb-searchLink {
+    color: $search-link;
+    background:$search-link-background;
+}
+
+/*********************************************
+ End globhalSearch.sass variables
+*********************************************/
+
+
+/*********************************************
+ Masterhead.sass variables
+*********************************************/
+.masterhead{
+    background: $head-background;
+}
+
+/*********************************************
+ End Masterhead.sass variables
+*********************************************/
+/*********************************************
+ mainMenu.sass variables
+*********************************************/
+.ms-core-navigation {
+    font-family:$font-primary;
+}
+
+.ms-core-listMenu-item, .ms-core-listMenu-item:link, .ms-core-listMenu-item:visited, .ms-tv-item:link, .ms-tv-item:visited, .ms-tv-header:link, .ms-tv-header:visited
+{
+    color:$main-nav-link;
+}
+
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, a.ms-tv-item:hover, a.ms-tv-header:hover, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, .ms-tv-selected:link {
+    background-color: darken($main-nav-background, 5%);
+    color: $main-nav-link;
+}
+
+.main-nav {
+    background:$main-nav-background;
+  
+
+ ul 
+ {
+ 
+ li{
+  
+
+
+ a{
+
+    color:$main-nav-link;
+
+}
+
+ a:hover,    a:focus{
+    background-color: darken($main-nav-background, 5%);
+    color: $main-nav-link;
+}
+
+ a.selected{
+    background: darken($main-nav-background, 4%) !important;  //override sharepoint corev15
+
+}
+
+}
+}
+
+ul ul  {
+    background-color: darken($main-nav-background, 5%);
+    background-color: darken($main-nav-background, 5%);
+
+    li{
+        border-bottom:1px solid darken($main-nav-background, 8%);
+
+        &:first-of-type{
+            border-top:1px solid darken($main-nav-background, 8%);
+        }
+
+        a
+            {
+
+
+            &:hover {
+                background:darken($main-nav-background, 8%);
+            }
+
+            }
+        }
+    }
+
+
+}
+
+/*********************************************
+ End mainMenu.sass variables
+*********************************************/
+
+/*********************************************
+ ResponsiveMenu.sass variables
+*********************************************/
+
+ul.menu{
+ 
+
+    li{
+ 
+
+
+    a {
+
+    &:hover, &:focus
+    {
+      background:lighten($main-nav-background, 87%);
+
+}  
+
+
+
+ &.main-menu, &.search{
+ 
+    background:#fff;
+}
+
+&.search{
+
+    background:lighten(gray, 30%);        
+}
+ 
+&.search.active,
+&.search:hover,
+&.search:focus{
+    background:#bdc3c7;
+}
+
+&.main-menu {
+
+       background:$main-nav-background;
+       color:#fff;
+
+   
+}
+
+&.main-menu:hover,
+&.main-menu:focus,
+&.main-menu.active{
+    background:darken($main-nav-background, 8%);
+
+    
+}
+
+
+    }
+}
+}
+
+
+/*********************************************
+ End ResponsiveMenu.sass variables
+*********************************************/
+
+/*********************************************
+ footer.sass variables
+*********************************************/
+
+footer.main {
+    background: $main-nav-background;
+
+
+
+ p{
+     color:$footer-font-color;
+ }
+
+   .footer{
+    background:$main-nav-background;
+
+
+      
+  li{
+
+
+ a { 
+    border-bottom:1px solid rgba(0,0,0,0.1) !important;  //override shaerpoint corev15   
+    color:$footer-font-color !important; //override shaerpoint corev15
+}
+
+ a:hover,    a:focus{
+    background:rgba(0,0,0,0.2);
+ }
+ a.selected{
+   background-color:rgba(0,0,0,0.2) !important;  //override shaerpoint corev15
+}
+
+ul  {
+
+
+     li {
+        
+
+            &:last-of-type{
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            a {
+ 
+
+                &:hover, &:focus {
+                background:rgba(0,0,0,0.2);  
+                color:#fff;
+                }
+
+
+                }
+
+
+            }
+ 
+
+    
+}
+
+}
+
+ }
+}
+
+.socialBookmarks{
+
+    h2{
+        color: $footer-font-color;
+    }
+
+
+        .facebook:after, .twitter:after, .youtube:after
+    {
+    border:1px solid  $footer-font-color;
+    color: $footer-font-color;
+
+     
+    }
+
+      a:hover:after{
+          background: $footer-font-color;
+          color:$main-nav-background;
+       }
+  
+}
+
+
+
+.footerGlobal
+{
+    background:darken( $main-nav-background, 4%);
+}
+
+
+.footerGlobal nav ul
+{  
+@include ulStyle();
+
+ li:after {
+    color: $footer-font-color;
+}
+
+   a{
+       color:$footer-font-color;
+   }
+}
+
+/*********************************************
+ End footer.sass variables
+*********************************************/

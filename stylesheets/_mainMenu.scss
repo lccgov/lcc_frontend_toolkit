@@ -17,9 +17,7 @@ MAIN MENU
   height: auto;
 }
 
-.ms-core-navigation {
-    font-family:$font-primary;
-}
+
 
 .ms-core-listMenu-horizontalBox
 {
@@ -40,12 +38,13 @@ MAIN MENU
 
 .ms-core-listMenu-item, .ms-core-listMenu-item:link, .ms-core-listMenu-item:visited, .ms-tv-item:link, .ms-tv-item:visited, .ms-tv-header:link, .ms-tv-header:visited
 {
-    color:$main-nav-link;
+    color:#fff;
 }
 
 .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, a.ms-tv-item:hover, a.ms-tv-header:hover, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, .ms-tv-selected:link {
-    background-color: darken($main-nav-background, 5%);
-    color: $main-nav-link;
+    background-color: #133E8D;
+    color:#fff;
+
 }
 
 /*sharepoint styles overide*/
@@ -53,7 +52,7 @@ MAIN MENU
 
 
 .main-nav {
-    background:$main-nav-background;
+    background:#133E8D;
     z-index:1; 
 
  ul 
@@ -71,21 +70,19 @@ MAIN MENU
     font-size:18px;
     font-weight:400;
     display:inline-block; 
-    color:$main-nav-link;
+    color:#fff;
 
 }
 
  a:hover,    a:focus{
-    background-color: darken($main-nav-background, 5%);
-    color: $main-nav-link;
+    background-color: darken(#133E8D, 5%);
+    color: #fff;
     text-decoration:none;
 }
 
  a.selected{
-    background: darken($main-nav-background, 4%) !important;  //override shaerpoint corev15
-
+    background: darken(#133E8D, 4%) !important;  //override shaerpoint corev15
 }
-
 }
 }
 
@@ -96,15 +93,15 @@ ul ul  {
     position: absolute;
     width: 300px;
     z-index: 10000 !important;
-    background-color: darken($main-nav-background, 5%);
-    background-color: darken($main-nav-background, 5%);
+    background-color: darken(#133E8D, 5%);
+    background-color: darken(#133E8D, 5%);
 
     li{
         display:block;
-        border-bottom:1px solid darken($main-nav-background, 8%);
+        border-bottom:1px solid darken(#133E8D, 8%);
 
         &:first-of-type{
-            border-top:1px solid darken($main-nav-background, 8%);
+            border-top:1px solid darken(#133E8D, 8%);
         }
 
         a
@@ -114,7 +111,7 @@ ul ul  {
             padding: 0.65em;
 
             &:hover {
-                background:darken($main-nav-background, 8%);
+                background:darken(#133E8D, 8%);
             }
 
             }

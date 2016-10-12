@@ -17,7 +17,7 @@ ul.menu{
     font-size:17px;
     font-weight:bold;
     padding:11px 15px;
-    color:$menu-link-color;
+    color:#133E8D;
     line-height:40px;
     min-height:62px;
     display:block;
@@ -85,7 +85,7 @@ ul.menu{
 
 &.main-menu {
 
-       background:$main-nav-background;
+       background:#133E8D;
        color:#fff;
 
         &:before{
@@ -102,7 +102,7 @@ ul.menu{
 &.main-menu:hover,
 &.main-menu:focus,
 &.main-menu.active{
-    background:darken($main-nav-background, 8%);
+    background:darken(#133E8D, 8%);
 
     
 }
@@ -144,5 +144,4 @@ span{
     display:none;
 }
 }
-
 }

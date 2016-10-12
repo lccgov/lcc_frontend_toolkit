@@ -1,9 +1,9 @@
 // footer.scss
-@import 'url-helper';
+
 
 footer.main {
     margin: 0;
-    background: $main-nav-background;
+    background: #133E8D;
     padding:0px 0px 0px 0px;
 
 
@@ -12,11 +12,11 @@ footer.main {
     }
 
  p{
-     color:$footer-font-color;
+     color:#fff;
  }
 
    .footer{
-    background:$main-nav-background;
+    background:#133E8D;
 
 
  ul{
@@ -43,7 +43,7 @@ footer.main {
     padding: 10px;
     font-size:18px;
     margin-left:0px;
-    color:$footer-font-color !important; //override shaerpoint corev15
+    color:#fff !important; //override shaerpoint corev15
     display:block;
 }
 
@@ -147,7 +147,7 @@ ul  {
     margin: 0 0 1.875em;
 
     h2{
-        color: $footer-font-color;
+        color: #fff;
     }
 
     @media (max-width:991px){
@@ -175,8 +175,8 @@ ul  {
     }
 
       a:hover:after{
-          background: $footer-font-color;
-          color:$main-nav-background;
+          background:#fff;
+          color:#133E8D;
           text-decoration:none;
        }
   
@@ -196,7 +196,7 @@ margin-bottom:1.875em;
 
 .footerGlobal
 {
-    background:darken( $main-nav-background, 4%);
+    background:darken( #133E8D, 4%);
 }
 
 
@@ -213,22 +213,21 @@ padding:1.875em 0;
 
  li:after {
     content: '|';
-    color: $footer-font-color;
+    color: #fff;
     padding: 0 0.625em;
 }
 
    a{
-       color:$footer-font-color;
+       color:#fff;
    }
 }
 .logo-footer span {
-    background: file-url('lcc-logo-white-01.svg') center center no-repeat;
+    background: url(/public/img/lcc-logo-white-01.svg) center center no-repeat;
     background-size:100%;
     width: 150px;
     height: 45px;
     display: block;
     margin: 0 0 1.875em;
 }
-
 
 
