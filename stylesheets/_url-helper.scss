@@ -10,7 +10,8 @@ $path: false !default;
   @if $path {
     $url: url($path + $file);
   } @else {
-    $url: "url('<%= asset_path('" + $file + "') %>')"
+    $assetPath: "<%= asset_path('" + $file + "') %>";
+    $url: url($assetPath)
   }
   @return $url;
 }
