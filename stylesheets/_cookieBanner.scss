@@ -23,7 +23,7 @@
             text-decoration:underline;
             }  
 
-            a#ck_acpt
+            a.submit
             {
             background:#c0392b;
             border-radius:0;
@@ -32,7 +32,7 @@
             text-decoration:none;
             }
 
-            a#ck_acpt:hover, a#ck_acpt:focus
+            a.submit:hover, a.submit:focus
             {
                 background:#e74c3c;
                 text-decoration:none;

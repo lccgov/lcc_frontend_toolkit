@@ -21,6 +21,7 @@ footer.main {
 
  ul{
     display:block;
+    margin:0px;
 
 @for $i from 1 through 10 {
     li:first-child:nth-last-child(#{$i}),
@@ -98,6 +99,13 @@ ul  {
  }
 
 @media (max-width:1200px){
+    
+     li{
+
+        margin:0px !important;
+        padding:0px;
+    }
+
 
         @for $i from 8 through 10 {
     li:first-child:nth-last-child(#{$i}),
@@ -110,6 +118,13 @@ ul  {
 }
 
 @media (max-width:1000px){
+
+ li{
+
+        margin:0px !important;
+        padding:0px;
+    }
+
 
         @for $i from 6 through 10 {
     li:first-child:nth-last-child(#{$i}),
@@ -129,6 +144,7 @@ ul  {
         width:100%;
         border-bottom:none;
         margin:0px !important;
+        padding:0px;
     }
 
     @for $i from 1 through 10 {
