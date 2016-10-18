@@ -22,6 +22,7 @@ footer.main {
  ul{
     display:block;
     margin:0px;
+    padding:0px;
 
 @for $i from 1 through 10 {
     li:first-child:nth-last-child(#{$i}),
@@ -103,7 +104,7 @@ ul  {
      li{
 
         margin:0px !important;
-        padding:0px;
+        padding:0px !important;
     }
 
 
@@ -122,7 +123,7 @@ ul  {
  li{
 
         margin:0px !important;
-        padding:0px;
+        padding:0px !important;
     }
 
 
@@ -144,7 +145,7 @@ ul  {
         width:100%;
         border-bottom:none;
         margin:0px !important;
-        padding:0px;
+        padding:0px!important;
     }
 
     @for $i from 1 through 10 {

@@ -132,7 +132,8 @@ body{
 
  ul 
  {
- 
+  width:100%;
+
  li{
   
 
@@ -191,17 +192,17 @@ ul ul  {
 *********************************************/
 
 ul.menu{
- 
-
+    
     li{
  
 
 
     a {
+     color:$menu-link-color;    
 
     &:hover, &:focus
     {
-      background:lighten($main-nav-background, 87%);
+      background:$main-nav-background !important;
 
 }  
 
@@ -220,12 +221,12 @@ ul.menu{
 &.search.active,
 &.search:hover,
 &.search:focus{
-    background:#bdc3c7;
+    background:#bdc3c7 !important;
 }
 
 &.main-menu {
 
-       background:$main-nav-background;
+       background:$main-nav-background !important;
        color:#fff;
 
    
@@ -339,7 +340,7 @@ ul  {
 
 
 
-.footerGlobal
+footer.main .footerGlobal
 {
     background:darken( $main-nav-background, 4%);
 }
