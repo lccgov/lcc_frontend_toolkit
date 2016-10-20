@@ -144,6 +144,71 @@ h2
    
     
 }// End A
+
+
+a[rel="xl"], a[rel="pdf"], a[rel="doc"], a[rel="pp"], a[rel="external"] {
+       &:after
+       {
+        content: ""; 
+        }
+}
+
+
+
+a[rel="xl"] {
+
+      .arrow{
+                  &:after{
+    content: "\f1c3"; 
+
+    }
+
+      }
+}
+
+a[rel="pdf"] {
+
+      .arrow{
+                  &:after{
+     content: "\f1c1";
+
+    }
+
+      }
+}
+
+
+a[rel="doc"] {
+
+      .arrow{
+                  &:after{
+     content: "\f1c2";
+
+    }
+
+      }
+}
+
+a[rel="pp"] {
+
+      .arrow{
+                  &:after{
+     content: "\f1c4";
+
+    }
+
+      }
+}
+
+a[rel="external"] {
+
+      .arrow{
+                  &:after{
+     content: "\f08e";
+    }
+
+      }
+}
     
     
   &.heightTwo a
