@@ -1,9 +1,10 @@
+@import 'url-helper';
 
  .logo{
 
         height:148px;
         width:280px;
-        background:url(../img/logo.png) center center no-repeat;
+        background:file-url('logo.png') center center no-repeat;
         margin:20px 0;
 
         @media (max-width: 767px){
