@@ -76,7 +76,7 @@
         top:62px;
         left:0px;
         background:#bdc3c7;
-        padding:20px 25px 15px 25px;
+        padding:20px;
         margin:0px;
         height:auto;
         width:100%;
@@ -107,19 +107,5 @@
     }
 }
 
-// iphone overide for images
-select.form-control {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-}
-
-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-}
 
 

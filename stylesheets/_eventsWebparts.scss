@@ -12,9 +12,9 @@ $base-highlight-color:#1E2A34; // highlight olor
 
 
 
-$eventsfilter-base-color:#fff; // background color
+$eventsfilter-base-color:#ffffff; // background color
 $eventsfilter-color:#fff; // alt color
-$eventsfilter-hightlight-color:#E7CC26 !default;
+$eventsfilter-hightlight-color:#E7CC26;
 $eventsfilter-font-color:#293238; // font-color
 $eventsfilter-border-color:#E0E0E0; // border color
 $filter-header-color:#E7CC26 ; // filter header background color on mobile
@@ -638,6 +638,7 @@ margin:0 0 0px 0 ; // overide margin bottom for Venuepods
 
  h2 {
 	color:$eventsfilter-color;
+    margin-top:-5px;
 }
 }
     
@@ -673,7 +674,18 @@ margin:0 0 0px 0 ; // overide margin bottom for Venuepods
     
 }// End responsive filter header 
 
+@media only screen and (max-width: 700px) {
 
+  
+     .selectedFilters a {
+        padding: 5px 40px 5px 10px; /*events fix*/
+        width:100%; /*events fix*/
+        margin: 0 0 10px 0; /*events fix*/
+        font-size: 14px; /*events fix*/
+    }
+    
+    
+}
 
 .eventsFilterType, .venuesFilterType{
 	padding: 0px 15px 7px 15px;
@@ -1347,7 +1359,7 @@ ul.content
     
     .eventsFilterSortContainer
 {
-   margin:25px 0;
+   margin:0 0 25px 0;
 }
     
 }
@@ -1968,6 +1980,7 @@ select.form-control {
 
 }
 
+
 .activitySearchHomeContent{
 .distance{
         &:before{
@@ -1981,8 +1994,11 @@ select.form-control {
 @media (max-width:700px){
     .activitySearchHomeContent{
 .distance{
+    float:left;
+    width:100%;
+    display:block;
         &:before{
-  top:106px; 
+  top:12px; 
   }
 
 }
@@ -2236,7 +2252,11 @@ box-shadow: inset 0px 0px 23px -5px rgba(0,0,0,0.85);
     border:none;
     border-right:1px solid #efefef;
     width :25%;
-    color:#666;
+}
+
+.activitySearchHome select {
+
+    background:#fff;
 }
 
 .activitySearchHome select::-ms-expand {
