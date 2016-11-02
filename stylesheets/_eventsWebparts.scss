@@ -762,8 +762,6 @@ select{
      
  }
 
-
-
     
 }  // End eventsFilterType/venueFilterType
 
@@ -1991,21 +1989,6 @@ select.form-control {
 
 }
 
-@media (max-width:700px){
-    .activitySearchHomeContent{
-.distance{
-    float:left;
-    width:100%;
-    display:block;
-        &:before{
-  top:12px; 
-  }
-
-}
-
-}
-
-}
 
 
 select.form-control::-ms-expand {
@@ -2176,7 +2159,7 @@ ACTIVITY SEARCH HOME
 
 .activitySearchHome{
 	text-align:center;
-	padding:50px 0px 80px 0px;
+	padding:0px 0px 50px 0px;
     
     .nav-tabs {
     border-bottom: none;
@@ -2222,7 +2205,7 @@ box-shadow: inset 0px 0px 23px -5px rgba(0,0,0,0.85);
 @media only screen and (max-width: 770px) {
     
     .activitySearchHome{
-	padding:40px 0px 20px 0px;
+	padding:0px 0px 20px 0px;
 }
 
     
@@ -2251,6 +2234,7 @@ box-shadow: inset 0px 0px 23px -5px rgba(0,0,0,0.85);
 	border-radius: 0px;
     border:none;
     border-right:1px solid #efefef;
+    background-color:#fff;
     width :25%;
 }
 
@@ -2281,6 +2265,8 @@ box-shadow: inset 0px 0px 23px -5px rgba(0,0,0,0.85);
     padding:10px;
     vertical-align: top;
     color:#fff;
+    background:$btn-background-color;
+    font-family:$font-primary;
 }
 
 
@@ -2338,41 +2324,27 @@ box-shadow: inset 0px 0px 23px -5px rgba(0,0,0,0.85);
 }
  
 
-.activitySearchHome input, .activitySearchHome select {
-	width: 100%;
-	float: left;
-	margin: 1% 0;
-}
+.activitySearchHome { 
+    padding:0 15px 20px;
+    input,  select {
+            width: 75%;
+            border:none;
+            float:left;
+            }
     
-    .activitySearchHome  input.btn{
- 
-    width :98%;
-    padding:10px;
-    margin:20px 1%  60px 1%;        
+            input.btn{
+            float:left;
+            width :25%;
+            min-width:25%;
+            }
+}
+
+.eventDateRange, #location , span.distance, span.distance:before {
+    display:none;
+    width:0px;
 }
 
 }
-
-
-
-@media only screen and (max-width: 500px) {
-
-
-.activitySearchHome input, .activitySearchHome select { 
-	width: 100%;
-	float: left;
-	margin: 1%;
-}
-    
-    
-        .activitySearchHome  input.btn{
- 
-    width :100%;
-    margin:20px 1%  60px 1%;        
-}
-
-}
-
 
 .btn .btn-primary {
     background: $button-primary-color;
