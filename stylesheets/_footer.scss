@@ -180,15 +180,11 @@ ul  {
     font-family: FontAwesome;
     font-size:25px;
     border-radius:50%;
-    border:1px solid  $footer-font-color;
     width:42px;
     height:42px;
     display:block;
     text-align: center;
-    padding-top:3px;
-    color: $footer-font-color;
-
-     
+    padding-top:3px;     
     }
 
       a:hover:after{
@@ -233,6 +229,9 @@ padding:1.875em 0;
     color: #fff;
     padding: 0 0.625em;
 }
+
+
+
 
    a{
        color:#fff;
