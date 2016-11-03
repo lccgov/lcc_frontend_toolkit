@@ -362,3 +362,34 @@ footer.main .footerGlobal
 /*********************************************
  End footer.sass variables
 *********************************************/
+
+/**********************
+Sharepoint overides
+********************/
+
+
+h1, h2, h3, h4, h5, ul, ol, p, input {
+    font-family:$font-primary;
+    color:$base-font-color;
+}
+
+
+.ms-rtestate-field
+{
+  h1,h2,h3,h4,h5
+{
+        font-weight:400;
+        font-family:$font-primary;
+        color:$base-font-color;
+}
+    
+}
+
+input[type=button], input[type=reset], input[type=submit], button {
+    min-width:1em;
+}
+
+
+hr.ms-rteElement-spacer{
+    border-top:none;
+}
