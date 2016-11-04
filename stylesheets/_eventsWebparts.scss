@@ -1327,7 +1327,7 @@ p{
 
 .col-md-9.contentBackground 
 {
-  background:$eventsfilter-hightlight-color; 
+  background:#fff; 
   padding:0px;
 }
 
@@ -2383,7 +2383,9 @@ box-shadow: inset 0px 0px 23px -5px rgba(0,0,0,0.85);
 #loading {
    text-align:center;
    font-size:$base-font-size * 2; 
-   font-family: $font-primary;  
+   font-family: $font-primary; 
+   height:250px;
+   background:$eventsfilter-hightlight-color; 
     
    span{
        font-weight:bold;
@@ -2484,4 +2486,27 @@ margin-bottom:0px !important;
 .eventListOnly{
     margin-bottom:$base-margin-bottom;
 }
+
+
+
+.alert.alert-warning p {
+    padding:20px;
+
+    a{
+        text-decoration:underline;
+    }
+
+    &:before {
+    font-family: FontAwesome;    
+    content: "\f0a1";
+    margin: 0px 10px 0px 0;
+    position: relative;
+    top: 0px;
+    font-size: 35px;
+}
+
+}
+
+
+
 

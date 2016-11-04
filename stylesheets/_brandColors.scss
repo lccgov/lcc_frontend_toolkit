@@ -92,6 +92,10 @@ body{
 .ms-srch-sb > .ms-srch-sb-searchLink {
     color: $search-link;
     background:$search-link-background;
+
+    &:hover{
+        color:#fff;
+    }
 }
 
 /*********************************************
@@ -373,6 +377,10 @@ h1, h2, h3, h4, h5, ul, ol, p, input {
     color:$base-font-color;
 }
 
+h1, h2, h3, h4, h5 {
+    font-weight:400;
+}
+
 
 .ms-rtestate-field
 {
@@ -390,6 +398,6 @@ input[type=button], input[type=reset], input[type=submit], button {
 }
 
 
-hr.ms-rteElement-spacer{
+hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
     border-top:none;
 }
