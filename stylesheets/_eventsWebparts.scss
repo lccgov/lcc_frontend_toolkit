@@ -537,9 +537,9 @@ box-shadow: 2px 2px 0px 0px rgba(204, 213, 215, 1);
     color:$link-primary-color;
 }
 
- p{
-
-	margin:0px !important;
+p.eventLocation{
+    font-weight:bold;
+    margin:5px 0 10px 0;
 }
     
 } //end events pod
