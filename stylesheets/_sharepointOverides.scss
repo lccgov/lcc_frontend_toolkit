@@ -70,3 +70,45 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
     margin-bottom:1.875em;
 }
 
+#s4-ribbonrow *,
+#s4-ribbonrow *:before,
+#s4-ribbonrow *:after,
+#ms-help *,
+*[class*='ms-core-menu'],
+*[class*='ms-dlg'],
+*[class*='ms-dlg']:before,
+*[class*='ms-dlg']:after,
+.ms-dlgFrameContainer > div,
+.ms-dlgFrameContainer > div:before,
+.ms-dlgFrameContainer > div:after,
+.ms-dlgFrameContainer > div > div,
+.ms-dlgFrameContainer > div > div:before,
+.ms-dlgFrameContainer > div > div:after,
+.ms-MenuUIPopupBody,
+.ms-MenuUIPopupBody:before,
+.ms-MenuUIPopupBody:after,
+.ms-MenuUIPopupBody *,
+.ms-MenuUIPopupBody *:before,
+.ms-MenuUIPopupBody *:after,
+.ms-ToolPaneOuter,
+.ms-ToolPaneOuter:before,
+.ms-ToolPaneOuter:after,
+.ms-ToolPaneOuter *,
+.ms-ToolPaneOuter *:before,
+.ms-ToolPaneOuter *:after,
+*[class*='ms-cui'],
+*[class*='ms-cui']:before,
+*[class*='ms-cui']:after,
+*[class*='ms-cui'] *,
+*[class*='ms-cui'] *:before,
+*[class*='ms-cui'] *:after,
+*[class*='ms-dlg'] *,
+*[class*='ms-dlg'] *:before,
+*[class*='ms-dlg'] *:after {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+
+
