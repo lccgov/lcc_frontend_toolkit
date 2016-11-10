@@ -1,0 +1,86 @@
+ // Hero Banner
+ 
+ 
+ $heroFontBackground:rgba(0, 0, 0, 0.5) !default; 
+ $heroFontcolor:#fff !default; 
+
+ .heroBanner {
+  padding: 55px 0;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+
+  .container {
+  position: relative;
+
+  h1, p.lead {
+
+  font-size: 40px;
+  font-weight: 100;
+  color: $heroFontcolor;
+  padding: 20px;
+  background: $heroFontBackground;
+  line-height: 48px;
+  width: 40%;
+  margin: 0 0 20px 0;
+
+  }
+
+  p{
+      font-size: 20px;
+  font-weight: 100;
+  color: #fff;
+  padding: 20px;
+  background: $heroFontBackground;
+  width: 40%;
+  margin: 0 0 20px 0;
+  }
+}
+
+ .button {
+  position: absolute;
+  bottom: 0px;
+  right: 55px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+   padding:0px;
+
+.container {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    
+    h1, p.lead {
+
+    width: 100%;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 30px;
+    background:none;
+    padding: 0 20px;
+
+    }
+
+    p {
+    font-size: 20px;
+    width: 100%;
+    margin: 0px auto;
+    background:none;
+
+  }
+
+  .button {
+    position: relative;
+    font-size: 20px;
+    width: 100%;
+    right: 0px;
+    display: block;
+  }
+    
+  }
+
+}
+
+}

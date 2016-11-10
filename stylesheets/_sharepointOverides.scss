@@ -65,9 +65,12 @@ input[type=button], input[type=reset], input[type=submit], button {
 }
 
 
+
 hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
-    border-top:none;
-    margin-bottom:1.875em;
+    border-top: none;
+    padding-bottom: 1.875em;
+    margin:0px;
+    width:100%
 }
 
 #s4-ribbonrow *,

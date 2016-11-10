@@ -379,7 +379,6 @@ box-shadow: 2px 2px 0px 0px rgba(204, 213, 215, 1);
 &.image
     {
         padding: 0px !important;
-        background: "url(images/arrow-grey-big.png) right 20px center no-repeat #fff !important";
         border:none;
         
      
@@ -432,7 +431,6 @@ box-shadow: 2px 2px 0px 0px rgba(204, 213, 215, 1);
                 
                 .dateIcon
                 {
-                    background: transparent url("images/icon-calender-events-white.png") no-repeat scroll center 3px;
                 height:25px;
     
                 }
@@ -526,10 +524,7 @@ box-shadow: 2px 2px 0px 0px rgba(204, 213, 215, 1);
     
     
 
-    
-&:hover{
-	background: "url(images/arrow-blue-big.png) right 20px center no-repeat #fff !important";
-}
+
 
     h3 {
 
@@ -733,13 +728,12 @@ select{
 	display:block;
 	margin-top:10px;
 	text-transform:uppercase;
-	background: "url(images/icon-plus.png) no-repeat center left 0px";
 	padding:0 0px 0 20px;
     width:100%; 
     clear:left; 
      
 &:hover{
-	background: "url(images/icon-plusDark.png) no-repeat center left 0px";
+
 	color:#293238;
     cursor: pointer;
 }
@@ -749,13 +743,11 @@ select{
 	display:block;
 	margin-top:10px;
 	text-transform:uppercase;
-	background: "url(images/icon-minus.png) no-repeat center left 0px";
 	padding:0 0px 0 20px;
     width:100%; 
     clear:left;  
      
 &:hover{
-	background: "url(images/icon-minusDark.png) no-repeat center left 0px";
 	color:#293238;
     cursor: pointer;
 }    
@@ -916,17 +908,16 @@ img{
 
 
 .backIcon {
-    background: transparent "url(images/icon-back.png) no-repeat scroll center 50%";
     margin: 2px 10px 0px -3px;
 }
 
 .printIcon {
-    background: transparent "url(images/icon-print.png) no-repeat scroll center center";
+ 
     margin: 2px -3px 0px 12px;
 }
 
 .forwardIcon {
-    background: transparent "url(images/icon-forward.png) no-repeat scroll center 50%";
+
     margin: 2px -3px 0px 12px;
 }
 
@@ -1053,10 +1044,7 @@ img{
        &:hover {
     background:rgba(0,0,0, 0.50)
 }
-    
-     .ie  &#closeIcon:hover {
-    background: $eventsfilter-hightlight-color "url(images/iconClose.png) no-repeat scroll 50% 50%"; 
-}       
+     
         
         
         
@@ -1137,9 +1125,7 @@ EVENT DETAILS
 .eventDetailsBlock.active a {
 	background:	#ECF0F1 !important;
 }
-.eventDetailsBlock.active a .downIcon{
-	background:"url(../Images/icon-up.png) no-repeat center center";
-}
+
 .eventDetails{
 	margin-bottom:20px;
 }
@@ -1251,15 +1237,7 @@ p{
 	top:24px;
 	right:20px;
 }
-.eventDetailsBlockIconDate{
-	background: "url(images/icon-calender-events.png) no-repeat center 50%";
-}
-.eventDetailsBlockIconCost{
-	background: "url(images/icon-cost.png) no-repeat center center";
-}
-.eventDetailsBlockIconAge{
-	background: "url(images/icon-user.png) no-repeat center center";
-}
+
 .eventDetailsBlockIconVenue{
 	      @include icon();
     &:before{
@@ -1285,15 +1263,7 @@ p{
 
     font-style: normal;
 }
-.eventDetailsBlockIconHours{
-	background: "url(images/icon-clock.png) no-repeat center center";
-}
-.eventDetailsBlockIconFacilities{
-	background:url(images/icon-drink.png) no-repeat center center;
-}
-.eventDetailsBlockIconAccess{
-	background:"url(images/icon-access.png) no-repeat center center";
-}
+
 .allDates{
 	display:none;
 }
@@ -1390,7 +1360,6 @@ a.additionalData.events {
     display: inline-block;
     margin: 0px 0px 20px;
     width: 100%;
-    background:$eventsfilter-color "url(images/icon-plus.png) no-repeat scroll left 20px top 12px";
     border-width: 0px 1px 1px;
     border-style: solid;
     border-color:  $eventsfilter-border-color;
@@ -1402,7 +1371,6 @@ a.additionalData.events {
 &:hover {
     text-decoration: none;
     color:$font-primary-color;
-    background: darken($eventsfilter-hightlight-color, 5%) "url(images/icon-plusDark.png) no-repeat scroll left 20px top 12px";
 }
 }
 
@@ -1935,7 +1903,6 @@ input.ui-autocomplete-input
 
 
 .searchForm .input-group-btn .btn{
-   // background: $button-primary-color "url(images/iconSearchHover.png) no-repeat  50% 50%";
     border-left:none;
     border-color:#E4E8EC;
     width:60px;
@@ -1956,13 +1923,12 @@ input.ui-autocomplete-input
 
 .searchForm .input-group-btn .btn:hover,
 .searchForm .input-group-btn .btn:focus{
-      background: #333 "url(images/iconSearchHover.png) no-repeat 50% 50%";
+
       width:60px;
 }
 
 
 select.form-control {
-    background: "url(images/accordionPlusIcon.png) no-repeat 95% 50%";
     padding-right: 60px;
     height: 50px;
     line-height: inherit;
@@ -2273,7 +2239,6 @@ box-shadow: inset 0px 0px 23px -5px rgba(0,0,0,0.85);
 }
 
 .activitySearchHome select{
-    background:#fff "url(images/accordionPlusIcon.png) no-repeat 95% 50%";
     padding-right: 60px;
        -webkit-appearance: none;
        -moz-appearance: none;
@@ -2305,26 +2270,22 @@ box-shadow: inset 0px 0px 23px -5px rgba(0,0,0,0.85);
 .activitySearchHomeHeader a:link, .activitySearchHomeHeader a:visited  {
 	border:2px solid #E7CC26;
 	font-size:20px;
-    background: "url(../img/iconSearch.png) no-repeat 95% 50%";
 	color:#fff;
 	padding:15px 70px 15px 50px;
 
 }
 .activitySearchHomeHeader a:hover {
 	border:2px solid #E7CC26;
-	background: "url(../img/iconSearchHover.png) no-repeat 95% 50% #E7CC26";
 	color:#fff !important;
     text-decoration: none;
 }
 .activitySearchHomeHeader.active a {
 	border:3px solid #fff;
-	background: "url(../img/arrowUp.png) no-repeat 95% 50% transparent";
 	color:#fff;
 }
 
 .activitySearchHomeHeader.active a:hover {
 	border:3px solid #fff;
-	background:#fff "url(../img/arrowUp.png) no-repeat 95% 50%";
 	color:#E7CC26 !important;
 }
 .activitySearchHomeContent{

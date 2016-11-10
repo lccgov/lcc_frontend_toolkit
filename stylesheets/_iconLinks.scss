@@ -1,0 +1,100 @@
+/* iconLinks -----------------------------------------------------------------*/
+
+
+ $iconLinkBorderColor:#DEDEDD !default;
+ $iconLinkBackground:#fff !default;
+ $iconLinkIconColor:#333 !default;
+
+
+  ul.iconLinks { 
+
+  text-align: center;
+  margin:0px;
+  padding:0px;
+   
+   li {
+
+  border-radius: 100%;
+  width: 130px;
+  height: 130px;
+  margin: 20px;
+  border: 1px solid $iconLinkBorderColor;
+  background:$iconLinkBackground;
+  display: inline-block;
+
+   a {
+  text-indent: -3000em;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  overflow: hidden;
+
+     &:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+}
+
+
+
+
+
+    position:relative;  
+
+    &.facebook, &.twitter, &.youtube, &.instagram, &.email
+    {
+    a:after
+    {
+    font-family: FontAwesome;
+    font-size:45px;
+    display:block;
+    text-align: center;
+    color:$iconLinkIconColor;
+    position:absolute;
+    text-indent:0px;
+    left:35%;
+    top:25%;
+
+    }
+
+      &:hover:after{
+          background:$social-link-color;
+          color:#fff;
+          text-decoration:none;
+          
+       }
+
+
+     &.facebook a:after {
+    content: "\f09a";  
+    left:40%;
+
+ }
+
+      &.twitter a:after {
+    content: "\f099"; 
+
+ }
+
+      &.youtube a:after {
+    content: "\f167"; 
+  
+ }
+
+       &.instagram a:after {
+    content: "\f16d"; 
+    top:26%;
+ }
+
+       &.email a:after {
+    content: "\f0e0";
+    left:32%;
+  
+ }
+ }
+}
+}

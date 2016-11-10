@@ -258,7 +258,7 @@ footer.main {
    .footer{
     background:$main-nav-background;
 
-
+ul {
       
   li{
 
@@ -304,11 +304,11 @@ ul  {
 }
 
 }
-
+}
  }
 }
 
-.socialBookmarks{
+footer.main .socialBookmarks{
 
     h2{
         color: $footer-font-color;
