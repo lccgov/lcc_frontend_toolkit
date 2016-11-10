@@ -1,7 +1,6 @@
  
 
 
-
 .promoListWebpart {   // start promo list webpart
  
 
@@ -53,7 +52,7 @@ h2
     display:inline-block;
     bottom:0px;
     right:0px;
-    padding:20px;
+    padding:20px 40px 20px 20px;
     background:$span-info-color;
     width:100%;
     opacity: 0.90;
@@ -112,7 +111,7 @@ h2
        font-family: FontAwesome;
     font-size:35px;
     content: "\f105";
-    color:$span-info-secondary-color;
+    color:$arrow-color;
     position:absolute;
     display:inline-block;
     vertical-align: middle;
@@ -131,7 +130,7 @@ h2
         
  span.thirdInfo
 {
-    background: $span-third-info-base;
+    background:$span-third-info-base;
     right:0px;
     color:$third-info-font-color;
     width:33.3%;
@@ -266,19 +265,19 @@ a[rel="external"] {
 }
 
 
- .two a span.info,  .four a span.info
+ .two a span.info, .three a span.info,  .four a span.info
 {
    font-size: $base-font-size * 1.5;
-   padding:20px 80px 20px 20px;   
+   padding:20px 100px 20px 20px;   
 }
 
- .two a span.secondaryInfo, .four a span.secondaryInfo
+ .two a span.secondaryInfo, .three a span.secondaryInfo, .four a span.secondaryInfo
 {
    font-size:$base-font-size;
 }
 
 
- .three a,  .four.heightTwo a
+ .four.heightTwo a
 {
       font-size: $base-font-size * 2.3;
 }
@@ -287,13 +286,13 @@ a[rel="external"] {
     
  @media screen and (max-width: 1000px) {   
     
-         li.three a span.info,  li.four.heightTwo a span.info, li.six a span.info
+    a span.info,  li.four.heightTwo a span.info, li.six a span.info
 {
       font-size: $base-font-size * 1.5;
 
 }
      
-              li.three a span.secondaryInfo,  li.four.heightTwo a span.secondaryInfo, li.six a span.secondaryInfo
+             a span.secondaryInfo,  li.four.heightTwo a span.secondaryInfo, li.six a span.secondaryInfo
 {
       font-size: $base-font-size *1.2;
 }
@@ -370,7 +369,7 @@ a[rel="external"] {
  .contentLink {   // Start contentLink Style
 
     position:relative;
-    color:#fff;
+    color:$contentFontColor;
     font-weight:100;
     padding-bottom:100px;
     height:200px;
@@ -381,13 +380,47 @@ h2
      }
      
 
+a  {
+    color:$contentFontColor;
 
+         .arrow
+{
+  
+
+    
+        &:after{
+
+    color:$content-arrow-color;
+    }
+
+    
+
+} 
+
+    &:hover{
+        color:#fff;
+
+                 .arrow
+{
+  
+
+    
+        &:after{
+
+    color:$arrow-color;
+    }
+
+    
+
+} 
+    } 
+}
      
      
 &.color{
     
     p{
-        color:#fff;
+        color:$contentFontColor;
     }
 
     div
@@ -484,7 +517,7 @@ h2
 span.info
 {
     background-color:transparent;
-    border-top:1px solid #fff;
+    border-top:1px solid $content-border-color;
 }
 
 
@@ -557,7 +590,7 @@ p strong
     font-weight:100;
     padding-bottom:100px;
     height:200px;
-     
+    color:$contentFontColor; 
      
     &.color
      {

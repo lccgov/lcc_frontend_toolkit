@@ -72,13 +72,18 @@ $promo-group-link-color:#216486 !default;
 
 
 //promolist webpart
-$link-font-color:#fff !default;
-$span-info-color:#222E3C !default;
+$link-font-color:#fff !default ;
+$span-info-color:#133E8D !default;
 $span-info-hover:#131A22 !default;
-$span-info-secondary-color:#E6CC26 !default;
-$span-arrow-base:#131A22 !default;
-$span-third-info-base:#fff !default;
+$span-info-secondary-color:#fff !default;
+$span-arrow-base:darken($span-info-color, 10%) !default;
+$span-third-info-base:#f6f6f6 !default;
 $third-info-font-color:#333 !default;
+$arrow-color:#fff !default;
+$contentFontColor:#333 !default;
+$content-arrow-color:#133E8D !default;
+$content-border-color:#ddd !default;
+
 
 // section backgrounds
 $sectionHeader-background-color:lighten($base-background-color, 3%) !default;
