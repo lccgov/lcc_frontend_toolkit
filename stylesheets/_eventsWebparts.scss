@@ -1,25 +1,25 @@
 @import 'url-helper';
 
 
-$base-secondary-color:#fff; // alternative background color
-$font-primary-color: #1E2A34; // font color
-$font-secondary-color: #ffffff; // alternative font color
-$button-primary-color: #3498DB;  // main button color
-$link-primary-color: #006da5;  // main link color
-$link-primary-font-color: #fff;  // main button font color
-$base-highlight-color:#1E2A34; // highlight olor
+$base-secondary-color:#fff !default; // alternative background color
+$font-primary-color: #1E2A34 !default; // font color
+$font-secondary-color: #ffffff !default; // alternative font color
+$button-primary-color: #3498DB !default;  // main button color
+$link-primary-color: #006da5 !default;  // main link color
+$link-primary-font-color: #fff !default;  // main button font color
+$base-highlight-color:#1E2A34 !default; // highlight olor
 
 
 
 
-$eventsfilter-base-color:#ffffff; // background color
-$eventsfilter-color:#fff; // alt color
-$eventsfilter-hightlight-color:#E7CC26;
-$eventsfilter-font-color:#293238; // font-color
-$eventsfilter-border-color:#E0E0E0; // border color
-$filter-header-color:#E7CC26 ; // filter header background color on mobile
+$eventsfilter-base-color:#ffffff !default; // background color
+$eventsfilter-color:#fff !default; // alt color
+$eventsfilter-hightlight-color:#E7CC26 !default;
+$eventsfilter-font-color:#293238 !default; // font-color
+$eventsfilter-border-color:#E0E0E0 !default; // border color
+$filter-header-color:#E7CC26 !default ; // filter header background color on mobile
 
-$contentPod-backround:#F5F7F8;
+$contentPod-backround:#F5F7F8 !default;
 
 
 @mixin border(){
