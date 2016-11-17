@@ -451,7 +451,7 @@ a.skip:focus, a.skip:active{
  .ui-datepicker-header {
 	border: none;
 	border-bottom: 1px solid transparent;
-	background:$eventsfilter-hightlight-color;
+	background:#006da5;
 	font-weight: normal;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -491,7 +491,7 @@ a.skip:focus, a.skip:active{
     }
 
     &:hover{
-        background:darken($eventsfilter-hightlight-color,10%);
+        background:darken(#006da5,10%);
         text-decoration: none;
     }
 }
@@ -577,7 +577,7 @@ a.skip:focus, a.skip:active{
 
  td .ui-state-active,
  td .ui-state-hover {
-	background: $eventsfilter-hightlight-color;
+	background: #006da5;
 	border-radius:0px;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
