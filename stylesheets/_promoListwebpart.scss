@@ -579,7 +579,16 @@ p strong
 }
 
 
-}  // end content Link Style
+} 
+
+@media only screen and (max-width: 600px) {
+.contentLink
+{
+    height:auto;
+}    
+} 
+
+ // end content Link Style
     
     
     

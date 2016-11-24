@@ -31,7 +31,7 @@
          height:0px;
      }
 
-    &.facebook:after, &.twitter:after, &.youtube:after
+    &.facebook:after, &.twitter:after, &.youtube:after, &.email:after, &.instagram:after
     {
     font-family: FontAwesome;
     font-size:25px;
@@ -66,6 +66,16 @@
 
       &.youtube:after {
     content: "\f167"; 
+  
+ }
+
+
+       &.instagram a:after {
+    content: "\f16d"; 
+ }
+
+       &.email a:after {
+    content: "\f0e0";
   
  }
 }
