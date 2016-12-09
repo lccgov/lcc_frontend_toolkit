@@ -90,6 +90,7 @@ a.button{
         padding: 10px 0px;
     }
 
+
     .contentPod {
 	margin:0px 0px 0px 0px;
 	width:100%;
@@ -141,9 +142,15 @@ p.date{
 
 ul.content{
     border:none;
+    margin: 0;
+    padding: 0px 0 0 0;
+    list-style: none;
+    clear: left;
+
+     li {
+    padding: 0;
+     }
 }
-
-
 }
 
 
