@@ -1,0 +1,151 @@
+
+.sectionSubsite.news
+{
+
+ h3 {
+     border:0px;
+ }   
+
+ input {
+    padding: 10px;
+    height: 50px;
+    border: 1px solid #ddd;
+}
+
+@media only screen and (max-width:400px){
+
+ input {
+    width:150px;
+}
+}
+
+a.button{
+    display:inline-block;
+    background:$news-button-background;
+    border:none;
+    margin-top:0px;
+
+    &:hover{
+        background:darken($news-button-background, 20%);
+        color:#fff;
+        text-decoration:none;
+    }
+
+    &:after{
+        display:none;
+    }
+
+}
+.datePickerContainer{
+    float:left;
+    width:250px;
+
+    &:first-of-type{
+        width:150px;
+    }
+    
+    label{
+        width:100%;
+    }
+
+    input{
+        width:120px;
+        margin-bottom:10px;
+    }
+
+    @media only screen and (max-width:400px){
+
+ input {
+    width:150px;
+}
+}
+
+}
+
+.accordion{
+    
+    margin:0px;
+
+
+
+        a.header {
+            margin:0px;
+        }
+  
+
+    li div div {
+    padding: 0px;
+}
+}
+
+}
+
+#paging {
+
+
+
+    h2 {
+        font-size: 40px;
+        color: #9B59B6;
+        padding: 10px 0px;
+    }
+
+    .contentPod {
+	margin:0px 0px 0px 0px;
+	width:100%;
+	border-bottom:1px solid $news-pod-border-color;
+	background:$news-pod-back;
+	font-size:0.9em;
+    
+
+    h3 {
+	font-size: 1.4em;
+	margin: 0px;
+	line-height:1.1em;
+	margin-bottom:5px;
+    }
+
+    a{
+    display:block;
+    width:100%;
+    padding:15px;
+
+    &:hover,&:focus {
+	text-decoration:none;
+    background:darken($news-pod-back, 5%);
+}
+
+p.date{
+	text-transform:uppercase;
+}
+
+ img{
+	margin:0px 15px 0px 0px;
+	max-width:300px;
+}
+
+}
+
+
+
+
+
+ h2 {
+	font-size:1.4em;
+	font-weight:normal !important;
+}
+
+
+
+}
+
+ul.content{
+    border:none;
+}
+
+
+}
+
+
+
+

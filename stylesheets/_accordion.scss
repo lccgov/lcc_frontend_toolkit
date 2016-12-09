@@ -1,4 +1,4 @@
-ul.accordionWP {
+ul.accordion {
 
   
          list-style: none;
@@ -7,15 +7,14 @@ ul.accordionWP {
 
          li{
            
-            border-bottom:1px solid #dedede;
+            border-bottom:1px solid $accordion-border-color;
 
-            h3.accordion {
-                margin:0px;
-                font-size:20px;
-            a{
+
+            a.header{
                 display:block;
                 padding:15px 40px 15px 15px;
                 position: relative;
+                font-size:20px;
 
                 &:hover, &:focus
                 {
@@ -30,6 +29,7 @@ ul.accordionWP {
                             content: "\f078";
                             position:absolute;
                             right:10px;
+                            color:$accordion-color;
 
                             }      
 
@@ -42,7 +42,7 @@ ul.accordionWP {
                             }      
 
              }
-            }
+          
 
             div div {
                 padding:15px;
@@ -57,5 +57,5 @@ ul.accordionWP {
 
    
 
-     border-top:1px solid #dedede;
+     border-top:1px solid $accordion-border-color;
 }
