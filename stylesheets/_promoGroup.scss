@@ -34,6 +34,8 @@ ul.promo-group{
                 font-size:1.313em;
                 position:relative;
 
+               
+
                                         img{
                             max-width:100%;
                             width:100%;
@@ -47,7 +49,9 @@ ul.promo-group{
                             color:#fff;
                             border-color:#212d3a;
 
-                            p{
+
+
+                            p, h3{
                                 color:#fff;
                             }
                     }
@@ -55,6 +59,7 @@ ul.promo-group{
                             margin:0 0 0.4em;
                             font-weight:600;
                             font-size:1em;
+                            color:$promo-group-link-color;
                          }
 
                         p{
