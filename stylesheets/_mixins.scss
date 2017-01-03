@@ -44,6 +44,29 @@
 
 
     }
+
+
+    @mixin listWebpartColors($list-webpart-back,$list-webpart-font-color)
+{
+background: $list-webpart-back;
+color: $list-webpart-font-color;
+
+ h2{
+     color: $list-webpart-font-color;
+ }
+
+    a {
+                background:lighten($list-webpart-back, 7%);
+                color:$list-webpart-font-color;
+
+                &:hover
+                {
+                    background:darken($list-webpart-back, 10%);
+                }
+            
+            }
+ 
+}
    
 
 

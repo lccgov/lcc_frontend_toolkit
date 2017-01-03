@@ -1,0 +1,166 @@
+
+
+
+.listWebpart 
+{
+	@include listWebpartColors(transparent, #333);
+    max-width:100%;
+    padding:15px 7.5px 0px;
+  
+   h2{
+       margin:0 7.5px 15px;
+       display:inline-block;
+   }   
+    ul{
+        list-style: none;
+        margin:0px;
+        padding:0px;
+
+        li{
+            float:left;
+               
+
+
+ 
+            a {
+                margin:0 7.5px 15px;
+                padding:15px;
+                display:block;
+                font-weight:bold;
+                position:relative;
+                width:auto;
+
+                img{
+                    width:100%;
+                    max-width:100%;
+                    margin-bottom:15px;
+                }
+
+                &:hover
+                {
+                    text-decoration: none;
+                }
+                     
+            }
+
+             .col-lg-12 & {
+                 width:20%;
+             }
+
+              .col-md-8 & {
+                 width:33.333%;
+             }
+
+             .col-md-6 & {
+                 width:25%;
+             }
+
+            .col-md-4 & {
+                 width:50%;
+             }
+
+
+
+             
+
+         @media only screen and (max-width:990px){
+
+               .col-lg-12 &,  .col-md-8 &,  .col-md-6 &, .col-md-4 &    {
+                 width:33.333%;
+             }
+
+
+         }   
+
+         
+         @media only screen and (max-width:700px){
+
+               .col-lg-12 &,  .col-md-8 &,  .col-md-6 &, .col-md-4 &    {
+                 width:50%;
+             }
+
+
+         }  
+
+         @media only screen and (max-width:350px){
+
+               .col-lg-12 &,  .col-md-8 &,  .col-md-6 &, .col-md-4 &    {
+                 width:100%;
+             }
+
+
+         }  
+
+        }
+        }
+            
+
+    .blockLinksGreen & {
+         @include listWebpartColors(#97BD0E, #fff);
+     }
+     
+    .blockLinksPurple & {
+         @include listWebpartColors(#72286E, #fff);
+    } 
+
+    .blockLinksPink & {
+         @include listWebpartColors(#B10042 , #fff);
+    }  
+
+    .midnightBlue & {
+         @include listWebpartColors(#2c3e50 , #fff);
+    }  	
+
+        .carrot & {
+         @include listWebpartColors(#e67e22 , #fff);
+    }  	
+
+        
+    .white & {
+         @include listWebpartColors(#fff, #333);
+        a{ 
+           
+            background:lighten(#d2d7d3,12%);
+            }
+    }  	 
+
+        .default & {
+         @include listWebpartColors(transparent, #333);
+        a{ 
+            border:1px solid #ddd;
+
+            &:hover{
+                background:#ddd;
+            }
+            }
+    }           
+
+   
+a.ask{
+    background:#B10042;
+    border-color:#B10042;
+    color:#fff;
+
+    &:hover{
+       background:darken(#B10042,10%); 
+    }
+}
+
+a.arrow{
+
+    padding-right:30px;
+    
+   &:after{
+    font-family: FontAwesome;
+    font-size:25px;
+    content: "\f105";
+    display:inline-block;
+    right:10px;
+    top:42%;
+    position:absolute;
+    }
+
+}
+
+
+}

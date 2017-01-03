@@ -1,0 +1,104 @@
+/*******************
+POLAROID WEBPART
+********************/
+.polaroid {
+    width:25%;
+	float:left;
+	min-height:330px;	
+		-webkit-transition: all ease .5s;
+	-moz-transition: all ease .5s;
+	transition: all ease .5s;
+    margin:50px 0;
+}
+.polaroid .listWebpart {
+	margin:5px;
+	background:#fff;
+	border: 10px solid #293238;
+	text-align: center;
+	padding:10px;
+	min-height:320px;
+        -webkit-box-shadow: 10px 10px 21px -5px rgba(189,189,189,1);
+    -moz-box-shadow: 10px 10px 21px -5px rgba(189,189,189,1);
+    box-shadow: 10px 10px 21px -5px rgba(189,189,189,1);
+}
+.polaroid .listWebpart a{
+	text-decoration:none;
+}
+.polaroid .listWebpart h2 {
+	font-size: 1.5em;
+	line-height: 1.2em;
+    color: #293238;
+    border-bottom: none;
+	margin-bottom:5px;
+    cursor:pointer;
+}
+.polaroid .listWebpart p {
+	font-size:1.1em;
+	line-height:1.3em;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+    color: #293238;
+    border-bottom: none;
+	margin-bottom:5px;
+}
+.polaroid .listWebpart img{
+   width:100%;
+   margin:0px;
+   border:6px solid #293238;
+   margin-bottom:10px;
+   background:#fff;
+}
+.polaroid:hover, .polaroid:focus{
+	-ms-transform: rotate(0deg) translate3d( 0, 0, 0);
+	-webkit-transform: rotate(0deg) translate3d( 0, 0, 0);
+	transform: rotate(0deg) translate3d( 0, 0, 0);
+}
+.polaroid:hover h2{
+	color:#3498DB;
+}
+.tiltRight{
+	-ms-transform: rotate(4deg) translate3d( 0, 0, 0);
+	-webkit-transform: rotate(4deg) translate3d( 0, 0, 0);
+	transform: rotate(4deg) translate3d( 0, 0, 0);
+}
+.tiltLeft{
+	-ms-transform: rotate(-4deg) translate3d( 0, 0, 0);
+	-webkit-transform: rotate(-4deg) translate3d( 0, 0, 0);
+	transform: rotate(-4deg) translate3d( 0, 0, 0);
+}
+.polaroidSide {
+width:100%;
+}
+@media only screen and (max-width: 800px) {
+.polaroid .listWebpart li a {
+    font-size: 1.2em;
+	min-height: 400px;
+}
+.polaroid {
+    width:50%;
+	min-height:450px;	
+}
+}
+@media only screen and (max-width: 700px) {
+.polaroid {
+	min-height:400px;	
+}
+}
+@media only screen and (max-width: 600px) {
+.polaroid {
+	min-height:350px;
+	width:100%;
+}	
+}
+@media only screen and (max-width: 500px) {	
+.polaroid .listWebpart li {
+    width: 100%;	
+}
+
+.polaroid {
+    margin: 10px 0;
+}
+}
+
+/*END POLAROID SECTION*/

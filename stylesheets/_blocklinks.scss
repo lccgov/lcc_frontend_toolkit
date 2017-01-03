@@ -1,0 +1,107 @@
+
+.blockLinks .listWebpart {
+    @include listWebpartColors(transparent, #555);
+
+    h2{
+        border-bottom:1px solid #dedede;
+        display:block;
+        padding-bottom:15px;
+    }
+    ul {
+
+       text-align:center;
+
+        li {
+            padding: 5px;
+            .col-lg-12 & {
+                width: 12.5%;
+            }
+            .col-md-8 & {
+                width: 20%;
+            }
+            .col-md-6 & {
+                width: 25%;
+            }
+            .col-md-4 & {
+                width: 50%;
+                 a {
+             
+                img {
+    
+                    width: 66%;
+                    margin: 0 17% 15px;
+                }
+           
+            }
+
+
+
+
+            }
+            a {
+                text-align: center;
+                font-size: 1em;
+                float: left;
+                width: 100%;
+                padding: 15px;
+                cursor: pointer;
+                border: none;
+                img {
+                    border: 0px;
+                    width: 80%;
+                    margin: 0 10% 15px;
+                }
+                &:hover {
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    background: rgba(0, 0, 0, 0.1);
+                }
+            }
+
+            @media only screen and (max-width:991px){
+
+                .col-lg-12 &,  .col-md-8 &,  .col-md-6 &, .col-md-4 &{
+                    width:16.66%;
+
+                    a img {
+                        width:100%;
+                        margin:0 0 15px 0;
+                    }
+                }
+            }
+
+                        @media only screen and (max-width:768px){
+
+                .col-lg-12 &,  .col-md-8 &,  .col-md-6 &, .col-md-4 &{
+                    width:25%;
+
+               
+                }
+            }
+
+                            @media only screen and (max-width:600px){
+
+                .col-lg-12 &,  .col-md-8 &,  .col-md-6 &, .col-md-4 &{
+                    width:33.333%;
+
+               
+                }
+            }
+
+            @media only screen and (max-width:420px){
+
+                .col-lg-12 &,  .col-md-8 &,  .col-md-6 &, .col-md-4 &{
+                    width:50%;
+
+               
+                }
+            }
+        }
+    }
+}
+ 
+
+
+
+
+/*BLOCK LINK END*/
