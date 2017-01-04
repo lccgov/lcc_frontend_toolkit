@@ -3,9 +3,7 @@ POLAROID WEBPART
 ********************/
 .polaroid {
    
-	float:left;
-	min-height:330px;	
-		-webkit-transition: all ease .5s;
+	-webkit-transition: all ease .5s;
 	-moz-transition: all ease .5s;
 	transition: all ease .5s;
     margin:50px 0;
@@ -13,12 +11,27 @@ POLAROID WEBPART
 
 
    .listWebpart li {
-    width:25% !important;
-	background:#fff;
+    width:25% !important;   
+
+
+
+
+
+ a{
+	text-decoration:none;
+    color: #293238;
+    border-bottom: none;
+	margin-bottom:5px;
+    font-size:1.1em;
+    margin:0px;
+    padding:0px;
+    background:#fff;
 	border: 10px solid #293238;
+    margin:10px;
 	text-align: center;
 	padding:10px;
-	min-height:320px;
+    height:100%;
+    display:block;
     -webkit-box-shadow: 10px 10px 21px -5px rgba(189,189,189,1);
     -moz-box-shadow: 10px 10px 21px -5px rgba(189,189,189,1);
     box-shadow: 10px 10px 21px -5px rgba(189,189,189,1);
@@ -30,27 +43,14 @@ POLAROID WEBPART
 	transition: all ease .5s;
     cursor:pointer;
 
-    &:nth-child(odd) {
-        	-ms-transform: rotate(-4deg) translate3d( 0, 0, 0);
-	-webkit-transform: rotate(-4deg) translate3d( 0, 0, 0);
-	transform: rotate(-4deg) translate3d( 0, 0, 0);
-    }
+
+
 
     &:hover, &:focus{
 	-ms-transform: rotate(0deg) translate3d( 0, 0, 0);
 	-webkit-transform: rotate(0deg) translate3d( 0, 0, 0);
 	transform: rotate(0deg) translate3d( 0, 0, 0);
 }
-
-
- a{
-	text-decoration:none;
-    color: #293238;
-    border-bottom: none;
-	margin-bottom:5px;
-    font-size:1.1em;
-    margin:0px;
-    padding:0px;
 
 
     span{
@@ -69,6 +69,18 @@ POLAROID WEBPART
 
 
 }
+
+    &:nth-child(odd) a {
+    -ms-transform: rotate(-4deg) translate3d( 0, 0, 0);
+	-webkit-transform: rotate(-4deg) translate3d( 0, 0, 0);
+	transform: rotate(-4deg) translate3d( 0, 0, 0);
+
+       &:hover, &:focus{
+	-ms-transform: rotate(0deg) translate3d( 0, 0, 0);
+	-webkit-transform: rotate(0deg) translate3d( 0, 0, 0);
+	transform: rotate(0deg) translate3d( 0, 0, 0);
+}
+    }
     
 }
 
