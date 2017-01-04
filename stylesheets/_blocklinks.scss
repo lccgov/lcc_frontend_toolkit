@@ -2,8 +2,9 @@
 .blockLinks .listWebpart {
     @include listWebpartColors(transparent, #555);
 
+        padding:0px;
+   
     h2{
-        border-bottom:1px solid #dedede;
         display:block;
         padding-bottom:15px;
     }
@@ -12,7 +13,6 @@
        text-align:center;
 
         li {
-            padding: 5px;
             .col-lg-12 & {
                 width: 12.5%;
             }
@@ -46,6 +46,7 @@
                 padding: 15px;
                 cursor: pointer;
                 border: none;
+                margin:0px;
                 img {
                     border: 0px;
                     width: 80%;
