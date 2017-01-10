@@ -1,45 +1,44 @@
 
 
-.sideNav
-{
 
 
+.sideNav {
+    padding: 10px 20px 20px;
+    background: $section-Background;
+    margin-bottom: 20px ;
 
+    h3{
+        margin:0.6em 0;
+    }
 
-#sideNavBox {
-    float: none;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 100%;
-    margin-bottom:20px;
-
-   
-
-
-
-
-.ms-core-listMenu-verticalBox > .ms-core-listMenu-item, .ms-core-listMenu-verticalBox li.static > .ms-core-listMenu-item {
-     padding: 15px 10px;
-    border-bottom: 1px solid #E0E0E0;
-    margin: -1px 1px 0 0;
-    color: #006DA5;
-    display: block;
-    font-weight: normal;
-    font-size: 18px;
-
-    &.selected 
-    {
-        color:'#fff'
+    li{
+        list-style:none;
     }
 
 
-}
+    a {
+            font-size: 1.1em;
+            line-height: 1.2em;
+            display: inline-block;
+            margin: 0px 0px 5px;
+            padding: 10px ;
+            background: #fff;
+            width: 100%;
+
+            &:hover{
+                    background: darken( $section-Background,50%)!important;
+                    color: #fff;
+                    }
+
+            &.active {
+                    color: $sidenav-active-color;
+                    background:transparent;
+
+                    &:hover{
+                        background:transparent;
+                    }
+            }
+    }
 
 
-.ms-core-listMenu-selected:link, .ms-core-listMenu-selected:visited, .ms-core-listMenu-selected {
-    background-color: $side-nav-active-background;
-    color:#fff;
-}
-
-}
 }
