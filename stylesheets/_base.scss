@@ -865,3 +865,17 @@ div.ms-rteElement-div-center {
     -ms-name: "div center";
     text-align: center;
 }
+
+
+
+.listWebpart{
+    li{ 
+        list-style: none;
+        float:left;
+              img {
+                    width: 100%;
+                    max-width: 100%;
+                    margin-bottom: 15px;
+               }
+    }
+}
