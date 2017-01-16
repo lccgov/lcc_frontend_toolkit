@@ -824,3 +824,149 @@ a
     
 }
 
+
+@mixin promoListWebpartColors($span-info-color,
+$link-font-color,
+$span-info-secondary-color,
+$span-arrow-base,
+$arrow-color) {
+    .info {
+        background: $span-info-color;
+        color: $link-font-color;
+        .secondaryInfo {
+            color: $span-info-secondary-color;
+        }
+        .arrow:after {
+            background: $span-arrow-base;
+            color: $arrow-color;
+            font-family: FontAwesome;
+            font-size: 35px;
+            content: "\f105";
+            position: absolute;
+            display: block;
+            right: 12px;
+            width: 50px;
+            height: 50px;
+            bottom: 10px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.promoListWebpart {
+    ul li {
+        &.orange a {
+            @include promoListWebpartColors($orange,
+            #fff,
+            #fff,
+            #fff,
+            $orange);
+        }
+        &.lime a {
+            @include promoListWebpartColors($lime,
+            #fff,
+            #fff,
+            #fff,
+            $lime);
+        }
+        &.yellow a {
+            @include promoListWebpartColors($yellow,
+            #fff,
+            #fff,
+            #fff,
+            $yellow);
+        }
+        &.magenta a {
+            @include promoListWebpartColors($magenta,
+            #fff,
+            #fff,
+            #fff,
+            $magenta);
+        }
+        &.pink a {
+            @include promoListWebpartColors($pink,
+            #fff,
+            #fff,
+            #fff,
+            $pink);
+        }
+        &.purple a {
+            @include promoListWebpartColors($purple,
+            #fff,
+            #fff,
+            #fff,
+            $purple);
+        }
+        &.green a {
+            @include promoListWebpartColors($green,
+            #fff,
+            #fff,
+            #fff,
+            $green);
+        }
+    }
+    .contentLink {
+        border: 15px solid #efefef;
+        a:hover .info
+        {
+            background:rgba(0,0,0,0.2) !important;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 25px;
+            margin: 30px;
+            strong {
+                text-align: center;
+                line-height: 30px;
+                font-size: 30px;
+                margin-top: 30px;
+                display: block;
+            }
+        }
+        &.heightTwo p strong {
+            font-size: 40px;
+            line-height: 40px;
+            margin-top: 40px;
+        }
+        &.heightTwo.one p strong {
+            font-size: 30px;
+            line-height: 30px;
+            margin-top: 30px;
+        }
+        h2,
+        h3,
+        p {
+            color: #fff;
+        }
+        &.lime {
+            color: #fff;
+            background: $lime;
+        }
+        &.yellow {
+            color: #fff;
+            background: $yellow;
+        }
+        &.orange {
+            color: #fff;
+            background: $orange;
+        }
+        &.magenta {
+            color: #fff;
+            background: $magenta;
+        }
+        &.pink {
+            color: #fff;
+            background: $pink;
+        }
+        &.purple {
+            color: #fff;
+            background: $purple;
+        }
+        &.green {
+            color: #fff;
+            background: $green;
+        }
+    }
+}
+

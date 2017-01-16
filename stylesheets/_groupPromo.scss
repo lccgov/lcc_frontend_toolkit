@@ -1,4 +1,6 @@
-.groupPromo .listWebpart {
+.groupPromo {
+
+.listWebpart {
     @include listWebpartColors(transparent, #333);
     max-width: 100%;
     padding: 15px 7.5px 0px;
@@ -66,55 +68,9 @@
             }
         }
     }
-    .blockLinksGreen & {
-        @include listWebpartColors(#97BD0E, #fff);
-    }
-    .blockLinksPurple & {
-        @include listWebpartColors(#72286E, #fff);
-    }
-    .blockLinksPink & {
-        @include listWebpartColors(#B10042, #fff);
-    }
-    .midnightBlue & {
-        @include listWebpartColors(transparent, #fff);
-        h2 {
-            color: #333;
-        }
-        a {
-            background: #2c3e50;
-            &:hover {
-                background: darken(#2c3e50, 12%);
-            }
-        }
-    }
-    .carrot & {
-        @include listWebpartColors(transparent, #fff);
-        h2 {
-            color: #333;
-        }
-        a {
-            background: #e67e22;
-            &:hover {
-                background: darken(#e67e22, 12%);
-            }
-        }
-    }
-    .white & {
-        @include listWebpartColors(#fff, #333);
-        a {
-            background: lighten(#d2d7d3, 12%);
-        }
-    }
-    .default & {
-        @include listWebpartColors(transparent, #333);
-        a {
-            border: 1px solid #ddd;
-            &:hover {
-                background: #ddd;
-            }
-        }
-    }
-    a.ask {
+
+
+        a.ask {
         background: #B10042;
         border-color: #B10042;
         color: #fff;
@@ -132,6 +88,55 @@
             right: 10px;
             top: 42%;
             position: absolute;
+        }
+    }
+}
+    &.blockLinksGreen .listWebpart {
+        @include listWebpartColors(#97BD0E, #fff);
+    }
+    &.blockLinksPurple .listWebpart {
+        @include listWebpartColors(#72286E, #fff);
+    }
+    &.blockLinksPink .listWebpart  {
+        @include listWebpartColors(#B10042, #fff);
+    }
+    &.midnightBlue .listWebpart {
+        @include listWebpartColors(transparent, #fff);
+        h2 {
+            color: #333;
+        }
+        a {
+            background: #2c3e50;
+            &:hover {
+                background: darken(#2c3e50, 12%);
+            }
+        }
+    }
+    &.carrot .listWebpart {
+        @include listWebpartColors(transparent, #fff);
+        h2 {
+            color: #333;
+        }
+        a {
+            background: #e67e22;
+            &:hover {
+                background: darken(#e67e22, 12%);
+            }
+        }
+    }
+    &.white .listWebpart {
+        @include listWebpartColors(#fff, #333);
+        a {
+            background: lighten(#d2d7d3, 12%);
+        }
+    }
+    &.default .listWebpart {
+        @include listWebpartColors(transparent, #333);
+        a {
+            border: 1px solid #ddd;
+            &:hover {
+                background: #ddd;
+            }
         }
     }
 }
