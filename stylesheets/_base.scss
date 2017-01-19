@@ -813,21 +813,45 @@ div.ms-rteElement-divFull, div.ms-rteElement-divLeft, div.ms-rteElement-divThird
 }
 
 
-.spacerBottom {    
-    margin-bottom:50px;
-    display:block;
-    clear:left;
+.ms-rteElement-divTwoThirds{
+
+    float: left;
+    margin: 0px 1% 25px 1%;
+    padding: 30px 0;
+    width: 64.6%;
+
+    h2,h3{
+        margin:0;
+        border-bottom: 1px solid #dcdcdc;
+        padding-bottom: 25px;
+        width: 100%;
+    }
+
+    h2{
+         padding-bottom: 20px;
+    }
+
+    ul {
+        
+        padding:0px;
+        margin:0px;
+    li{
+        list-style: none;
+        padding:15px 0;
+    }
+    }
+@media only screen and (max-width: 1000px){
+    width:98%;
 }
 
-.spacerTop {    
-    margin-top:50px;
-    display:block;
-    clear:left;
+@media only screen and (max-width: 600px){
+   .pull-right {
+    margin-bottom:10px;
+    float:none !important;
+    padding-left:10px;
 }
-
-
-
-
+}
+}
 
 
 @media only screen and (max-width: 770px) {
@@ -852,13 +876,6 @@ div.ms-rteElement-divFull, div.ms-rteElement-divLeft, div.ms-rteElement-divThird
 
 
 
-.floatLeft{
-	float:left;
-}
-.floatRight{
-	float:right;
-}
-
 
 div.ms-rteElement-div-center {
     
@@ -879,3 +896,42 @@ div.ms-rteElement-div-center {
                }
     }
 }
+
+// Helper classses -----------------------------------------------------------------------------------------//
+
+.margin15px
+{
+    margin:15px;
+}
+
+.lrgPadding
+    {
+        padding:150px 0;
+     @media only screen and (max-width:600px){
+         padding:50px 0;
+     }
+  }
+
+
+.floatLeft{
+	float:left;
+}
+.floatRight{
+	float:right;
+}
+
+
+
+
+.spacerBottom {    
+    margin-bottom:50px;
+    display:block;
+    clear:left;
+}
+
+.spacerTop {    
+    margin-top:50px;
+    display:block;
+    clear:left;
+}
+
