@@ -1,0 +1,187 @@
+/*********************
+docsList
+**********************/
+
+
+.docList {
+    a {
+        background: #fff;
+        display: block;
+        text-align: left;
+        position: relative;
+        height: 100%;
+        padding-top: 45px;
+        background: #efefef;
+        font-weight: bold;
+        &:hover,
+        &:focus {
+            background: #525252;
+            border-color: #525252;
+            span.info {
+                background: #676767;
+                color: #fff;
+            }
+
+            span.thirdInfo {
+                            color:#fff;
+                            }
+        }
+
+
+        &:before {
+            content: '\f138';
+            font-family: FontAwesome;
+            position: absolute;
+            font-weight: normal;
+            top: -1px;
+            left: -1px;
+            height: 45px;
+            width: 45px;
+            display: block;
+            padding: 3px 15px;
+            color: #fff;
+            font-size: 30px;
+            &:hover {
+                color: #fff !important;
+            }
+        }
+
+        span.info{
+    background:#fff;
+    display:inline-block;
+    width:100%;
+    padding:10px;
+    padding:15px 40px 15px 15px;
+    height:100%;
+
+    span.arrow{
+    position:absolute;
+    height:auto;
+    width:20px;
+    right:10px;
+    bottom:10px;
+    background:transparent;
+
+    &:after{
+    content: '\f138';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none !important;
+    border: none;
+}
+}
+}
+
+    span.thirdInfo{
+    position:absolute;
+    top:12px;
+    right:15px;
+    color:#555;
+}
+
+    }
+
+.pdf a:before {
+  content: '\f1c1';
+  color:#ED1F24;
+
+    }   
+ .word a:before{
+    content: '\f1c2';
+    color:#294BA0;
+} 
+
+.xl a:before{
+    content: '\f1c3';
+    color:#269129;
+} 
+
+.external a:before{
+    content: '\f08e';
+    color:rgba(0,0,0, 0.5);
+}
+
+.pp a:before{
+    content: '\f1c4';
+    color:orange;
+}
+
+   .pdf a,  .word a,  .xl a,  .external a, .pp a { 
+       &:hover{
+        &:before{
+            color:#fff;
+        }
+    }
+   }
+
+
+       &.one, &.two, &.three, &.four, &.five {
+        width: 100%;
+    }  
+
+ ul{
+     padding:0px;
+ }   
+
+ li{
+   padding:15px;
+ }
+       
+&.five   li   {
+    width:20%;
+}
+
+
+
+&.four li{
+    width:25%;
+
+}
+
+&.three li{
+    width:33.333333%;
+}
+
+&.two li{
+    width:50%;
+}
+
+&.one li{
+    width:100%;
+    padding:0;
+    margin-bottom:30px;
+}
+
+@media (max-width: 1200px){
+    
+    &.four li, &.five li {
+        width:33%;
+        float:left;
+    }
+    
+
+}
+
+
+
+@media (max-width: 991px){
+    
+    &.three li, &.four li, &.five li {
+        width:50%;
+        float:left;
+    }
+    
+
+}
+
+@media (max-width: 600px){
+    
+    &.two li, &.three li, &.four li, &.five li{
+        width:100%;
+    }
+
+}
+   
+    
+}
