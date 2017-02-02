@@ -935,3 +935,61 @@ div.ms-rteElement-div-center {
     clear:left;
 }
 
+form
+{
+    input[type=password], input[type=text], input[type=file], select, input, textarea {
+        border-color:#ddd;
+    }
+
+    input[type=submit].submit{
+        background:$btn-background-color;
+        border:none;
+        font-size:18px;
+        padding:15px;
+        margin:0px;
+        color:#fff;
+        width:100%;
+        max-width:300px;
+
+        &:hover{
+            background:#333;
+        }
+
+
+    }
+
+    .error{
+        color:red;
+    }
+}
+
+.pageCommentsControl{
+
+    h2, h3{  
+    border-bottom:1px solid #ddd;
+    padding-bottom:20px;
+    }
+
+.comment{
+    padding:30px 0;
+    border-bottom:1px solid #ddd;
+}
+
+}
+
+.sectionSubsite {
+
+input[type=submit]{
+    margin:0px;
+}
+
+
+.alert {
+    margin:20px 0 0 0;
+
+    p{
+        background:transparent;
+    }
+
+}
+}

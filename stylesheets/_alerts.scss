@@ -2,6 +2,7 @@
 
 .alert {
 
+
     padding: 0px;
     margin-bottom: 0px;
     border:none;
@@ -9,7 +10,11 @@
     color:#fff;
 
 
-       .container-fluid{
+  h1, h2, h3, h4, p {
+        color:#fff;
+    }
+
+       .alertInner{
            position:relative;
             padding: 25px 25px 25px 80px;
 
@@ -31,7 +36,7 @@
     
     &.alert-warning{
         background:#f4d313;
-        .container-fluid::before{
+        .alertInner:before{
             content: '\f071';
         }
 
@@ -39,7 +44,7 @@
 
     &.alert-info{
         background:#5dade2;
-          .container-fluid::before{
+          .alertInner:before{
             content: '\f0a1';
         }
 
@@ -47,14 +52,14 @@
 
     &.alert-success{
         background:#58d68d;
-          .container-fluid::before{
+         .alertInner::before{
             content: '\f087';
         }
     }
 
     &.alert-danger{
         background:#ec7063;
-          .container-fluid::before{
+          .alertInner::before{
             content: '\f256';
         }
     }
