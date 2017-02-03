@@ -382,3 +382,15 @@ footer.main .footerGlobal
 /** jquery ui datepicker overides ***/
 
 
+/** main button color for forms and comments **/
+form
+{
+
+    input[type=submit].submit{
+        background:$btn-background-color
+    }
+
+}
+
+
+/**End  main button color for forms and comments **/
