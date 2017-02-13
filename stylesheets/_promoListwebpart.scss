@@ -251,6 +251,11 @@
              }
          }
          &.color {
+                a{
+           bottom:10px !important;
+       }
+
+
              p {
                  color: $contentFontColor;
              }
@@ -685,3 +690,121 @@
          }
      }
  }
+
+
+
+.promoListWebpart ul li{
+
+
+&.contentLink {
+
+   border-color:transparent;
+
+    h2{
+        font-size:35px;
+        margin:0.4em 0px;
+    }
+
+    p{
+        font-size:25px;
+    }
+
+    .info{
+        font-size:22px;
+    }
+
+    
+}
+
+
+    &.catergory a {
+
+background-size:540px !important; 
+background-position:top center!important;   
+
+.info{
+    background:transarent;
+}
+
+    text-align:center;
+ .fa {
+    color: #fff;
+    font-size: 80px;
+    margin-top: 10px;
+}
+
+
+
+
+ &:hover{
+        border-color:transparent;
+}
+
+
+img{
+    text-align: center;
+}
+
+.info {
+    background: rgba(0,0,0,0);
+    width: 100%;
+    opacity: 1;
+    border-top: 1px solid #888;
+    padding:20px;
+    font-size: 18px;
+    text-transform: uppercase;   
+    opacity: 1;
+    filter: alpha(opacity=1);
+
+
+
+
+    .arrow{
+        background:transparent;
+
+
+        &:after{
+            display:none;
+        }
+    }
+}
+
+}
+}
+
+@media only screen and (max-width: 600px){
+.promoListWebpart .contentLink.heightTwo {
+    padding-bottom: 80px;
+}
+}
+
+
+
+ @mixin promoListWebpartDarkerLighter($span-info-color) {
+   .color{
+   
+       .info .arrow {
+           background:#f6f6f6;
+           &:after{
+               color:#333;
+           }
+       }
+        
+        div{
+         background:$span-info-color
+       }
+
+        
+       &.darker div{
+          background: darken($span-info-color,5%);
+       }
+
+         
+       &.lighter  div {
+          background: lighten($span-info-color,5%);
+       }
+   }
+ }
+
+
+ 
