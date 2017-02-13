@@ -6,12 +6,13 @@
  $iconLinkIconColor:#333 !default;
 
 
-  ul.iconLinks { 
+  .iconLinks{ ul  {
 
   text-align: center;
   margin:0px;
   padding:0px;
-   
+  display:block;
+  }
    li {
 
   border-radius: 100%;
@@ -21,6 +22,11 @@
   border: 1px solid $iconLinkBorderColor;
   background:$iconLinkBackground;
   display: inline-block;
+  float:none;
+  position:relative;  
+
+
+
 
    a {
   text-indent: -3000em;
@@ -41,11 +47,7 @@
 
 
 
-
-
-    position:relative;  
-
-    &.facebook, &.twitter, &.youtube, &.instagram, &.email
+    &.facebook, &.twitter, &.youtube, &.instagram, &.email, &.linkedin
     {
     a:after
     {
@@ -93,6 +95,13 @@
        &.email a:after {
     content: "\f0e0";
     left:32%;
+  
+ }
+
+
+       &.linkedin a:after {
+    content: "\f0e1";
+    left:35%;
   
  }
  }
