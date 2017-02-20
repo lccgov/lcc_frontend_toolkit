@@ -160,13 +160,15 @@
      }
      .two a span.info,
      .three a span.info,
-     .four a span.info {
+     .four a span.info,
+     .quarter a span.info {
          font-size: $base-font-size * 1.5;
          padding: 20px 100px 20px 20px;
      }
      .two a span.secondaryInfo,
      .three a span.secondaryInfo,
-     .four a span.secondaryInfo {
+     .four a span.secondaryInfo,
+     .quarter a span.secondaryInfo {
          font-size: $base-font-size;
      }
      .four.heightTwo a {
@@ -444,6 +446,10 @@
  .one {
      width: 16.6667%;
  }
+
+ .quarter{
+     width:25%;
+ }
  
  .two {
      width: 33.33333%;
@@ -464,7 +470,8 @@
  @media only screen and (max-width: 1200px) {
      .one,
      .two,
-     .four {
+     .four,
+     .quarter {
          width: 50%;
      }
  }
@@ -473,7 +480,8 @@
      .one,
      .two,
      .three,
-     .four {
+     .four,
+     .quarter {
          width: 100%;
      }
  }
