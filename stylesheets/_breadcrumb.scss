@@ -1,12 +1,14 @@
 .breadcrumb {
-    padding: 0;
-    margin:20px 0 0 0;
+    padding: 0 0 20px 0;
+    margin:20px 0 0px 0;
     list-style: outside none none;
     background-color: transparent;
     border-radius: 0;
-    font-size: 20px;
+    font-size: 18px;
 
-span span a:after {
+
+
+ a:after {
     font-family: fontAwesome;
     content: "\f105";
     font-size:20px;
@@ -15,7 +17,18 @@ span span a:after {
 }
 
 img {
-    display: none;
+    display: none !important;
 }
+
+
+ul{
+    list-style:none;
+    display:inline;
+
+    li{
+        display:inline;
+    }
+}
+
 
 }
