@@ -1,6 +1,7 @@
 
 .sectionSubsite.news
 {
+    float:left;
 
  h3 {
      border:0px;
@@ -10,6 +11,7 @@
     padding: 10px;
     height: 50px;
     border: 1px solid #ddd;
+    float:left;
 }
 
 @media only screen and (max-width:400px){
@@ -24,6 +26,8 @@ a.button{
     background:$news-button-background;
     border:none;
     margin-top:0px;
+    float:left;
+    padding:14px;
 
     &:hover{
         background:darken($news-button-background, 20%);
