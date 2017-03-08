@@ -26,22 +26,26 @@ ul.accordion {
                             {
                             font-family: FontAwesome;
                             font-size:18px;
-                            content: "\f078";
+                            content: "\f067";
                             position:absolute;
                             right:10px;
                             color:$accordion-color;
 
-                            }      
+                            }    
 
-            }   
-             &.active{
 
-                    a:after
+                  &.active{
+
+                   &:after
                             {
-                            content: "\f077"; 
+                            content: "\f068"; 
                             }      
 
              }
+          
+                               
+
+            }   
           
 
             div div {
