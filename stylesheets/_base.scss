@@ -886,6 +886,10 @@ div.ms-rteElement-div-center {
 
 
 .listWebpart{
+   ul{
+      margin:0px;
+      padding:0p
+
     li{ 
         list-style: none;
         float:left;
@@ -895,6 +899,7 @@ div.ms-rteElement-div-center {
                     margin-bottom: 15px;
                }
     }
+}
 }
 
 // Helper classses -----------------------------------------------------------------------------------------//
@@ -993,3 +998,85 @@ input[type=submit]{
 
 }
 }
+
+
+// General Styling for Docs on all Sites ------------------------------------------------------------------------------------//
+
+ a.doc {
+
+        border-bottom:1px solid #ddd;
+        padding:20px 15px 20px 40px;
+        margin:0px;
+        display:block;
+        font-weight:bold;
+        position:relative;
+
+        &:first-of-type{
+          border-top:1px solid #ddd;
+        }
+
+        &:hover{
+            background:#ddd;
+          text-decoration:none;          
+        }
+
+        span{
+            color:#333;
+            margin-left:10px;
+        }
+
+        &:before{
+
+                font-family: FontAwesome;
+                position:absolute;
+                font-weight: normal;
+                top: 17px;
+                left: 10px;
+                height: 25px;
+                margin-top:-5px;
+                width: 25px;
+                display: block;
+                padding:0px;
+                font-size: 22px;
+            
+        }
+
+
+
+
+
+    &.pdf:before {
+  content: '\f1c1';
+  color:#ED1F24;
+
+    }   
+ &.word:before{
+    content: '\f1c2';
+    color:#294BA0;
+} 
+
+&.xl:before{
+    content: '\f1c3';
+    color:#269129;
+} 
+
+&.external:before{
+    content: '\f08e';
+    color:rgba(0,0,0, 0.5);
+}
+
+&.pp:before{
+    content: '\f1c4';
+    color:orange;
+}
+
+   &.pdf,  &.word,  &.xl ,  &.external, &.pp{ 
+       &:hover{
+        &:before{
+            color:#333;
+        }
+    }
+   }
+}
+
+
