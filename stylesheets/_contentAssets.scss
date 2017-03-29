@@ -1,0 +1,89 @@
+//highlighted is a hightlighed section of content
+.highlighted {
+    padding:2em 1.75em;
+    margin: 1em 0;
+    background:$highlighted-background-color;
+
+    img{
+        max-width:100%;
+    }
+    &.section{
+        margin:0px;
+    }
+    &.alignCenter {
+      text-align:center;
+    }
+
+    h2, h3, h4 {
+        margin-top:0px;
+    }
+
+    h2, h3, h4, p, ul, ol, em {
+        color:$highlighted-font-color;
+    }
+
+
+    p{
+
+        strong{
+            font-weight:800 !important;
+            font-size: 28px !important;
+            line-height: 1.25 !important;
+        }
+    }
+
+
+
+    em{
+        font-size:80px;
+        font-style:normal;
+        line-height:60px;
+        margin-bottom:30px;
+        font-weight:800;
+        display:block;
+    }
+
+    a.btn {
+        font-size:$base-font-size;
+        border-color:$highlighted-font-color;
+        color:$highlighted-font-color;
+        background:transparent;
+        margin:0px 0 20px;
+        display:inline-block;
+
+        @media screen and (max-width:400px){
+            width:100%;
+        }
+    
+        &:hover{
+          background:$highlighted-font-color;
+          color:$highlighted-background-color;
+        }
+    }
+
+    &.alt{
+        background:$highlighted-alt-background-color;
+
+            h2, h3, h4, p, ul, ol, em {
+            color:$highlighted-alt-font-color;
+
+    }
+
+                 a.btn {
+        border-color:$highlighted-alt-font-color;
+        color:$highlighted-alt-font-color;
+
+        
+        &:hover{
+          background:$highlighted-alt-font-color;
+          color:$highlighted-alt-background-color;
+        }
+    }
+
+    }
+
+    
+        @media screen and (max-width:400px){
+                padding:1.5em 1em;
+        }
+}

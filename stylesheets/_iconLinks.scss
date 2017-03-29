@@ -22,7 +22,7 @@
   border: 1px solid $iconLinkBorderColor;
   background:$iconLinkBackground;
   display: inline-block;
-  float:none;
+  float:none !important;
   position:relative;  
 
 
