@@ -24,7 +24,7 @@ blockquote {
             content:'\f10d';    
             font-family: FontAwesome;
             font-size: 40px;
-            color:#00929F;
+            color:$blockquoteQuoteColor;
         }
     }
 
@@ -32,6 +32,6 @@ blockquote {
         padding:10px 0;
         background:transparent;
         font-size:1em;
-        color: #7f8c8d;
+        color: $blockquoteQuoteFooterColor;
     }
 }
