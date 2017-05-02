@@ -199,6 +199,10 @@
 
                         h3{
                             color:lighten($group-promo-header-color,5%);
+
+                            &:after {
+                                color:lighten($group-promo-arrow-color,5%);
+                            }
                         }
                         p{
                             color:lighten($group-promo-description-color,5%);
@@ -234,7 +238,7 @@
                                 position: absolute;
                                 top: 30px;
                                 right: 30px;
-                                color:$light-grey;
+                                color:$group-promo-arrow-color;
 
                                 @media (max-width: 767px) {
                                 top: 20px;
