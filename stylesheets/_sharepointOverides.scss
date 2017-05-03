@@ -132,3 +132,73 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
    padding:0px;
 }
 
+
+
+.col-md-8{
+
+    .ms-srch-item {
+    width: 100% ;
+    overflow: visible;
+    margin: 10px 0px 10px 0px;
+}
+
+h3.ms-srch-ellipsis {
+    white-space: normal;
+    overflow: visible;
+    display:inline;
+}
+
+
+// OOTB SEARCH WEBPART OVERIDES
+
+#SearchBox {
+
+    border: 1px solid #ddd;
+    padding: 10px 10px 0 10px;
+    width:100%;
+   max-width:600px;
+
+   .ms-srch-sbLarge > .ms-srch-sb-searchLink {
+    float: right;
+}
+}
+
+.ms-srch-item-body {
+    overflow: visible;
+    display: inline-block;
+    width: 100%;
+}
+
+.ms-srch-item-icon {
+   margin-bottom:10px;
+}
+
+#UpScopeLinkTop {
+    width:100% !important;
+}
+
+ .ms-srch-item-path {
+    width:100%;
+}
+
+.ms-promlink-button-image {
+
+    margin: -9px 0 9px -5px;
+}
+
+.ms-srch-sbLarge-fullWidth {
+  width:80%;
+  max-width:500px;
+}
+
+
+@media(max-width:1024px){
+    .col-md-8 .ms-srch-hover-outerContainer{
+        display:none !important;
+    }
+}
+
+}
+
+// END OOTB SEARCH WEBPART OVERIDES
+
