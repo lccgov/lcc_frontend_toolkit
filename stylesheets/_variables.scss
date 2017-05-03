@@ -1,15 +1,10 @@
-
 // masterhead.scss
-
 $head-background: #ffffff !default;
 
-
-// mainMenu.scss -- responsive icons color
+//mainMenu.scss -- responsive icons color
 $menu-link-color:#337ab7 !default;
 
-
 //base.scss
-
 $base-background-color:#fff !default;
 $base-font-size:16px !default;
 $base-font-color:#333 !default;
@@ -19,8 +14,7 @@ $btn-background-color:green !default;
 $font-primary: Arial !default; // main font
 $font-secondary: Arial !default; // secondary font
 
-
-// global used on all partials to get a uniform spacing between elements
+//global used on all partials to get a uniform spacing between elements
 $base-margin-bottom:1.875em !default;
 
 //headerTop
@@ -44,24 +38,22 @@ $footer-nav-selected-link:#133E8D !default;
 $footer-list-item-width:23%  !default;
 $footer-gutter-width:0 1% !default;
 
-// sectionSubsite.scss - socialamedia.scss
+//sectionSubsite.scss - socialamedia.scss
 $section-Background:#efefef !default;
 
-//  socialamedia.scss
+//socialamedia.scss
 $social-link-color:#337ab7 !default;
 
-//  sideNavigation.scss
+//sideNavigation.scss
 $side-nav-active-background:#133E8D !default;
 
-//  carousel.scss
+//carousel.scss
 $carousel-active-background:#000 !default;
 $carousel-indicators-active-background:#ccc !default;
 $carousel-caption-background: rgba(0,0,0,0.6) !default;
 $carousel-caption-font-color:#fff !default;
 
-
 // blocklinks.scss
-
 $block-link-back:#f6f6f6 !default;
 $block-link-back-hover:#3380A4 !default;
 
@@ -69,7 +61,6 @@ $promo-group-border:1px solid #fff !default;
 $promo-group-background:#EDF2F5 !default; 
 $promo-group-li-background:#EDF2F5 !default;
 $promo-group-link-color:#216486 !default;
-
 
 //promolist webpart
 $link-font-color:#fff !default ;
@@ -91,8 +82,7 @@ $magenta:#CC6699 !default;
 $pink:#FF6699 !default;
 $purple:#666699 !default;
 
-
-// section backgrounds
+//section backgrounds
 $sectionHeader-background-color:lighten($base-background-color, 3%) !default;
 $sectionOne-background-color:darken($base-background-color, 5%) !default;
 $sectionTwo-background-color:darken($base-background-color, 10%) !default;
@@ -100,7 +90,7 @@ $sectionThree-background-color:lighten($base-background-color, 3%) !default;
 $sectionFour-background-color:lighten($base-background-color, 5%) !default;
 $sectionFive-background-color:darken($base-background-color, 5%) !default;
 
-// eventwebparts
+//eventwebparts
 $eventsfilter-hightlight-color:#000 !default;
 
 //accordion
@@ -117,22 +107,41 @@ $list-webpart-back:#ddd !default;
 $list-webpart-font-color:#333 !default;
 
 //SideNav
-
 $sidenav-active-color:#E67E22 !default;
 
-
 //Promo background 
- $promo-span-back:rgba(0,0,0,0.6) !default;
- $promo-span-color:#fff !default;
+$promo-span-back:rgba(0,0,0,0.6) !default;
+$promo-span-color:#fff !default;
 
 //Block quote
- $blockquoteBorderColor:#bbcada !default;
- $blockquoteQuoteColor:#333 !default;
- $blockquoteQuoteFooterColor:#000!default;
+$blockquoteBorderColor:#bbcada !default;
+$blockquoteQuoteColor:#333 !default;
+$blockquoteQuoteFooterColor:#000!default;
 
+//highlighted box in contentAssets
+$highlighted-background-color:#333 !default;
+$highlighted-font-color:#fff !default;
+$highlighted-alt-background-color:#f6f6f6 !default;
+$highlighted-alt-font-color:#333 !default;
 
- //highlighted box in contentAssets
- $highlighted-background-color:#333 !default;
- $highlighted-font-color:#fff !default;
- $highlighted-alt-background-color:#f6f6f6 !default;
- $highlighted-alt-font-color:#333 !default;
+//mega-promo
+$promo-background-color:#3D414A !default;
+$promo-arrow-color:#fff !default;
+$promo-header-color:#fff !default;
+$promo-secondary-color:#fff !default;
+$promo-highlight-background-color:lighten(#3D414A, 15%) !default;
+$promo-highlight-color:#fff !default;
+
+//button colours
+$primary-button-background-color:green !default;
+$primary-button-color:white !default;
+$secondary-button-background-color:blue !default;
+$secondary-button-color:white !default;
+$outline-button-border-color:blue !default;
+$outline-button-color:blue !default;
+
+//group promo colours
+$group-promo-background-color: grey !default;
+$group-promo-header-color: black !default;
+$group-promo-description-color: black !default;
+$group-promo-arrow-color: black !default;

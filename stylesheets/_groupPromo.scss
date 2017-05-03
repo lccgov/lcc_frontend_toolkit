@@ -149,137 +149,124 @@
 }
 
 //promo-group leeds.gov.uk custom
-ul.promo-group{
+.groupPromo{
 
-  &.lcc {
-    background: transparent;
-    @include flexbox();
-    @include flex-direction(row);
-    @include flex-wrap(wrap);
-    margin:10px 0 30px -6px;
-    width:auto;
-    border:0;
-
-    @media (max-width: 600px) {
-       margin:10px 0 30px;
+    .listWebpart{
+        margin:0;
+        padding:0;
     }
 
+    &.lcc {
 
-    li {
-        background:$lighter-grey;
-        border: 0;
-        width: calc(100% * (1/4) - 5px);
-        margin:5px 0 0 5px;
-        border:0;
-
-        @media (max-width: 1200px) {
-            width: calc(100% * (1/2) - 5px);
-        }
-        @media (max-width: 600px) {
-            width: calc(100%);
-            margin:5px 0 0;
-        }
-
-        a{
-            background:$lighter-grey;
-            padding:30px;
-            text-decoration:none !important;
-            height:100%;
-
-            &:hover,
-            &:active{
-                background:$blue !important;
-
-                h3,
-                p{
-                    color:$white !important;
-                }
-            }
-
-            &:focus{
-
-                h3,
-                p{
-                    color:$black !important;
-                }
-            }
-
-            @media (max-width: 767px) {
-                min-height:0;
-                padding:20px;
-            }
+        ul{
+            background: transparent;
+            @include flexbox();
+            @include flex-direction(row);
+            @include flex-wrap(wrap);
+            margin:10px 0 30px -6px;
+            width:auto;
+            border:0;
 
             @media (max-width: 600px) {
-                min-height:0;
-                padding:20px 15px;
+                margin:10px 0 30px;
             }
-            
-            h3 {
-                margin: 0;
-                font-weight: 600;
-                font-size: 24px;
-                color: $base-link-color;
-                padding-right:30px;
-                line-height:28px;
 
-                @media (max-width: 767px) {
-                    font-size: 19px;
-                    line-height:24px;
+            li {
+                background:$group-promo-background-color;
+                border: 0;
+                width: calc(100% * (1/4) - 5px) !important;
+                margin:5px 0 0 5px;
+                border:0;
+
+                @media (max-width: 1200px) {
+                    width: calc(100% * (1/2) - 5px) !important;
                 }
-
-                    &:after {
-                        content: '\f105';
-                        font-family: FontAwesome;
-                        position: absolute;
-                        top: 30px;
-                        right: 30px;
-                        color:$light-grey;
-
-                        @media (max-width: 767px) {
-                          top: 20px;
-                          right: 20px;
-                        }
-
-                        @media (max-width: 600px) {
-                            top: 50%;
-                            right: 15px;
-                            margin-top:-10px;
-                            font-size:34px;
-                        }
-                    }
-            }
-
-            p{
-              font-size:18px;
-              font-weight:300;
-              margin-top: 10px;
-              margin-bottom:0;
-              color:$black;
-
-              @media (max-width: 600px) {
-                padding-right:30px;
-                font-size:16px;
-                margin-top: 5px;
-              }
-            }
-        }
-    }
-}
-}
-
-ul.promo-group{
-    &.lcc{
-        &.home{
-            margin:30px 0 30px -6px;
-
-            @media (max-width: 600px) {
-                margin:0 -15px 15px -15px;
-            }
-            li{
-                background:$white;
+                @media (max-width: 600px) {
+                    width: calc(100%) !important;
+                    margin:5px 0 0;
+                }
 
                 a{
-                    background:$white;
+                    background:$group-promo-background-color;
+                    padding:30px;
+                    text-decoration:none !important;
+                    height:100%;
+                    margin:0;
+
+                    &:hover,
+                    &:active{
+                        background:darken($group-promo-background-color,5%);
+
+                        h3{
+                            color:lighten($group-promo-header-color,5%);
+
+                            &:after {
+                                color:lighten($group-promo-arrow-color,5%);
+                            }
+                        }
+                        p{
+                            color:lighten($group-promo-description-color,5%);
+                        }
+                    }
+
+                    @media (max-width: 767px) {
+                        min-height:0;
+                        padding:20px;
+                    }
+
+                    @media (max-width: 600px) {
+                        min-height:0;
+                        padding:20px 15px;
+                    }
+                    
+                    h3 {
+                        margin: 0;
+                        font-weight: 600;
+                        font-size: 24px;
+                        color: $group-promo-header-color;
+                        padding-right:30px;
+                        line-height:28px;
+
+                        @media (max-width: 767px) {
+                            font-size: 19px;
+                            line-height:24px;
+                        }
+
+                            &:after {
+                                content: '\f105';
+                                font-family: FontAwesome;
+                                position: absolute;
+                                top: 30px;
+                                right: 30px;
+                                color:$group-promo-arrow-color;
+
+                                @media (max-width: 767px) {
+                                top: 20px;
+                                right: 20px;
+                                }
+
+                                @media (max-width: 600px) {
+                                    top: 50%;
+                                    right: 15px;
+                                    margin-top:-10px;
+                                    font-size:34px;
+                                }
+                            }
+                    }
+
+                    p{
+                        font-size:18px;
+                        font-weight:300;
+                        margin-top: 10px;
+                        margin-bottom:0;
+                        color:$group-promo-description-color;
+
+                        @media (max-width: 600px) {
+                            padding-right:30px;
+                            font-size:16px;
+                            margin-top: 5px;
+                        }
+                    }
                 }
             }
         }
