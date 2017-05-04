@@ -1,154 +1,4 @@
-.groupPromo {
-
-.listWebpart {
-    @include listWebpartColors(transparent, #333);
-    max-width: 100%;
-    padding: 15px 7.5px 0px;
-    h2 {
-        margin: 0 7.5px 15px;
-        display: inline-block;
-    }
-    ul {
-        list-style: none;
-        margin: 0px;
-        padding: 0px;
-        li {
-            float: left;
-            a {
-                margin: 0 7.5px 15px;
-                padding: 15px;
-                display: block;
-                font-weight: bold;
-                position: relative;
-                width: auto;
-
-
-                            span{
-                    font-size:0.8em;
-                    display:block;            }
-
-
-                img {
-                    width: 100%;
-                    max-width: 100%;
-                    margin-bottom: 15px;
-                }
-                &:hover {
-                    text-decoration: none;
-                }
-            }
-            .col-lg-12 & {
-                width: 20%;
-            }
-            .col-md-8 & {
-                width: 33.333%;
-            }
-            .col-md-6 & {
-                width: 25%;
-            }
-            .col-md-4 & {
-                width: 50%;
-            }
-            @media only screen and (max-width:990px) {
-                .col-lg-12 &,
-                .col-md-8 &,
-                .col-md-6 &,
-                .col-md-4 & {
-                    width: 33.333%;
-                }
-            }
-            @media only screen and (max-width:700px) {
-                .col-lg-12 &,
-                .col-md-8 &,
-                .col-md-6 &,
-                .col-md-4 & {
-                    width: 50%;
-                }
-            }
-            @media only screen and (max-width:350px) {
-                .col-lg-12 &,
-                .col-md-8 &,
-                .col-md-6 &,
-                .col-md-4 & {
-                    width: 100%;
-                }
-            }
-        }
-    }
-
-
-        a.ask {
-        background: #B10042;
-        border-color: #B10042;
-        color: #fff;
-        &:hover {
-            background: darken(#B10042, 10%);
-        }
-    }
-    a.arrow {
-        padding-right: 30px;
-        &:after {
-            font-family: FontAwesome;
-            font-size: 25px;
-            content: "\f105";
-            display: inline-block;
-            right: 10px;
-            top: 42%;
-            position: absolute;
-        }
-    }
-}
-    &.blockLinksGreen .listWebpart {
-        @include listWebpartColors(#97BD0E, #fff);
-    }
-    &.blockLinksPurple .listWebpart {
-        @include listWebpartColors(#72286E, #fff);
-    }
-    &.blockLinksPink .listWebpart  {
-        @include listWebpartColors(#B10042, #fff);
-    }
-    &.midnightBlue .listWebpart {
-        @include listWebpartColors(transparent, #fff);
-        h2 {
-            color: #333;
-        }
-        a {
-            background: #2c3e50;
-            &:hover {
-                background: darken(#2c3e50, 12%);
-            }
-        }
-    }
-    &.carrot .listWebpart {
-        @include listWebpartColors(transparent, #fff);
-        h2 {
-            color: #333;
-        }
-        a {
-            background: #e67e22;
-            &:hover {
-                background: darken(#e67e22, 12%);
-            }
-        }
-    }
-    &.white .listWebpart {
-        @include listWebpartColors(#fff, #333);
-        a {
-            background: lighten(#d2d7d3, 12%);
-        }
-    }
-    &.default .listWebpart {
-        @include listWebpartColors(transparent, #333);
-        a {
-            border: 1px solid #ddd;
-            &:hover {
-                background: #ddd;
-            }
-        }
-    }
-}
-
-//promo-group leeds.gov.uk custom
+//promo-group
 .groupPromo{
 
     .listWebpart{
@@ -156,7 +6,7 @@
         padding:0;
     }
 
-    &.lcc {
+
 
         ul{
             background: transparent;
@@ -178,12 +28,51 @@
                 margin:5px 0 0 5px;
                 border:0;
 
+     
+            .col-md-8 & {
+                width: calc(100% * (1/3) - 5px) !important;
+            }
+            .col-md-6 & {
+               width: calc(100% * (1/2) - 5px) !important;
+            }
+            .col-md-4 & {
+               width: calc(100% * (1/2) - 5px) !important;
+            }
+
                 @media (max-width: 1200px) {
+
+
                     width: calc(100% * (1/2) - 5px) !important;
+
+                      .col-md-8 &, .col-md-6 & {
+                width: calc(100% * (1/2) - 5px) !important;
+            }
+
+
+         .col-md-4 & {
+                width: calc(100%) !important;
+            }
+
                 }
+
+            @media (max-width:990px)and(min-width:601px){
+
+                 .col-md-4 & {
+                width: calc(100% * (1/2) - 5px) !important;
+            }
+
+            }
+
+
+
                 @media (max-width: 600px) {
                     width: calc(100%) !important;
                     margin:5px 0 0;
+
+             .col-md-8 &, .col-md-6 &,  .col-md-4 & {
+                width: calc(100%) !important;
+            }
+
                 }
 
                 a{
@@ -192,21 +81,20 @@
                     text-decoration:none !important;
                     height:100%;
                     margin:0;
+                    display: block;
+                    position: relative;
+                    width: auto;
+
+                    
+                img {
+                    width: 100%;
+                    max-width: 100%;
+                    margin-bottom: 15px;
+                }
 
                     &:hover,
-                    &:active{
+                    &:active {
                         background:darken($group-promo-background-color,5%);
-
-                        h3{
-                            color:lighten($group-promo-header-color,5%);
-
-                            &:after {
-                                color:lighten($group-promo-arrow-color,5%);
-                            }
-                        }
-                        p{
-                            color:lighten($group-promo-description-color,5%);
-                        }
                     }
 
                     @media (max-width: 767px) {
@@ -226,6 +114,7 @@
                         color: $group-promo-header-color;
                         padding-right:30px;
                         line-height:28px;
+                        position:relative;
 
                         @media (max-width: 767px) {
                             font-size: 19px;
@@ -236,8 +125,8 @@
                                 content: '\f105';
                                 font-family: FontAwesome;
                                 position: absolute;
-                                top: 30px;
-                                right: 30px;
+                                top: 0px;
+                                right: 0px;
                                 color:$group-promo-arrow-color;
 
                                 @media (max-width: 767px) {
@@ -271,4 +160,30 @@
             }
         }
     }
+
+
+
+
+
+.groupPromo {
+
+    &.blockLinksGreen .listWebpart {
+        @include groupPromo(#97BD0E, #fff, #fff,#fff);
+    }
+    &.blockLinksPurple .listWebpart {
+        @include groupPromo(#72286E, #fff,#fff,#fff);
+    }
+    &.blockLinksPink .listWebpart  {
+        @include groupPromo(#B10042, #fff,#fff,#fff);
+    }
+    &.midnightBlue .listWebpart {
+        @include groupPromo(#2c3e50, #fff, #fff,#fff);
+    }
+    &.carrot .listWebpart {
+        @include groupPromo(#e67e22, #fff,#fff,#fff);
+    }
+    &.white .listWebpart {
+        @include groupPromo(#fff, #333, #333,#333);
+    }
+
 }

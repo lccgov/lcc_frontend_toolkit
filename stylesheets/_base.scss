@@ -1117,3 +1117,51 @@ input[type=submit]{
 }
 
 
+
+
+
+ /* Begin generic Table styling ------------------------------------------------------------------ */
+
+table.styledTable {
+	font-size:1em;
+	margin:20px 0;
+	background:#ddd;
+	border-collapse:collapse;
+	width:100%;
+ }
+ 
+ table.styledTable th{
+   	padding:8px;
+   	text-align:left;
+   	border:2px solid #ddd;
+   	background:#eee;
+   	margin:0px;
+ }
+ 
+ .styledTable tr.resultsAlternatingRowStyle td{
+   	background:#f6f6f6;
+ }
+ 
+table.styledTable  td{
+   	padding:8px;
+   	border:2px solid #ddd;
+   	margin:0px;
+   	background:#fff; 
+ }
+ 
+ table.styledTable tbody th{
+   	background:#fff;
+ }
+ 
+ table.styledTable img{
+   	margin:0 30%;
+ }
+ 
+  table.styledTable p{
+   	font-size:1em;
+   	padding:0 0 10px 0;
+  }
+
+ 
+/* End generic Table styling ------------------------------------------------------------------ */ 
+
