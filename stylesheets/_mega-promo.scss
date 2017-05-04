@@ -11,6 +11,14 @@
         @include flex(1 1 auto);
         margin-bottom:15px;
 
+
+             &.external a:after {
+
+                content: "\f08e";
+                font-size:24px;
+            }
+
+
         a{
             display: block;
             width: 100%;
@@ -26,13 +34,13 @@
             &:focus{
                 .mega-promo__header,
                 .mega-promo__secondary{
-                    color:$black !important;
+                    color:#333 !important;
                 }
             }
 
             &:after {
                 font-family: FontAwesome;
-                content: "\f054";
+                content: $promo-arrow;
                 position: absolute;
                 right: 20px;
                 bottom: 20px;
@@ -334,10 +342,3 @@
     }
 }
 
-.mega-promo{
-    .mega-promo__item{
-         &.blue{
-            @include mega-promo-colors($blue, $white, $white, $white, $promo-highlight-background-color, $promo-highlight-color);
-        }
-    }
-}

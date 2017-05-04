@@ -125,12 +125,13 @@ $highlighted-alt-background-color:#f6f6f6 !default;
 $highlighted-alt-font-color:#333 !default;
 
 //mega-promo
-$promo-background-color:#3D414A !default;
-$promo-arrow-color:#fff !default;
-$promo-header-color:#fff !default;
-$promo-secondary-color:#fff !default;
-$promo-highlight-background-color:lighten(#3D414A, 15%) !default;
-$promo-highlight-color:#fff !default;
+$promo-background-color:#F6F7FA !default;
+$promo-arrow-color:#9DA5B2 !default;
+$promo-header-color:#3D414A !default;
+$promo-secondary-color:#666B76 !default;
+$promo-highlight-background-color:#F6F7FA !default;
+$promo-highlight-color:#3D414A !default;
+$promo-arrow:"\f054" !default;
 
 //button colours
 $primary-button-background-color:green !default;
@@ -141,7 +142,7 @@ $outline-button-border-color:blue !default;
 $outline-button-color:blue !default;
 
 //group promo colours
-$group-promo-background-color: grey !default;
-$group-promo-header-color: black !default;
-$group-promo-description-color: black !default;
-$group-promo-arrow-color: black !default;
+$group-promo-background-color: #F6F7FA  !default;
+$group-promo-header-color: #3D414A  !default;
+$group-promo-description-color: #666B76  !default;
+$group-promo-arrow-color: #9DA5B2  !default;
