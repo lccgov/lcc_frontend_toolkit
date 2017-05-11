@@ -143,6 +143,8 @@
                             }
                     }
 
+                 
+
                     p{
                         font-size:18px;
                         font-weight:300;
@@ -157,6 +159,10 @@
                         }
                     }
                 }
+
+                   &.external a h3:after {
+                        content:'\f08e';
+                    }
             }
         }
     }
@@ -184,3 +190,5 @@
     }
 
 }
+
+

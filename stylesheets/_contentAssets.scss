@@ -23,16 +23,6 @@
     }
 
 
-    p{
-
-        strong{
-            font-weight:800 !important;
-            font-size: 28px !important;
-            line-height: 1.25 !important;
-        }
-    }
-
-
 
     em{
         font-size:80px;
@@ -86,4 +76,39 @@
         @media screen and (max-width:400px){
                 padding:1.5em 1em;
         }
+}
+
+
+
+
+.imgRight {
+    float:right;
+    margin:0 0 30px 30px;
+    max-width:50%;
+
+    @media screen and (max-width:500px) {
+
+        max-width:100%;
+        margin:0px 0 30px 0;
+
+    }
+}
+
+.imgLeft {
+    float:left;
+    margin:0 30px 30px 0px;
+    max-width:50%;
+
+    @media screen and (max-width:500px) {
+
+        max-width:100%;
+        margin:0px 0 30px 0;
+
+    }
+}
+
+@media (max-width: 768px){
+.lead {
+    font-size: 21px;
+}
 }

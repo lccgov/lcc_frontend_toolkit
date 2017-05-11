@@ -162,6 +162,41 @@ color: $list-webpart-font-color;
             }  
      }
 
+// group promo mixin for multi coloured items ---------------------------------------------------------------------------------------------------
+
+         @mixin groupPromoMulticolors($group-promo-background-color,$group-promo-header-color, $group-promo-arrow-color,$group-promo-description-color)
+{
+
+
+
+
+     background:$group-promo-background-color;
+
+    a {
+                background:$group-promo-background-color;
+
+
+                &:hover, &:active {
+                        background:darken($group-promo-background-color,10%);
+                      }
+
+                
+                   h3 {
+                        color: $group-promo-header-color;
+                
+                            &:after {
+                                   color:$group-promo-arrow-color;
+                            }
+                     }
+
+                    p{
+                        color:$group-promo-description-color;
+                    }
+
+
+                   }
+            } 
+
 
 
 
