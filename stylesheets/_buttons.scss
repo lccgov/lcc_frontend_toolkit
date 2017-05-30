@@ -91,9 +91,15 @@
     border-color:$primary-button-background-color;
 
     &:hover{
-        background:darken($primary-button-background-color, 5%);
+        background:lighten($primary-button-background-color, 5%);
+        color:$primary-button-color;
+        border-color:lighten($primary-button-background-color, 5%);
+    }
+
+    &:active{
+        background:darken($primary-button-background-color, 10%) !important;
         color:$primary-button-color !important;
-        border-color:darken($primary-button-background-color, 5%);
+        border-color:darken($primary-button-background-color, 10%) !important;
     }
 }
 
@@ -103,9 +109,15 @@
     border-color:$secondary-button-background-color;
 
     &:hover{
-        background:darken($secondary-button-background-color, 5%);
-        color:$white;
-        border-color:darken($secondary-button-background-color, 5%)
+        background:lighten($secondary-button-background-color, 5%);
+        color:$secondary-button-color;
+        border-color:lighten($secondary-button-background-color, 5%)
+    }
+
+    &:active{
+        background:darken($secondary-button-background-color, 10%) !important;
+        color:$secondary-button-color !important;
+        border-color:darken($secondary-button-background-color, 10%) !important;
     }
 }
 
@@ -117,6 +129,11 @@
     &:hover{
         background-color:darken($white,5%) !important;
         border-color:darken($outline-button-border-color, 5%)
+    }
+
+    &:active{
+        background-color:darken($white,10%) !important;
+        border-color:darken($outline-button-border-color, 10%)
     }
 
     &:after{
