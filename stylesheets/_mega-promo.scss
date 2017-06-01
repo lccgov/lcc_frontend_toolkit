@@ -8,7 +8,6 @@
         padding-left: 15px;
         @include flexbox();
         @include align-items(stretch);
-        @include flex(1 1 auto);
         margin-bottom:15px;
 
 
