@@ -12,6 +12,8 @@
             padding:30px;
             background:#ECF0F1;
             text-align: center;
+            position:relative;
+            padding-bottom: 100px;
 
             img{
                 max-width:100%;
@@ -27,9 +29,20 @@
             }
 
             
-        a{
-            width:100%;
-        }
+          a.btn{
+        position:absolute;
+        bottom:30px;
+        left:30px;
+        right:30px;
+        width:auto;
+    }
+
+
+        &:after{
+        content:'';
+        height:80px;
+        display:block;
+    }
 
         }
   
@@ -39,4 +52,3 @@
     }
     }
 }
-
