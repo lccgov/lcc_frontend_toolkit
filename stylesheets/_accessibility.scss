@@ -7,3 +7,24 @@ input[type=submit]:focus,
     text-decoration:none;   
     outline:0; 
 }
+
+//accessibility skip links
+a.skip {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+
+a.skip:focus, a.skip:active{
+    left: 8px;
+    top: 8px;
+    width:auto;
+    height: auto;
+    overflow:auto;
+    z-index:999;
+    padding:0.625em;
+}

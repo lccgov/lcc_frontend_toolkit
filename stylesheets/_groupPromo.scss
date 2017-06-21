@@ -191,4 +191,56 @@
 
 }
 
+//no flexbox fallback - group promo
+.no-flexbox .groupPromo ul {
+    width:100%;
+    display:inline-block;
+
+    @media (max-width: 600px){
+        margin:0;
+    }
+
+    li{
+        display:inline-block;
+
+        a{
+            @media (min-width: 600px){
+                min-height:170px;
+            }
+            @media (min-width: 990px){
+                min-height:170px;
+            }
+            @media (min-width: 990px){
+                min-height:150px;
+            }
+            @media (min-width: 1200px){
+                min-height:240px;
+            }
+            @media (min-width: 1400px){
+                min-height:210px;
+            } 
+        }
+    }
+
+    li:nth-child(4n+5){
+        @media (min-width: 990px){
+            clear:both;
+        }
+    }
+    li:nth-child(2n+3){
+        @media (min-width: 600px) and (max-width: 990px){
+            clear:both;
+        }
+    }
+}
+
+//group promo
+.ie8 .groupPromo ul li{
+    width:100%;
+
+    a{
+        width:100%;
+    }
+}
+
 

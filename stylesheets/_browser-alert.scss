@@ -1,0 +1,15 @@
+.browser-alert{
+    background:black;
+
+    span{
+        color:white;
+        padding:15px 0;
+        display:block;
+
+        &:before{
+            font-family: "FontAwesome";
+            content: "\f071"; 
+            margin-right:10px;
+        }
+    }
+}

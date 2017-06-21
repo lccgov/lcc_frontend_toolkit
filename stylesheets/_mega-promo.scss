@@ -341,3 +341,15 @@
     }
 }
 
+//no flexbox fallback - mega promo
+.no-flexbox .mega-promo .mega-promo__item{
+    display:inline-block;
+    float:left;
+
+    &.featured{
+        a{
+            display:inline-block;
+            width:100%;
+        }
+    }
+}

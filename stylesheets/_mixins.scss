@@ -197,6 +197,12 @@ color: $list-webpart-font-color;
                    }
             } 
 
+//mixins
+.input-focus{
+    -webkit-box-shadow: 0 0 0 4px $focus-color;
+    -moz-box-shadow: 0 0 0 4px $focus-color;
+    box-shadow: 0 0 0 4px $focus-color;
+}
 
 
 
