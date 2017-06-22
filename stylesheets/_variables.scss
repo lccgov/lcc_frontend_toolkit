@@ -222,3 +222,11 @@ $group-promo-arrow-color: #9DA5B2  !default;
     background: -moz-radial-gradient($top, $bottom); /* For Firefox 3.6 to 15 */
     background: radial-gradient($top, $bottom); /* Standard syntax */
 }
+
+//extra colours
+$focus-color:#FFBF47 !default;
+$secondary-link-color:#003F55 !default;
+$secondary-font-color:#666B76 !default;
+$border-color:#DCDEE1 !default;
+$panel-color:darken(#F6F7FA,3%) !default;
+$button-hover-color:lighten(#008000,5%) !default;
