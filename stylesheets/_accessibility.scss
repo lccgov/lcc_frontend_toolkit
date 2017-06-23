@@ -2,6 +2,7 @@
 a:focus, 
 input[type=submit]:focus, 
 .btn:focus,
+.button:focus,
 .ms-srch-sb > .ms-srch-sb-searchLink:focus,
 .main-nav ul li a.selected:focus,
 .promoListWebpart ul li a:focus .info,
@@ -11,12 +12,19 @@ input[type=submit]:focus,
 a:focus .eventsContentPod, a:focus .venuesContentPod,
 a:focus .eventsContentPod h3, a:focus .venuesContentPod h3,
 a:focus .eventsContentPod:after, a:focus .venuesContentPod:after, 
-a:focus .eventsContentPod .additionaldates
+a:focus .eventsContentPod .additionaldates,
+.promo a:focus span,
+.sideNav ul li:first-of-type a:focus, .sideNav ul li:first-of-type a.active:focus,
+.iconLinks li a:focus:after
 {
     background-color:#FFBF47 !important;
     color:#212224  !important;
     text-decoration:none;   
     outline:0; 
+}
+//promo overide
+.promo a:focus{
+    background:transparent !important;
 }
 
 //accessibility skip links
@@ -41,7 +49,7 @@ a.skip:focus, a.skip:active{
 }
 
 
-.ms-srch-sb > input, input[type=text], select, input.mapIcon, input[type=checkbox], input[type=radio]  {
+.ms-srch-sb > input, input[type=text], select, input.mapIcon, input[type=checkbox], input[type=radio], .footerLogos a:focus  {
         outline:0;
         
         &:focus{
