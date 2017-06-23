@@ -1,9 +1,20 @@
 //accessibility
 a:focus, 
 input[type=submit]:focus, 
-.btn:focus{
-    background:#FFBF47 !important;
-    color:$base-font-color !important;
+.btn:focus,
+.ms-srch-sb > .ms-srch-sb-searchLink:focus,
+.main-nav ul li a.selected:focus,
+.promoListWebpart ul li a:focus .info,
+.promoListWebpart ul li a:focus .info .arrow,
+.promoListWebpart ul li a:focus .secondaryInfo,
+.promoListWebpart a:focus .info .arrow:after,
+a:focus .eventsContentPod, a:focus .venuesContentPod,
+a:focus .eventsContentPod h3, a:focus .venuesContentPod h3,
+a:focus .eventsContentPod:after, a:focus .venuesContentPod:after, 
+a:focus .eventsContentPod .additionaldates
+{
+    background-color:#FFBF47 !important;
+    color:#212224  !important;
     text-decoration:none;   
     outline:0; 
 }
@@ -28,3 +39,15 @@ a.skip:focus, a.skip:active{
     z-index:999;
     padding:0.625em;
 }
+
+
+.ms-srch-sb > input, input[type=text], select, input.mapIcon, input[type=checkbox], input[type=radio]  {
+        outline:0;
+        
+        &:focus{
+            -webkit-box-shadow: 0 0 0 4px $focus-color !important;
+            -moz-box-shadow: 0 0 0 4px $focus-color !important;
+            box-shadow: 0 0 0 4px $focus-color !important;
+        }
+    } 
+
