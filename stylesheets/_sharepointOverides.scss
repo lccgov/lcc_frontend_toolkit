@@ -207,5 +207,27 @@ h3.ms-srch-ellipsis {
 
 }
 
+
+
+.limitedrte-Style-image-left {
+    -ms-name: "IMAGE LEFT ALIGN";
+    float: left;
+    margin: 10px 20px 10px 0 !important;
+}
+
+.limitedrte-Style-image-right {
+    -ms-name: "IMAGE RIGHT ALIGN";
+    float:  right;
+    margin: 10px 0px 10px 20px !important;
+}
+
+@media(max-width:768px){
+   .limitedrte-Style-image-left, .limitedrte-Style-image-right {
+       margin: 10px 0px 10px 0px !important;
+   }
+}
+
+
+
 // END OOTB SEARCH WEBPART OVERIDES
 

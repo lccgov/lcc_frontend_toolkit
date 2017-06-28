@@ -14,7 +14,7 @@
       text-align:center;
     }
 
-    h2, h3, h4 {
+    h2:first-of-type, h3:first-of-type, h4:first-of-type {
         margin-top:0px;
     }
 
@@ -80,35 +80,53 @@
 
 
 
-
-.imgRight {
-    float:right;
-    margin:0 0 30px 30px;
-    max-width:50%;
-
-    @media screen and (max-width:500px) {
-
-        max-width:100%;
-        margin:0px 0 30px 0;
-
-    }
-}
-
-.imgLeft {
-    float:left;
-    margin:0 30px 30px 0px;
-    max-width:50%;
-
-    @media screen and (max-width:500px) {
-
-        max-width:100%;
-        margin:0px 0 30px 0;
-
-    }
-}
-
 @media (max-width: 768px){
 .lead {
     font-size: 21px;
 }
+}
+
+
+
+
+a.arrow {
+    padding: 15px;
+    display:block;
+    position:relative;
+    border-bottom:1px solid $ArrowLinkBorderColor;
+
+    &:first-of-type{
+        border-top:1px solid $ArrowLinkBorderColor;
+    }
+
+
+        
+    &:after{
+    content:'\f105';    
+    font-family: FontAwesome;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid $ArrowLinkColor;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding: 2px 0 0 2px;
+    margin: -18px 5px 0 0;
+    color:$ArrowLinkColor;
+    display:inline-block;
+    right:0px;
+    position:absolute;
+    top:50%;
+    
+ 
+    }  
+
+       &:hover{
+       background:#f2f2f2;
+
+       &:after{
+        background:$ArrowLinkColor;
+        color:#fff;
+    }
+       }
 }
