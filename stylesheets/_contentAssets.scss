@@ -130,3 +130,8 @@ a.arrow {
     }
        }
 }
+
+
+li a.arrow:first-of-type{
+    border-top:none;
+}
