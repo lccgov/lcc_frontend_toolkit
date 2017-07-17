@@ -106,8 +106,8 @@ textarea.form-control{
 .form-control{
     width: 100% !important;
     height: 45px;
-    color: $input-color;
-    background-color: #fff;
+    color: $input-color !important;
+    background-color: #fff !important;
     background-image: none;
     border: 1px solid $input-border-color !important;
     box-shadow:none;
