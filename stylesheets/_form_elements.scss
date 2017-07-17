@@ -1,0 +1,345 @@
+//back-up styles for forms not marked up correctly
+.form-group{
+
+    label{
+        display:block;
+    }
+
+    input[type=password], input[type=text], input[type=file], select, input, textarea {
+        border:0;
+        padding:0;
+        width:auto;
+        max-width:100%;
+    }
+}
+
+input[type=password], input[type=text], input[type=file], select, input, textarea {
+    width:auto;
+    max-width:100%;
+
+    &:focus{
+        @extend .input-focus;
+        outline:0;
+    }
+}
+
+//style begin
+form{
+    width:100%;
+    display:inline-block;
+}
+
+input[type=file]{
+    font-size:16px;
+}
+
+.form-group{
+    display: inline-block;
+    width: 100%;
+    margin-top:0;
+    margin-bottom:30px;
+
+    @media (max-width: 641px) {
+        margin-bottom:20px;
+    }
+
+    .btn{
+        margin:0;
+    }
+
+    .panel{
+        display:inline-block;
+        width:100%;
+        box-shadow:none;
+        clear: both;
+        border-top:0;
+        border-right:0;
+        border-bottom:0;
+        border-left-style: solid;
+        border-color: #E5F1F5;
+        padding: 20px;
+        margin-bottom: 30px;
+        @include border-radius(0); 
+        background:none;
+
+        &:first-child {
+            margin-top: 0; 
+        }
+
+        &:only-child,
+        &:last-child {
+            margin-bottom: 0; 
+        }
+
+        &.panel-border-wide {
+            border-left-width: 10px; 
+        }
+
+        &.panel-border-narrow {
+            border-left-width: 5px; 
+            float: left;
+            width: 100%;
+            margin:10px 0 30px;
+
+            &:first-child {
+                margin-top: 10px; 
+            }
+
+            &:last-child {
+                margin-top: 10px;
+                margin-bottom: 0; 
+            }
+
+            .form-group{
+                margin-bottom:0;
+            }
+        }
+    }
+}
+
+input.form-control,
+textarea.form-control{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.form-control{
+    width: 100% !important;
+    height: 45px;
+    color: $input-color;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid $input-border-color !important;
+    box-shadow:none;
+    font-size:16px;
+    padding:5px !important;
+    background:white !important;
+    font-family: $font-primary !important;
+    @include border-radius(4px);
+
+    @media (min-width: 641px) {
+        width:50% !important;
+        font-size:19px;
+    }
+
+    &:focus{
+        @extend .input-focus;
+    }
+}
+
+.form-hint{
+    display:block;
+    color: $secondary-font-color;
+    font-weight: normal;
+    margin-top: 1px;
+    padding-bottom: 2px;
+    font-weight:300;
+    font-size:16px;
+
+    @media (min-width: 641px) {
+        font-size:19px;
+    }
+}
+
+.form-label{
+    display:block;
+    font-weight:normal;
+    font-size:19px;
+
+    @media (min-width: 641px) {
+        font-size:21px;
+    }
+}
+
+//input sizes
+.form-control-3-4 {
+    width: 100% !important;
+
+    @media (min-width: 641px){
+        width: 75% !important;
+    }
+}
+
+.form-block{
+    display:inline-block;
+    width:100%;
+}
+
+.js .js-hidden {
+    display: none;
+    visibility: hidden;
+}
+
+//sharpoint override
+input[type=button], 
+input[type=reset], 
+input[type=submit], button{
+    font-family: $font-primary !important;
+}
+
+
+//form button styles
+input[type=button]{
+    @extend .btn;
+    @extend .btn-primary;
+    margin:0 !important;
+}
+
+input[type=button].btn-secondary{
+    @extend .btn-secondary;
+}
+
+input[type=button].btn-outline{
+    @extend .btn-outline;
+}
+
+input[type=button].btn-small{
+    @extend .btn-small;
+}
+
+.col-md-4,
+.col-md-6{
+    .form-control{
+        width:100% !important;
+    }
+}
+
+//custom class for lookup address button
+.form-group-button{
+    .form-group:first-of-type{
+        margin-bottom:10px;
+    }
+}
+
+//block label
+.block-label {
+  display: block;
+  float: none;
+  clear: left;
+  position: relative;
+  background: #DCDEE1;
+  border: 1px solid #DCDEE1;
+  padding: 18px 25px 15px 54px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  @include border-radius(4px);
+}
+
+@media (min-width: 641px) {
+  .block-label {
+    float: left;
+  }
+}
+
+.block-label {
+    input {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        cursor: pointer;
+        margin: 0;
+        width: 29px;
+        height: 29px;
+    }
+
+    &.active{
+        border-color: #9DA5B2;
+        background:white;
+    }
+}
+
+.block-label.active + .panel{
+    display:block;
+    visibility:visible;
+}
+
+.block-label:hover {
+  border-color: #9DA5B2;
+}
+
+.inline{
+    .block-label {
+        display:inline;
+        float:none;
+        margin-right:10px;
+    }
+}
+
+//fieldset
+legend {
+    @extend .heading-medium;
+    border-bottom: 0;
+}
+
+form{
+    legend{
+        margin-bottom:0;
+    }
+}
+
+//date input
+.form-date {
+    .form-group {
+        float: left;
+        width: 50px;
+        margin-right: 20px;
+        margin-bottom: 0;
+        clear: none; 
+
+        label {
+            display: block;
+            padding-bottom: 2px; 
+        }
+
+        input {
+            width: 100% !important; 
+        }
+    }
+
+    .form-group-year {
+        width: 70px; 
+    }
+}
+
+//form errors
+.form-group-error {
+    margin-right: 15px;
+    border-left: 4px solid #cc0000;
+    padding-left: 10px; 
+
+    @media (min-width: 641px) {
+        border-left: 5px solid #cc0000;
+        padding-left: 15px; 
+    }
+}
+  
+
+.form-control-error {
+  border: 4px solid #cc0000 !important; 
+}
+
+.error-message {
+    font-size: 16px;
+    color: #cc0000;
+    display: block;
+    clear: both;
+    margin: 0 0 5px;
+    padding: 2px 0; 
+    font-weight:700;
+
+    @media (min-width: 641px) {
+        font-size: 19px;
+    }
+
+    &:before{
+        font-family: FontAwesome;
+        content: "\F071";
+        margin-right:5px;
+    }
+}
+
+.form-label .error-message,
+.form-label-bold .error-message {
+  padding-top: 4px;
+  padding-bottom: 0; 
+}

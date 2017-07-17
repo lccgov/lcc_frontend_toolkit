@@ -1,0 +1,50 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+table th {
+    font-weight: 700;
+}
+
+table th, table td {
+    @extend .font-small;
+    padding: 0.63158em 1.05263em 0.47368em 0;
+    text-align: left;
+    border-bottom: 1px solid $border-color;
+}
+
+table th.numeric,
+table td.numeric{
+    text-align:right;
+}
+
+//description-list
+.list-definition__heading {
+    border-top: 1px solid $border-color;
+    clear: left;
+    font-weight: bold;
+    padding-top: 1rem;
+
+    @media (min-width: 767px) {
+        float: left;
+        padding: 1rem .75rem;
+        text-align: right;
+        width: 25%;
+    }
+}
+.list-definition__content {
+    margin: 0;
+    padding-bottom: 1rem;
+    padding-top: .25rem;
+
+    @media (min-width: 767px) {
+        border-top: 1px solid $border-color;
+        float: left;
+        padding: 1rem .75rem;
+        width: 75%;
+    }
+}

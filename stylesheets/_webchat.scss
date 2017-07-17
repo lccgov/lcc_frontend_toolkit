@@ -1,0 +1,104 @@
+#myChatLinkContainer{
+    #myChatLink{
+        #myChatLinkInfo{
+            background:#DCDEE1;
+            padding:15px 15px 15px 70px !important;
+            position:relative;
+            @include border-radius(4px);
+
+            @media (min-width: 641px){
+                padding:20px 20px 20px 100px !important;
+            }
+
+            &:before{
+                font-family: FontAwesome;
+                content: "\f086";
+                position:absolute;
+                font-size: 40px;
+                left:15px;
+                top:15px;
+                line-height:1;
+                color:rgba($base-font-color,0.8);
+
+                @media (min-width: 641px){
+                    top:50%;
+                    left:20px;
+                    font-size:60px;
+                    margin-top:-30px;
+                }
+            }
+
+            h4,
+            span{
+                color:rgba($base-font-color,0.8);
+            }
+
+            h4{
+                margin:0;
+                font-size:21px;
+
+                @media (min-width: 641px){
+                    font-size:24px;
+                }
+            }
+            span{
+                font-size:14px;
+                line-height:1.1;
+
+                @media (min-width: 641px){
+                    font-size:16px;
+                }
+            }
+        }
+
+        a{
+            text-decoration:none !important;
+
+            #myChatLinkInfo{
+                @extend .btn;
+                @extend .btn-primary;
+
+                &:before{
+                    color:white;
+                }
+
+                &:after{
+                    display:block;
+                    font-family:FontAwesome;
+                    content:"\f105";
+                    position:absolute;
+                    right:20px;
+                    font-size:30px;
+                    top:50%;
+                    margin-top:-13px;
+                }
+
+                h4{
+                    color:white;
+                    text-decoration:none !important;
+                }
+                span{
+                    color:white;
+                    text-decoration:none !important;
+                    display:inline-block;
+                    width:100%;
+                }
+
+                h4,
+                span{
+                    padding-right:50px;
+                }
+            }
+        }
+    }
+}
+
+//pop-up fixes
+.rn_SyndicatedChatQuestionDiv {
+    width: 280px;
+    height: 80px;
+}
+
+.yui-skin-sam .yui-panel .hd {
+    width: 300px;
+}

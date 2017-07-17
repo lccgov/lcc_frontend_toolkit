@@ -1,0 +1,33 @@
+//images
+.img-content{
+    display: block;
+    max-width: 100%;
+    width:100%;
+    height: auto;
+    padding:5px 0 20px;
+
+    @media (max-width: 641px){
+        padding:5px 0 10px;
+    }
+
+    &.img-right{
+        float:right;
+        padding:5px 0 20px 30px;
+    }
+
+    &.img-left{
+        float:left;
+        padding:5px 30px 20px 0;
+    }
+
+    &.img-right,
+    &.img-left{
+        width:50%;
+
+        @media (max-width: 641px){
+            width:100%;
+            float:none;
+            padding:5px 0 10px;
+        }
+    }
+}
