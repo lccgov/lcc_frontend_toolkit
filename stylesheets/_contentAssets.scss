@@ -1,8 +1,9 @@
 //highlighted is a hightlighed section of content
-.highlighted {
+.highlighted, .panel {
     padding:2em 1.75em;
     margin: 1em 0;
     background:$highlighted-background-color;
+    box-shadow: 0 0 0;
 
     img{
         max-width:100%;

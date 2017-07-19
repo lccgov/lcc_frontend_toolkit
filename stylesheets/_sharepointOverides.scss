@@ -44,19 +44,16 @@ h1, h2, h3, h4, h5, ul, ol, p, input {
     color:$base-font-color;
 }
 
-h1, h2, h3, h4, h5 {
-    font-weight:400;
-}
-
 
 .ms-rtestate-field
 {
-  h1,h2,h3,h4,h5
+  h1,h2,h3,h4,h5,p
 {
-        font-weight:400;
         font-family:$font-primary;
         color:$base-font-color;
 }
+
+
     
 }
 
