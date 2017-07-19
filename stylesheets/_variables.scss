@@ -13,6 +13,11 @@ $base-container-width:1500px !default;
 $btn-background-color:green !default;
 $font-primary: Arial !default; // main font
 $font-secondary: Arial !default; // secondary font
+$header-font-weight: 600 !default;
+
+//panel colours
+$panel-color:#F6F7FA !default;
+$panel-color-secondary: darken(#F6F7FA,5%) !default;
 
 //global used on all partials to get a uniform spacing between elements
 $base-margin-bottom:1.875em !default;

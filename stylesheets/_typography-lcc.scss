@@ -164,27 +164,25 @@ h4{
 
 .heading-xlarge {
   font-size: 36px;
-  line-height: 1.09375;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  line-height: 1.15;
+  margin:30px 0;
 
   @media (min-width: 641px) {
     font-size: 50px;
-    line-height: 1.0416666667;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    line-height: 1.15;
+    margin:50px 0;
   }
 }
 
 .heading-large {
   font-size: 24px;
-  line-height: 1.0416666667;
+  line-height: 1.25;
   margin-top: 30px;
   margin-bottom: 0.5em;
 
   @media (min-width: 641px) {
     font-size: 32px;
-    line-height: 1.1111111111;
+    line-height: 1.25;
     margin-top: 50px;
     margin-bottom: 0.7em;
   }
@@ -207,24 +205,24 @@ h4{
 .heading-small {
   font-size: 16px;
   line-height: 1.25;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 0.7em;
 
   @media (min-width: 641px) {
     font-size: 19px;
     line-height: 1.3157894737;
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 
 .part-title{
     font-size: 20px;
-    line-height: 1.11111;
+    line-height: 1.25;
     margin-bottom: 15px;
 
   @media (min-width: 641px) {
     font-size: 27px;
-    line-height: 1.11111;
+    line-height: 1.25;
     margin-bottom: 20px;
   }
 
@@ -264,10 +262,6 @@ p,
   }
 }
 
-/*.lead-in{
-  margin-bottom:10px;
-}*/
-
 //text-wrapper for usability reasons (recommeneded max 75 characters)
 .text {
   max-width: 35em;
@@ -275,15 +269,15 @@ p,
 
 .text-description{
   margin-bottom:0;
-  font-size:186x;
-  font-weight:300;
+  font-size:16px;
+  font-weight:400;
 
   @media (min-width: 641px) {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 
-//text-highlight
+//inset text
 .text-highlight{
   border: 1px solid #B3D9E6;
   border-left: 15px solid #B3D9E6;
@@ -314,6 +308,7 @@ p,
   }
 }
 
+//text block
 .text-block{
   @extend .text-highlight;
   padding-top:0;
@@ -481,7 +476,7 @@ blockquote {
 
 //panels
 .panel{
-  background:#E5F1F5;
+  background:$panel-color;
   padding:20px;
   box-shadow:none;
   border-radius:0;

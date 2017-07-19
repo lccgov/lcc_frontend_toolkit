@@ -15,12 +15,12 @@ ul.accordion {
                 padding:15px 40px 15px 15px;
                 position: relative;
                 font-size:20px;
+                text-decoration:none !important;
 
                 &:hover, &:focus
                 {
                   background:rgba(0,0,0,0.05);
                 }
-
 
                     &:after
                             {

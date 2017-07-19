@@ -13,6 +13,8 @@ docsList
         padding-top: 45px;
         font-weight: bold;
         border: 1px solid $content-border-color;
+        text-decoration:none !important;
+
         &:hover,
         &:focus {
             background: #525252;
