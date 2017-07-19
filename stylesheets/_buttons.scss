@@ -4,17 +4,23 @@
     border:0;
     @include border-radius(4px);
     white-space: normal;
-    border:1px solid $grey;
+    border:1px solid $border-color;
     box-shadow:none;
-    margin-top: 0.2631578947em;
-    margin-bottom: 1.0526315789em;
+    margin:0 0 20px;
     text-decoration:none!important;
-    padding:15px 20px;
+    padding:20px 25px;
     text-align:left;
+    font-weight:bold;
+    line-height:1.3em;
 
-    @media (max-width: 767px) {
-        padding:10px 15px;
+    @media (max-width: 641px) {
+        margin:5px 0 15px;
+        padding:15px 20px;
         font-size:16px;
+      }
+
+    &.bottom{
+        margin-bottom:0 !important;
     }
 
     &:after{
@@ -77,11 +83,11 @@
 
 .btn-default{
     background-color:$light-grey;
-    color:$white;
+    color:white;
 
     &:hover{
         background:darken($light-grey, 5%);
-        color:$white;
+        color:white;
     }
 }
 
@@ -127,12 +133,12 @@
     background:transparent !important;
 
     &:hover{
-        background-color:darken($white,5%) !important;
+        background-color:darken(white,5%) !important;
         border-color:darken($outline-button-border-color, 5%)
     }
 
     &:active{
-        background-color:darken($white,10%) !important;
+        background-color:darken(white,10%) !important;
         border-color:darken($outline-button-border-color, 10%)
     }
 
