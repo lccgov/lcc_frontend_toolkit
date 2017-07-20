@@ -23,9 +23,13 @@ ul.accordion {
             position: relative;
             border:none !important;
             font-weight:700;
-            padding: 20px 20px 20px 59px;
+            padding: 20px 20px 20px 60px;
             text-decoration:none !important;
             font-size:19px;
+
+            @media (max-width: 641px){
+                padding: 20px 20px 20px 45px;
+            }
 
             &:hover, 
             &:focus{
@@ -47,7 +51,6 @@ ul.accordion {
                 @media (max-width: 641px){
                     font-size:16px;
                     left: 10px;
-                    top:10px;
                 }
             }    
 
@@ -63,10 +66,10 @@ ul.accordion {
         }
 
         div.content-block{
-            padding:20px 20px 20px 60px !important;
+            padding:15px 20px 5px 60px !important;
 
             @media (max-width: 641px){
-                padding: 10px 10px 10px 39px !important;
+                padding: 10px 10px 5px 45px !important;
             }
         }
     }
