@@ -39,6 +39,7 @@ h5,
   font-family: $font-primary, sans-serif;
   font-weight: 400;
   text-transform: none;
+  color:$base-font-color;
 
   &.top{
     margin-top:0;
@@ -229,6 +230,7 @@ h4{
 }   
 
 p,
+p.sharepoint,
 .link-back,
 .hidden-text,
 .text-link.reveal {
