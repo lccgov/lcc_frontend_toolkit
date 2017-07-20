@@ -28,7 +28,7 @@ ul.accordion {
             font-size:19px;
 
             @media (max-width: 641px){
-                padding: 20px 20px 20px 45px;
+                padding: 15px 15px 15px 35px;
             }
 
             &:hover, 
@@ -43,7 +43,7 @@ ul.accordion {
                 position: absolute;
                 right: auto;
                 left: 20px;
-                top:20px;
+                top:21px;
                 margin-top:0;
                 color: $base-link-color;
                 font-weight:400;
@@ -51,6 +51,7 @@ ul.accordion {
                 @media (max-width: 641px){
                     font-size:16px;
                     left: 10px;
+                    top:18px;
                 }
             }    
 
@@ -69,7 +70,7 @@ ul.accordion {
             padding:15px 20px 5px 60px !important;
 
             @media (max-width: 641px){
-                padding: 10px 10px 5px 45px !important;
+                padding: 10px 10px 5px 35px !important;
             }
         }
     }
