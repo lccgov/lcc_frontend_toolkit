@@ -1,65 +1,79 @@
 ul.accordion {
+    list-style: none;
+    padding:0px;
+    margin:30px 0;
+    border-top:1px solid $border-color;
 
-  
-         list-style: none;
-         padding:0px;
-         margin:0px 0 $base-margin-bottom 0;
+    li{
+        border-color:$border-color;
+        border-bottom:1px solid $border-color;
+        border-left:5px solid transparent !important;
 
-         li{
-           
-            border-bottom:1px solid $accordion-border-color;
+        &:hover{
+            border-left:5px solid $base-link-color !important;
+        }
 
+        ul li,
+        ul li:hover{
+            border:0 !important;
+        }
 
-            a.header{
-                display:block;
-                padding:15px 40px 15px 15px;
-                position: relative;
-                font-size:20px;
-                text-decoration:none !important;
+        a.header{
+            display:block;
+            position: relative;
+            border:none !important;
+            font-weight:700;
+            padding: 20px 20px 20px 59px;
+            text-decoration:none !important;
+            font-size:19px;
 
-                &:hover, &:focus
-                {
-                  background:rgba(0,0,0,0.05);
-                }
-
-                    &:after
-                            {
-                            font-family: FontAwesome;
-                            font-size:18px;
-                            content: "\f067";
-                            position:absolute;
-                            right:10px;
-                            color:$accordion-color;
-
-                            }    
-
-
-                  &.active{
-
-                   &:after
-                            {
-                            content: "\f068"; 
-                            }      
-
-             }
-          
-                               
-
-            }   
-          
-
-            div div {
-                padding:15px;
-
-                li{
-                    border:none;
-                }
-
+            &:hover, 
+            &:focus{
+                background:rgba(0,0,0,0.05);
             }
-         }
- 
 
-   
+            &:after {
+                font-family: FontAwesome;
+                font-size: 19px;
+                content: "\f067";
+                position: absolute;
+                right: auto;
+                left: 20px;
+                top:20px;
+                margin-top:0;
+                color: $base-link-color;
+                font-weight:400;
 
-     border-top:1px solid $accordion-border-color;
+                @media (max-width: 641px){
+                    font-size:16px;
+                    left: 10px;
+                    top:10px;
+                }
+            }    
+
+            &.active{
+                &:after{
+                    content: "\f068"; 
+                }      
+            }
+        }   
+
+        div{
+            padding:0 !important;
+        }
+
+        div.content-block{
+            padding:20px 20px 20px 60px !important;
+
+            @media (max-width: 641px){
+                padding: 10px 10px 10px 39px !important;
+            }
+        }
+    }
+
+    .list{
+        a{
+        text-decoration:none;
+        }
+    }
 }
