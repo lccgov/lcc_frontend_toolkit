@@ -29,6 +29,7 @@ ul.accordion {
 
             @media (max-width: 641px){
                 padding: 15px 15px 15px 35px;
+                font-size:16px;
             }
 
             &:hover, 
@@ -51,7 +52,7 @@ ul.accordion {
                 @media (max-width: 641px){
                     font-size:16px;
                     left: 10px;
-                    top:18px;
+                    top:16px;
                 }
             }    
 
