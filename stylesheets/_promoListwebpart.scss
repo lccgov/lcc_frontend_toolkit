@@ -162,14 +162,18 @@
      .three a span.info,
      .four a span.info,
      .quarter a span.info {
-         font-size: $base-font-size * 1.5;
-         padding: 20px 100px 20px 20px;
+         font-size:24px;
+         padding: 20px 80px 20px 20px;
+         font-weight:600;
+         line-height:30px;
      }
      .two a span.secondaryInfo,
      .three a span.secondaryInfo,
      .four a span.secondaryInfo,
      .quarter a span.secondaryInfo {
          font-size: $base-font-size;
+         font-weight:200;
+         margin-top:10px;
      }
      .four.heightTwo a {
          font-size: $base-font-size * 2.3;
@@ -177,6 +181,7 @@
      @media screen and (max-width: 1000px) {
          a span.info,
          li.four.heightTwo a span.info,
+         
          li.six a span.info {
              font-size: $base-font-size * 1.5;
          }
