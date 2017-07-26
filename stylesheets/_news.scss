@@ -158,6 +158,17 @@ ul.content{
 }
 
 
+
+.ms-promlink-headerNav {
+    		display:inline-flex;
+            float:none;
+            margin-bottom:20px;
+}
+
+.ms-promlink-button-inner{
+    display:none;
+}
+
 .pagingNav
 {
 	display:block;   
@@ -165,12 +176,9 @@ ul.content{
 	border-bottom:1px solid $news-pod-border-color;
 	text-align: center;
 
-	.ms-promlink-lcc-headerNav{
-		display:inline-flex;
-	}
 }
 
-.pageNumbers a, .ms-promlink-button
+.pageNumbers a, .ms-promlink-button, .pageNumbers strong
 {
     float: left;
     list-style: none;
@@ -195,10 +203,6 @@ ul.content{
 	}
 }
 
-
-		.pageNumbers .ms-promlink-button:first-of-type{
-	 border-left:none;
-	}
 
 
 
@@ -237,10 +241,11 @@ a.active_page {
     border-color: #666
 }
 
-.ms-promlink-button-disabled {
+.pageNumbers strong{
     background-color: #efefef;
     color: #999;
-    pointer-events: none
+    pointer-events: none;
+    border-left:none !important;
 }
 
 
