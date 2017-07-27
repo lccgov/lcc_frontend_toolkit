@@ -39,9 +39,9 @@ ul.cbs-List {
     .bold-small,
     .bold-xsmall,
     .part-title{
-        font-family: $font-secondary !important;
-        font-weight: $header-font-weight !important;
-        color:$base-font-color !important;
+        font-family: $font-secondary;
+        font-weight: $header-font-weight;
+        color:$base-font-color;
         padding:0;
         display:block;
     }
