@@ -39,13 +39,34 @@ ul.cbs-List {
     .bold-small,
     .bold-xsmall,
     .part-title{
-        font-family: $font-secondary;
-        font-weight: $header-font-weight;
-        color:$base-font-color;
+        font-family: $font-secondary !important;
+        font-weight: $header-font-weight !important;
+        color:$base-font-color !important;
         padding:0;
         display:block;
     }
 
+    h1,
+    h1.ms-rteElement-H2{
+        @extend .heading-xlarge;
+    }
+
+    h2,
+    h2.ms-rteElement-H2{
+        @extend .heading-large;
+    }
+
+    h3,
+    h3.ms-rteElement-H2{
+        @extend .heading-medium;
+    }
+
+    h4,
+    h4.ms-rteElement-H2{
+        @extend .heading-small;
+    }
+
+/*
     h1,
     h1.ms-rteElement-H2{
         font-size: 36px;
@@ -101,7 +122,7 @@ ul.cbs-List {
             line-height: 1.3157894737;
             margin-top: 30px;
         }
-    }
+    }*/
 
     p, 
     p.ms-rteElement-P {

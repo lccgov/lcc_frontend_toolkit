@@ -3,10 +3,6 @@ form{
     display:inline-block;
 }
 
-input[type=file]{
-    font-size:16px;
-}
-
 .form-group{
     display: inline-block;
     width: 100%;
@@ -15,6 +11,11 @@ input[type=file]{
 
     @media (max-width: 641px) {
         margin-bottom:20px;
+    }
+
+    input[type=file]{
+        font-size:16px;
+        border:0;
     }
 
     .btn{

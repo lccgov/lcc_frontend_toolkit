@@ -1,5 +1,11 @@
 //footer
 footer.main{
+    margin-top:50px;
+
+  @media (max-width: 641px){
+      margin-top:30px;
+  }
+
   .container-fluid{
       padding:0;
   }
