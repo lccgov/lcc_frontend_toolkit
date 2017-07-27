@@ -1,29 +1,3 @@
-//back-up styles for forms not marked up correctly
-.form-group{
-
-    label{
-        display:block;
-    }
-
-    input[type=password], input[type=text], input[type=file], select, input, textarea {
-        border:0;
-        padding:0;
-        width:auto;
-        max-width:100%;
-    }
-}
-
-input[type=password], input[type=text], input[type=file], select, input, textarea {
-    width:auto;
-    max-width:100%;
-
-    &:focus{
-        @extend .input-focus;
-        outline:0;
-    }
-}
-
-//style begin
 form{
     width:100%;
     display:inline-block;
@@ -124,6 +98,7 @@ textarea.form-control{
 
     &:focus{
         @extend .input-focus;
+        outline:0;
     }
 }
 
