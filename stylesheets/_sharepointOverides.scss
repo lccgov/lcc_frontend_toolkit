@@ -66,74 +66,9 @@ ul.cbs-List {
         @extend .heading-small;
     }
 
-/*
-    h1,
-    h1.ms-rteElement-H2{
-        font-size: 36px;
-        line-height: 1.15;
-        margin:30px 0;
-
-        @media (min-width: 641px) {
-            font-size: 50px;
-            line-height: 1.15;
-            margin:50px 0;
-        }
-    }
-
-    h2,
-    h2.ms-rteElement-H2{
-        font-size: 24px;
-        line-height: 1.25;
-        margin-top: 30px;
-        margin-bottom: 0.5em;
-
-        @media (min-width: 641px) {
-            font-size: 32px;
-            line-height: 1.25;
-            margin-top: 50px;
-            margin-bottom: 0.7em;
-        }
-    }
-
-    h3,
-    h3.ms-rteElement-H2{
-        font-size: 19px;
-        line-height: 1.2;
-        margin-top: 30px;
-        margin-bottom: 0.5em;
-
-        @media (min-width: 641px) {
-            font-size: 24px;
-            line-height: 1.25;
-            margin-top: 40px;
-            margin-bottom: 0.7em;
-        }
-    }
-
-    h4,
-    h4.ms-rteElement-H2{
-        font-size: 16px;
-        line-height: 1.25;
-        margin-top: 25px;
-        margin-bottom: 0.7em;
-
-        @media (min-width: 641px) {
-            font-size: 19px;
-            line-height: 1.3157894737;
-            margin-top: 30px;
-        }
-    }*/
-
     p, 
     p.ms-rteElement-P {
-        margin-top: 0.3125em;
-        margin-bottom: 1.25em;
-        line-height:1.4;
-
-        @media (min-width: 641px) {
-            margin-top: 0.2631578947em;
-            margin-bottom: 1.0526315789em;
-        }
+        @extend .paragraph;
     }
 }
 
