@@ -68,7 +68,7 @@ ul.cbs-List {
 
     p, 
     p.ms-rteElement-P {
-        @extend .paragraph;
+        @extend .paragraph !optional;
     }
 }
 
