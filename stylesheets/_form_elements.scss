@@ -318,3 +318,13 @@ form{
   padding-top: 4px;
   padding-bottom: 0; 
 }
+
+//button input fix
+.form-group{
+    input.btn.btn-primary{
+        @extend .btn;
+        @extend .btn-primary;
+        width: auto;
+        max-width: 100%;
+    }
+}
