@@ -52,17 +52,29 @@ ul.cbs-List {
     }
 
     h2,
-    h2.ms-rteElement-H2{
+    h2.ms-rteElement-H2,
+    h1.heading-large,
+    h2.heading-large,
+    h3.heading-large,
+    h4.heading-large{
         @extend .heading-large;
     }
 
     h3,
-    h3.ms-rteElement-H2{
+    h3.ms-rteElement-H2
+    h1.heading-medium,
+    h2.heading-medium,
+    h3.medium-heading,
+    h4.medium-heading{
         @extend .heading-medium;
     }
 
     h4,
-    h4.ms-rteElement-H2{
+    h4.ms-rteElement-H2,
+    h1.heading-small,
+    h2.heading-small,
+    h3.medium-small,
+    h4.medium-small{
         @extend .heading-small;
     }
 
