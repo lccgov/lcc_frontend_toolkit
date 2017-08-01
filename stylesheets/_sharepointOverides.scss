@@ -84,25 +84,6 @@ ul.cbs-List {
     }
 }
 
-//lists
-.sectionOne .col-md-8 ul.list{
-    @extend .list;
-    list-style:none;
-}
-
-.sectionOne .col-md-8 ul{
-    @extend .list;
-    @extend .list-bullet;
-    list-style-type: disc;
-    width:auto;
-}
-
-.sectionOne .col-md-8 ol{
-    @extend .list;
-    @extend .list-number;
-    list-style-type: disc;
-}
-
 input[type=button], 
 input[type=reset], 
 input[type=submit], 
