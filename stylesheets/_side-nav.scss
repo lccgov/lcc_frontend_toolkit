@@ -1,10 +1,11 @@
-nav:first-of-type .sideNav {
-    /*border-top:10px solid $border-color;*/
+nav:first-of-type .sideNav,
+nav:first-of-type .relatedPages{
     padding:10px 0 0;
     margin-top:50px;
 }
 
-.sideNav{
+.sideNav,
+.relatedPages{
     margin-top:30px;
     padding:10px 0 0;
 
