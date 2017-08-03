@@ -1,5 +1,5 @@
 .btn{
-    font-weight:600;
+    font-weight:400;
     font-size:19px;
     border:0;
     @include border-radius(4px);
@@ -28,8 +28,9 @@
     }
 
     &:focus{
-        background:$yellow;
+        background:$focus-color;
         color:$black;
+        border-color:$focus-color !important;
     }
 
     &.btn-arrow{
@@ -146,4 +147,14 @@
         background: rgba(0, 0, 0, 0.05);
     }
 
+}
+
+.btn[rel=external] {
+    @extend .btn-arrow;
+    margin: 0 0 20px;
+
+    &:after{
+        content: "\f08e";
+        width: 41px;
+    }
 }

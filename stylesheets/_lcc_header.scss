@@ -4,10 +4,10 @@
         width: auto;
         background: none;
         display:inline-block;
-        margin:10px 0;
+        margin:11px 0;
         text-decoration:none;
         border:0;
-        font-size:36px;
+        font-size:34px;
         text-transform:uppercase;
         font-weight:600;
         color: #fff;
@@ -15,9 +15,9 @@
         font-family:$font-secondary;
 
         @media (max-width: 767px) {
-            font-size:26px;
+            font-size:22px;
             line-height:1.2;
-            margin:9px 0;
+            margin:12px 0;
         }
 
         &:after{
@@ -157,6 +157,7 @@
     .ms-srch-sb-searchLink{
         margin: 0 !important;
         padding:0 15px;
+        line-height: 45px;
 
         &:before{
             font-size:34px;

@@ -263,6 +263,10 @@ p.sharepoint,
   &.header{
     margin-bottom:50px;
   }
+
+  a[rel="external"] {
+      margin-right: 32px;
+  }
 }
 
 //text-wrapper for usability reasons (recommeneded max 75 characters)
@@ -523,4 +527,38 @@ blockquote {
     margin-bottom:0;
   }
 
+}
+
+//element spacing
+ul + .text-highlight{
+    margin-top:6px;
+}
+
+ul + .heading-large{
+    margin-top:26px;
+    @media (max-width: 641px){
+        margin-top:6px;
+    }
+}
+
+ul + .heading-medium{
+    margin-top:16px;
+    @media (max-width: 641px){
+        margin-top:6px;
+    }
+}
+
+ul + .heading-small{
+    margin-top:6px;
+    @media (max-width: 641px){
+        margin-top:1px;
+    }
+}
+
+ul + p{
+    margin-top:0;
+}
+
+.text-highlight + p{
+    margin-top:0;
 }

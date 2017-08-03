@@ -7,6 +7,10 @@
     margin-top:50px;
     margin-bottom:-50px; //this negative margin cancels out the footers margin top so leaving no gap
 
+    @media (max-width: 1300px){
+        padding: 10px 0 16px;
+    }
+
     @media (max-width: 641px) {
         margin-top:30px;
         margin-bottom:-30px; //this negative margin cancels out the footers margin top so leaving no gap
@@ -19,12 +23,20 @@
         font-weight:800;
         line-height:1em;
         padding:10px 0;
+
+        @media (max-width: 641px){
+            font-size:19px;
+        }
     }
 
     ul{
         float:right;
         padding:5px 0;
         margin:0;
+
+        @media (max-width: 1300px){
+            float: none;
+        }
 
         li{
             float:left;
@@ -35,6 +47,14 @@
             text-align:center;
             padding:0;
             margin:0 4px 4px 0;
+
+            @media (max-width: 641px){
+                font-size:16px;
+            }
+
+            :last-of-type a{
+                width:74px;
+            }
 
             a{
                 padding:5px 0;
@@ -90,7 +110,9 @@
     }
 }
 
-#DeltaPlaceHolderMain .atoz{
-    margin-top: 0;
-    margin-bottom: 0;
+#atozListResultsTop,
+#DeltaPlaceHolderMain {
+    .atoz{
+        margin:0;
+    }
 }
