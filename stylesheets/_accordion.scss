@@ -61,6 +61,10 @@ ul.accordion {
                     content: "\f068"; 
                 }      
             }
+
+            &:visited{ 
+                color: $base-link-color;
+            }
         }   
 
         div{
