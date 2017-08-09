@@ -54,7 +54,7 @@
     }
 }
 
- a {
+ a, a[rel=external] {
     display:block;
     margin: 2px 0 0;
     padding: 15px;
