@@ -1165,3 +1165,22 @@ table.styledTable  td{
  
 /* End generic Table styling ------------------------------------------------------------------ */ 
 
+//third columns for summary links
+.column-thirds .column-third{
+    @media (min-width: 1200px) {
+        &:nth-child(4){
+            clear:left;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+        width:50%;
+
+        &:nth-child(3),
+        &:nth-child(5){
+            clear:left;
+        }
+    }
+    @media (max-width: 767px) {
+        clear:none;
+    }
+}

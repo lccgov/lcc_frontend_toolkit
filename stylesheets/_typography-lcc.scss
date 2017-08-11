@@ -297,6 +297,9 @@ p.sharepoint,
     margin: 30px 0;
   }
 
+  h2,
+  h3,
+  h4,
   p:first-of-type{
     margin-top:0;
   }
@@ -560,5 +563,39 @@ ul + p{
 }
 
 .text-highlight + p{
+    margin-top:0;
+}
+
+.btn + h2,
+.btn + h3,
+.btn + .heading-medium,
+.btn + .heading-small{
+    margin-top:30px;
+
+    @media (max-width: 641px) {
+        margin-top:15px;
+    }
+}
+
+//contact
+.list-nav .contact{
+    i{
+        margin-right:10px;
+    }
+}
+
+.contact{
+    font-size:21px;
+
+    @media (max-width: 641px) {
+        font-size:19px;
+    }
+
+    i{
+        margin-right:10px;
+    }
+}
+
+.sub-section a + p.contact{
     margin-top:0;
 }

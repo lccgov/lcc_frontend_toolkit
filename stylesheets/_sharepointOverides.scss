@@ -249,7 +249,64 @@ h3.ms-srch-ellipsis {
    }
 }
 
+h1.ms-dlg-heading{
+    margin:0;
+}
 
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.list-nav{
+    list-style:none;
+    padding-left:0;
+}
+
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField .groupPromo ul{
+    padding:0;
+}
+
+.column-third,
+.col-md-8 .col-sm-6{
+    .dfwp-column {
+        float: none;
+        padding-left:0;
+    }
+}
+
+//fix for summary links groupPromo editing menu
+.groupPromo ul li {
+    position:relative;
+}
+
+.groupPromo ul li .slm-edit-ecb{
+    position:absolute;
+    left:0;
+    z-index:2;
+}
+
+.groupPromo ul li .slm-edit-ecb{
+
+    a{
+        padding:0;
+
+        span img{
+            width: auto;
+            max-width: 40px;
+            margin-bottom: 0;
+        }
+    }
+    .ms-core-menu-box{    
+        left:0 !important;
+        
+        ul li{
+            width: auto !important;
+            margin: 2px;
+        }
+    }
+}
+
+.slm-layout-main table td, 
+.slm-layout-main table th{
+    padding:0;
+    border:0;
+}
 
 // END OOTB SEARCH WEBPART OVERIDES
 
