@@ -227,7 +227,19 @@ h4{
     margin-bottom: 20px;
   }
 
-}   
+} 
+
+.part-content{
+    @extend .text;
+
+    .part-title {
+        @extend .heading-large;
+    }
+
+    h2{
+        @extend .heading-medium;
+    }
+}  
 
 .paragraph,
 p,
@@ -570,10 +582,10 @@ ul + p{
 .btn + h3,
 .btn + .heading-medium,
 .btn + .heading-small{
-    margin-top:30px;
+    margin-top:50px;
 
     @media (max-width: 641px) {
-        margin-top:15px;
+        margin-top:30px;
     }
 }
 
@@ -598,4 +610,18 @@ ul + p{
 
 .sub-section a + p.contact{
     margin-top:0;
+}
+
+h2 + h3{
+    margin-top:0;
+}
+
+.text-highlight {
+    p + ul{
+        margin-top:15px;
+    }
+}
+
+p + .panel{
+    margin:50px 0;
 }

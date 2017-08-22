@@ -86,15 +86,24 @@
                     width: auto;
 
                     
-                img {
-                    width: 100%;
-                    max-width: 100%;
-                    margin-bottom: 15px;
-                }
+                    img {
+                        width: 100%;
+                        max-width: 100%;
+                        margin-bottom: 15px;
+                    }
 
                     &:hover,
                     &:active {
                         background:darken($group-promo-background-color,5%);
+                    }
+
+                    &:active,
+                    &:focus{
+                        h3,
+                        h3:after,
+                        p{
+                            color:$base-font-color !important;
+                        }
                     }
 
                     @media (max-width: 767px) {
