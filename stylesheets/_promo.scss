@@ -73,3 +73,30 @@ a{
 }
 }
 
+.two,
+.three,
+.four{
+    .listWebpart{
+        ul{
+            @include flexbox();
+            @include flex-wrap(wrap);
+            margin: 0 0 0 -2%;
+
+            @media (max-width: 600px) {
+                margin:0;
+            }
+
+            .promo{
+                @include flexbox();
+                @include align-items(stretch);
+                margin:0 0 2% 2%;
+
+                @media (max-width: 600px) {
+                    margin:0 0 15px;
+                    width:100% !important;
+                }
+                
+            }
+        }
+    }
+}
