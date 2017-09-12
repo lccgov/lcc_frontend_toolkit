@@ -114,3 +114,31 @@
         }
     }
 }
+
+//mixins
+@mixin alert-custom($alert-custom-color,$alert-custom-background){
+    &.alert {
+        color:$alert-custom-color;
+        background:$alert-custom-background;
+
+        h1, h2, h3, h4, p {
+            color:$alert-custom-color;
+        }
+
+        a{
+            color:$alert-custom-color;
+
+            &:hover{
+                color:lighten($alert-custom-color,10%);
+            }
+        }
+
+        .close{
+            color:$alert-custom-color;
+
+            &:hover{
+                color:lighten($alert-custom-color,10%);
+            }
+        }
+    }
+}
