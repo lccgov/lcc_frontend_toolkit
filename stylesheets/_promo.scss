@@ -45,7 +45,7 @@ a{
             font-family: FontAwesome;
             position: absolute;
             font-weight: normal;
-            bottom: -40px;
+            bottom: 17px;
             right: 0px;
             height: 25px;
             width: 25px;
@@ -60,17 +60,23 @@ a{
 &:hover span{
     width:100%;
     padding: 15px 15px 40px 15px;
-
-       
-    &:after{
-    
-            bottom:10px;
-            right: 0px;
-
-    }
 }
 
 }
+}
+
+
+
+.two .listWebpart ul .promo {
+    width: 48%!important
+}
+
+.three .listWebpart ul .promo {
+    width: 31.33%!important
+}
+
+.four .listWebpart ul .promo {
+    width: 23%!important
 }
 
 .two,
