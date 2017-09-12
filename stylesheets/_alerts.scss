@@ -140,5 +140,16 @@
                 color:lighten($alert-custom-color,10%);
             }
         }
+
+        .btn-default{
+            border-color:$alert-custom-color;
+            color:$alert-custom-color;
+            
+            &:hover{
+                background:rgba(0,0,0,0.1);
+                border-color:$alert-custom-color;
+                color:$alert-custom-color;
+            }
+        }
     }
 }
