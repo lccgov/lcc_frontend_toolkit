@@ -55,6 +55,10 @@
 
         &:hover{
             color:lighten(#212224,10%);
+            
+            span{
+                background:transparent;
+            }
         }
 
         &:focus span{
@@ -138,6 +142,7 @@
 
             &:hover{
                 color:lighten($alert-custom-color,10%);
+                background:transparent;
             }
         }
 
