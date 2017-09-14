@@ -1712,12 +1712,17 @@ table.basicTable  td {
     border-radius: 0px;
 }
 
-.panel {
-    margin-bottom:0px;
+.panel-group .panel {
+    margin:0px;
+    padding:0px;
     background-color: transparent;
     border: none;
     border-radius: 0px;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+
+    a{
+        text-decoration: none;
+    }
 }
 
 .panel-group
@@ -1770,7 +1775,7 @@ table.basicTable  td {
 
 }
 
-.panel-default  {
+.panel-default.panel  {
     border-bottom: 1px solid #D0DCE8;
 }
 /* End Bootstrap accordion overides */
