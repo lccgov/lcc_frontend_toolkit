@@ -23,7 +23,7 @@
  a {
       
    
-      
+      text-decoration:none;
       display:block;
      
      span{
@@ -37,7 +37,7 @@
         border: 0;
      }
 
-    &.facebook:after, &.twitter:after, &.youtube:after, &.email:after, &.instagram:after
+    &.facebook:after, &.twitter:after, &.youtube:after, &.email:after, &.instagram:after, &flickr:after
     {
     font-family: FontAwesome;
     font-size:25px;
@@ -83,6 +83,12 @@
        &.email a:after {
     content: "\f0e0";
   
+
+  
+       &.flickr a:after {
+    content: "\f16e";
+  
+ }
  }
 }
 }
