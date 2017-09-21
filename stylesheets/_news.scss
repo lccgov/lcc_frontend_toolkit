@@ -27,7 +27,8 @@ a.button{
     border:none;
     margin-top:0px;
     float:left;
-    padding:14px;
+    padding:12px;
+    text-decoration:none;
 
     &:hover{
         background:darken($news-button-background, 20%);
