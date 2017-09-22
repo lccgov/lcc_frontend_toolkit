@@ -76,16 +76,16 @@
  }
 
 
-       &.instagram a:after {
+       &.instagram:after {
     content: "\f16d"; 
  }
 
-       &.email a:after {
+       &.email:after {
     content: "\f0e0";
   
  }
   
-       &.flickr a:after {
+       &.flickr:after {
     content: "\f16e";
   
  }
