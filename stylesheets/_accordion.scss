@@ -26,15 +26,24 @@ ul.accordion {
             padding: 20px 20px 20px 60px;
             text-decoration:none !important;
             font-size:19px;
+            color: $base-link-color;
 
             @media (max-width: 641px){
                 padding: 15px 15px 15px 35px;
                 font-size:16px;
             }
 
-            &:hover, 
-            &:focus{
+            &:hover{
                 background:rgba(0,0,0,0.05);
+                color: $base-link-color;
+            }
+
+            &:focus{
+                color: $base-font-color !important;
+
+                &:after{
+                    color: $base-font-color !important;
+                }
             }
 
             &:after {
@@ -89,6 +98,18 @@ ul.accordion {
 
 ul.accordion div.text-block {
     padding: 0 20px !important;
+}
+
+ul.accordion div.text-highlight {
+    padding: 20px !important;
+}
+
+ul.accordion li div.content-block div:last-of-type {
+    padding-bottom:30px !important;
+}
+
+ul.accordion li div.content-block div + .btn {
+    margin-right:20px;
 }
 
 ul.accordion div.text-highlight {

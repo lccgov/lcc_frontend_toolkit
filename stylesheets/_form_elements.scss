@@ -146,6 +146,22 @@ textarea.form-control{
     }
 }
 
+.label-small{
+    .block-label {
+        padding: 8px 15px 8px 38px;
+        font-size:16px;
+    }
+
+    .block-label {
+        input {
+            top: 9px;
+            left: 10px;
+            width: 21px;
+            height: 21px;
+        }
+    }
+}
+
 //input sizes
 .form-control-3-4 {
     width: 100% !important;
@@ -327,4 +343,18 @@ form{
         width: auto;
         max-width: 100%;
     }
+}
+
+.form-group{
+    .panel{
+        .form-date{
+            margin-bottom:30px;
+            display:inline-block;
+            width:100%;
+        }
+    }
+}
+
+.form-label-header{
+    margin:0 0 10px;
 }

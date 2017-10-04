@@ -147,7 +147,7 @@
                                     top: 50%;
                                     right: 15px;
                                     margin-top:-10px;
-                                    font-size:34px;
+                                    font-size:16px;
                                 }
                             }
                     }
@@ -161,9 +161,12 @@
                         margin-bottom:0;
                         color:$group-promo-description-color;
 
+                        @media (max-width: 767px){
+                            font-size: 14px;
+                        }
+
                         @media (max-width: 600px) {
                             padding-right:30px;
-                            font-size:16px;
                             margin-top: 5px;
                         }
                     }
@@ -172,6 +175,42 @@
                    &.external a h3:after {
                         content:'\f08e';
                     }
+
+            //External and PDF link
+            a[rel="external"],
+            a.external,
+            a[rel="pdf"],
+            a.pdf{
+                &:after{
+                    display:none;
+                }
+
+                h3{
+                    &:after{
+                        color:$group-promo-arrow-color;
+                    }
+                }
+            }
+
+            //External link
+            a[rel="external"],
+            a.external{
+                h3{
+                    &:after{
+                        content: "\f08e";
+                    }
+                }
+            }
+
+            //PDF link
+            a[rel="pdf"],
+            a.pdf{
+                h3{
+                    &:after{
+                        content: "\f1c1";
+                    }
+                }
+            }
             }
         }
     }

@@ -241,6 +241,13 @@ h4{
     }
 }  
 
+.section-title{
+    display:block;
+    font-size:24px;
+    color:$secondary-font-color;
+    font-weight:400;
+}
+
 .paragraph,
 p,
 p.sharepoint,
@@ -259,6 +266,10 @@ p.sharepoint,
 .hidden-text{
   .panel{
     margin-top:10px;
+  }
+
+  a.reveal{
+    @extend .border-link;
   }
 }
 
@@ -481,13 +492,10 @@ ol {
 
   li{
     margin-bottom: 10px;
+    line-height:1.7;
 
     a{
-      text-decoration:none;
-
-      &:hover{
-        text-decoration:underline;
-      }
+      @extend .border-link;
     }
   }
 }
@@ -525,6 +533,10 @@ blockquote {
   border-radius:0;
   border:0;
   margin:30px 0;
+
+  &.top{
+    margin-top:0;
+  }
 
   &.panel-border{
     background:white;
@@ -640,4 +652,8 @@ p + .panel{
   @media (max-width: 641px) {
         margin-top:30px;
     }
+}
+
+.more{
+    font-weight:700;
 }

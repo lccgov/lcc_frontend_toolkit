@@ -4,16 +4,10 @@
     padding:10px 0 6px;
     width:100%;
     text-transform:uppercase;
-    margin-top:50px;
-    margin-bottom:-50px; //this negative margin cancels out the footers margin top so leaving no gap
+    margin-top:30px;
 
     @media (max-width: 1300px){
         padding: 10px 0 16px;
-    }
-
-    @media (max-width: 641px) {
-        margin-top:30px;
-        margin-bottom:-30px; //this negative margin cancels out the footers margin top so leaving no gap
     }
 
     .atoz__header{
@@ -53,7 +47,7 @@
             }
 
             &:last-of-type a{
-                width:74px;
+                width:60px;
             }
 
             a{
@@ -61,7 +55,7 @@
                 border:0;
                 text-decoration:none;
                 border:1px solid white;
-                width:35px;
+                width:30px;
                 display:inline-block;
                 background:white;
 
@@ -81,7 +75,7 @@
             &.inactive{
                 padding:5px 0;
                 color:#9DA5B2;
-                width:35px;
+                width:30px;
                 display:inline-block;
                 border:1px solid white;
                 background:#F6F7FA;

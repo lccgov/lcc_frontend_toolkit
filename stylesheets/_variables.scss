@@ -173,6 +173,19 @@ $group-promo-arrow-color: #9DA5B2  !default;
     }
 }
 
+.border-link{
+    border-bottom:1px solid rgba($base-link-color,0.3);
+    text-decoration:none !important;
+
+    &:hover{
+        border-color:rgba($base-link-hover-color,0.3) !important;
+    }
+
+    &:visited{
+        border-color:rgba($base-link-visited-color,0.3);
+    }
+}
+
 @mixin column-count($val) {
     -webkit-column-count: $val;
     -moz-column-count: $val;
