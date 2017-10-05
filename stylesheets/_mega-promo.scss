@@ -9,6 +9,7 @@
         @include flexbox();
         @include align-items(stretch);
         margin-bottom:15px;
+        width:100%;
 
 
              &.external a:after {
@@ -30,7 +31,9 @@
 
             &:focus{
                 .mega-promo__header,
-                .mega-promo__secondary{
+                .mega-promo__secondary,
+                &.external a:after,
+                &:after{
                     color:#333 !important;
                 }
             }
