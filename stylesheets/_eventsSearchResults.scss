@@ -1,0 +1,72 @@
+.eventSearchResults{
+    h2{
+        margin-top:0;
+    }
+    .eventSearchResultsList{
+        .eventListOnly{
+            ul.content{
+                padding:0;
+
+                li{
+                    margin-bottom:5px;
+                    a{
+                        text-decoration:none;
+                        background:$lighter-grey;
+                        display:inline-block;
+                        width:100%;
+                        padding:30px;
+
+                        .eventsContentPod{
+                            .eventsContentPodWrapper{
+                                h3{
+                                    position: relative;
+                                    margin:0 0 3px;
+                                    color:$base-link-color;
+                                    padding-right:25px;
+
+                                    &:after{
+                                        content: '\f105';
+                                        font-family: FontAwesome;
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        color: #9da5b2;
+                                    }
+                                }
+                                .dateFull{
+                                    .dateTime{
+                                        color:$base-font-color;
+                                    }
+                                }
+                                p{
+                                    @extend .font-xsmall;
+                                    margin-bottom:0;
+                                    color:$secondary-font-color;
+                        
+                                    strong{
+                                        font-weight:normal;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover{
+                            .eventsContentPod{
+                                .eventsContentPodWrapper{
+                                    h3{
+                                        color:$base-link-hover-color;
+                                        text-decoration:underline;
+
+                                        &:after{
+                                            color:$base-link-hover-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

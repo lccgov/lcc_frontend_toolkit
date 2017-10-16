@@ -162,6 +162,12 @@ textarea.form-control{
     }
 }
 
+.block-label.inline{
+    clear: both;
+    display: inline-block;
+    float: none;
+}
+
 //input sizes
 .form-control-3-4 {
     width: 100% !important;
@@ -335,6 +341,20 @@ form{
   padding-bottom: 0; 
 }
 
+.error-message-wrapper{
+    border: 2px solid #cc0000;
+    padding: 10px;
+    margin: 10px 0;
+
+    .error-message{
+        font-size: 14px;
+
+        @media (min-width: 641px){
+            font-size: 16px;
+        }
+    }
+}
+
 //button input fix
 .form-group{
     input.btn.btn-primary{
@@ -357,4 +377,13 @@ form{
 
 .form-label-header{
     margin:0 0 10px;
+}
+
+.scopeNote{
+    @extend .font-xsmall;
+}
+
+.form-group-off,
+.form-control-off{
+    @extend .sr-only;
 }
