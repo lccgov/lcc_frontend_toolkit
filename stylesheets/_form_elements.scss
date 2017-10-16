@@ -382,8 +382,3 @@ form{
 .scopeNote{
     @extend .font-xsmall;
 }
-
-.form-group-off,
-.form-control-off{
-    @extend .sr-only;
-}
