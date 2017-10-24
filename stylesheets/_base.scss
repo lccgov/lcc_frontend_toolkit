@@ -76,36 +76,35 @@ BACK TO THE TOP
 
 
 /*link styles*/
-
 a[rel]:after{
-        font-family: FontAwesome;
-        padding:0 5px;
+    font-family: FontAwesome;
+    padding:0 5px;
 }
 
-
-a[rel="xl"]:after {
+a[rel="xl"]:after,
+a[rel="xsl"]:after,
+a[rel="xslx"]:after {
       content: "\f1c3"; 
-
-
 }
 
 a[rel="pdf"]:after {
     content: "\f1c1";
-
 }
 
-a[rel="doc"]:after {
+a[rel="doc"]:after,
+a[rel="docx"]:after {
   content: "\f1c2"; 
 }
 
-a[rel="pp"]:after {
+a[rel="pp"]:after,
+a[rel="pt"]:after {
   content: "\f1c4"; 
-
 }
 
 a[rel="external"]:after {
     content: "\f08e"; 
 }
+
 // space for the top of  pagelayouts
 .spacer
 {
