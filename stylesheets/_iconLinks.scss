@@ -37,6 +37,7 @@
   -webkit-transition: -webkit-transform 0.8s ease-in-out;
   transition: transform 0.8s ease-in-out;
   overflow: hidden;
+  text-decoration:none;
 
      &:hover {
   -webkit-transform: rotate(360deg);

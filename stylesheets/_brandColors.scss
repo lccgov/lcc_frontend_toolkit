@@ -2,7 +2,6 @@
 /*********************************************
 Base.sass variables
 *********************************************/
-
 body{
   font-size:$base-font-size;
   font-family:$font-primary;
@@ -84,6 +83,50 @@ body{
 /*********************************************
  End Base.sass variables
 *********************************************/
+/*********************************************
+globhalSearch.sass variables
+*********************************************/
+
+@media (max-width: $responsiveMenuWidth){
+
+    
+    #nav-search{
+    
+        position:absolute;
+        top:62px;
+        left:0px;
+        background:#bdc3c7;
+        padding:20px;
+        margin:0px;
+        height:auto;
+        width:100%;
+        z-index: 10;
+        display:none;
+
+         &.active{
+        display:block;
+    
+         }
+
+       .input-group{
+        margin:0 !important;
+        width:100%;
+        }
+
+        .ms-srch-sb>input
+{
+
+    min-width: 100% !important;
+    margin:0px !important;
+	
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink {
+    height: 100%;   
+    min-height:100%;
+}
+    }
+}
 
 
 /*********************************************
@@ -191,6 +234,7 @@ ul.menu{
 
     a {
      color:$menu-link-color;    
+     text-decoration:none;
 
     &:hover, &:focus
     {
@@ -235,6 +279,123 @@ ul.menu{
 
     }
 }
+}
+
+
+
+@media (max-width:$responsiveMenuWidth){
+
+    ul.menu li a.main-menu,
+    ul.menu li a.search{
+        display:block !important;
+        text-decoration:none;
+   }
+
+
+    .main-nav {
+        position:absolute;
+        left:-$responsiveMenuWidth;
+        top:0px;
+        z-index:10;
+        min-height:640px;
+        width:100%;
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        -o-transition:all ease .5s;
+        transition: all ease .5s;
+        
+        .container-fluid
+        {
+            padding:20px;
+        }
+    
+    
+    &.active{
+        left:0px;
+    
+    }
+ 
+    
+  .container-fluid ul li {
+
+    border-top: 1px solid rgba(0,0,0, 0.2);
+    margin:0px;
+    padding-top:0 !important;
+    width:100%;
+
+    a{
+          width:100%; 
+          background:none;
+            &:hover, &:focus
+                {
+                    background: rgba(0,0,0, 0.2);
+                }
+            &.selected {
+                background:none;
+                color:#fff;
+            } 
+                
+    }
+    
+
+       ul {
+       display:block;
+       position:relative;
+       width:100%; 
+       margin-left:0px;
+       background:none;
+       float:left;
+       padding:0px 0 10px 0;
+       border:none;
+
+       li {
+           border:none;
+           float:left;
+            
+            a{
+                font-size: 16px;
+                background:none;
+                padding:5px 20px;
+                color:#fff;
+
+        
+            }
+       }
+
+       &.active{
+           display:block;
+       }
+        
+   }  
+
+    }
+
+
+
+    }
+    
+}
+
+
+@media (max-width: $responsiveMenuWidth){
+    
+
+ .main-nav .ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item{
+      margin-left:0px;
+  } 
+    
+    .menu-horizontal {
+        width: 100%;
+    }
+
+    .ms-core-listMenu-horizontalBox, .ms-core-listMenu-horizontalBox ul {
+    display:block;
+    }
+    
+    .ms-core-listMenu-horizontalBox li.static, .ms-core-listMenu-horizontalBox  a.static, .ms-core-listMenu-horizontalBox span.static {
+        width: 100%;
+    }
+    
 }
 
 
