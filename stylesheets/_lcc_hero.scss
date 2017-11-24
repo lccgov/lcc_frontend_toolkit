@@ -47,6 +47,10 @@
                         margin:0 0 5px;
                     }
 
+                    @media (max-width: 330px) {
+                        font-size:28px;
+                    }
+
                     span{
                         display:block;
                         font-size:24px;
