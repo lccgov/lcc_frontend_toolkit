@@ -1,25 +1,18 @@
+// custom for leeds.gov.uk
 .hero-lcc-wrapper{
     background-image: none;
     background-color:rgba(9,59,81,1);
     background-repeat: no-repeat;
     background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    @include background-size(cover);
     z-index:-2;
-    margin-top:-65px;
 
     @media (min-width: 767px) {
-        height:70vh;
+        height:75vh;
     }
 
     .hero-lcc{
-        background: rgba(9,59,81,0.5);
-        background: -webkit-radial-gradient(rgba(9,59,81,0.8), rgba(9,59,81,0)); /* For Safari 5.1 to 6.0 */
-        background: -o-radial-gradient(rgba(9,59,81,0.8), rgba(9,59,81,0)); /* For Opera 11.1 to 12.0 */
-        background: -moz-radial-gradient(rgba(9,59,81,0.8), rgba(9,59,81,0)); /* For Firefox 3.6 to 15 */
-        background: radial-gradient(rgba(9,59,81,0.8), rgba(9,59,81,0)); /* Standard syntax */
+        @include background-radial(rgba(9,59,81,0.9),rgba(9,59,81,0.3),rgba(9,59,81,0.5));
         z-index:-1;
         height:100%;
         @include flexbox();
@@ -27,17 +20,13 @@
         @include align-items(center);
 
         @media (max-width: 767px) {
-            padding:145px 0 80px 0;
-        }
-
-        @media (max-width: 500px) {
-            padding:115px 0 50px 0;
+            padding:80px 0;
+            @include background-radial(rgba(9,59,81,0.9),rgba(9,59,81,0.5),rgba(9,59,81,0.7));
         }
     
         .hero-lcc__content{
             max-width:900px;
             width:100%;
-            margin:0 auto;
             padding:15px;
 
             @media (max-width: 500px) {
@@ -56,6 +45,10 @@
                     @media (max-width: 500px) {
                         font-size:36px;
                         margin:0 0 5px;
+                    }
+
+                    @media (max-width: 330px){
+                        font-size: 28px;
                     }
 
                     span{
@@ -96,6 +89,7 @@
                         margin:0 0 5px;
                     }
 
+                    //bootstrap style
                     .hero-lcc__search{
                         position:relative;
 
@@ -118,13 +112,27 @@
 
                         .hero-lcc__search-input{
                             height:45px;
+                            -webkit-border-radius:4px 0 0 4px;
+                            -moz-border-radius:4px 0 0 4px;
+                            -ms-border-radius:4px 0 0 4px;
                             border-radius:4px 0 0 4px;
                             font-size:16px;
+                            width:100% !important;
+                            border:0 !important;
+                            padding: 6px 12px !important;
 
                             @media (min-width: 767px) {
-                                padding-left:60px;
-                                font-size:20px;
+                                padding-left:60px !important;
+                                font-size:20px !important;
                                 height:55px;
+                            }
+
+                            @media (max-width: 350px) {
+                                font-size:14px;
+                            }
+
+                            &:focus{
+                                @extend .input-focus;
                             }
                         }
 
@@ -132,13 +140,19 @@
                             height:55px;
                             border:0;
                             padding:10px 25px;
-                            background:$green;
+                            background:$primary-button-background-color;
                             font-size:21px;
                             margin:0;
+                            line-height:1.2;
 
                             &:hover{
-                                background:darken($green,5%);
+                                background:$button-hover-color;
                                 color:$white;
+                            }
+
+                            &:active{
+                                background:darken($button-color,5%) !important;
+                                color:#fff !important;
                             }
 
                             @media (max-width: 766px) {
@@ -183,6 +197,7 @@
                     @include flex-wrap(wrap);
                     margin:0 0 0 -10px;
 
+
                     .hero-lcc__most-popular-item{
                         @include flexbox();
                         @include flex(1 1 auto);
@@ -196,20 +211,41 @@
                             text-align:left;
                             margin:0;
                             font-size:16px;
-                            padding:10px 100px 10px 10px;
+                            padding:12px 100px 12px 12px;
                             font-weight:400;
                             background:$blue;
                             border:0;
                             margin:0;
-                            line-height:1.1;
+                            line-height:1.2;
                             @include flexbox();
                             @include justify-content(center);
                             @include flex-direction(column);
+                            border-bottom:2px solid darken($secondary-button-background-color,5%);
 
 
                             &:hover{
-                                background:darken($blue,5%);
+                                background:$base-link-hover-color;
                                 color:$white;
+                                border-color:$base-link-hover-color;
+                            }
+
+                            &:active{
+                                background:darken($base-link-color,10%) !important;
+                                color:#fff !important;
+                                border-color:darken($base-link-color,10%) !important;
+
+                                &:before{
+                                    background:darken($base-link-color,10%) !important;
+                                    box-shadow:none;
+                                }
+                            }
+
+                            &:focus{
+                                border:0;
+                                
+                                &:before{
+                                    background:$focus-color;
+                                }
                             }
 
                             &:after,
@@ -220,6 +256,18 @@
                                 @media (max-width: 767px) {
                                     width: 45px;
                                 }
+                            }
+
+                            &:before{
+                                background-color:$light-blue;
+                                -webkit-border-radius:0 4px 4px 0;
+                                -moz-border-radius:0 4px 4px 0;
+                                -ms-border-radius:0 4px 4px 0;
+                                border-radius:0 4px 4px 0;
+                            }
+
+                            &:after{
+                                z-index:5;
                             }
 
                             @media (min-width: 767px) {
@@ -242,6 +290,71 @@
                         padding-bottom:5px;
                     }
                 }
+                }
+            }
+        }
+    }
+}
+
+//no flexbox fallback
+.no-flexbox .hero-lcc-wrapper{
+    .hero-lcc{   
+        display:table;
+        width:100%;
+        background:rgba(9,59,81,0.7);
+
+        .hero-lcc__content{
+            margin:0 auto;
+            display: table-cell;
+	        vertical-align: middle;
+            padding:0 15em;
+
+            @media (max-width: 1400px) {
+                padding:0 10em;
+            }
+
+            @media (max-width: 1200px) {
+                padding:0 5em;
+            }
+
+            @media (max-width: 990px) {
+                padding:0;
+            }
+
+            .hero-lcc__actions{
+                .hero-lcc__most-popular{
+                    width:100%;
+                    display:table;
+
+                    .hero-lcc__most-popular-item{
+                        display:table-cell;
+
+                        @media (max-width: 767px) {
+                            display:block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//hero-lcc
+.ie8 .hero-lcc-wrapper{
+    .hero-lcc{   
+        .hero-lcc__content{
+            padding:80px 15em;
+
+            .hero-lcc__actions{
+                .hero-lcc__search-wrapper .hero-lcc__search {
+
+                    .hero-lcc__search-input{
+                        height:55px;
+                    }
+                
+                    .btn i{
+                        display:none;
+                    }
                 }
             }
         }

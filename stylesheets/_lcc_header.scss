@@ -20,6 +20,11 @@
             margin:12px 0;
         }
 
+        @media (max-width: 320px){
+            font-size: 18px;
+            margin: 14px 0;
+        }
+
         &:after{
             display:none;
         }

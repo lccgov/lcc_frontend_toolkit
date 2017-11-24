@@ -1,7 +1,7 @@
 
 .atoz{
     background:#F6F7FA;
-    padding:10px 0 6px;
+    padding:20px 0 26px;
     width:100%;
     text-transform:uppercase;
     margin-top:50px;
@@ -24,13 +24,12 @@
     }
 
     ul{
-        float:right;
-        padding:5px 0;
-        margin:0;
-
-        @media (max-width: 1300px){
-            float: none;
-        }
+        @include flexbox();
+        @include justify-content(flex-star);
+        @include flex-wrap(wrap);
+        float:none;
+        margin:10px 0 0;
+        padding:0;
 
         li{
             float:left;
@@ -41,23 +40,33 @@
             text-align:center;
             padding:0;
             margin:0 4px 4px 0;
+            @include flex(auto);
+            border: 1px solid #F6F7FA;
+            background: white;
+
+            @media (max-width: 1100px){
+                min-width:50px;
+            }
 
             @media (max-width: 641px){
                 font-size:16px;
             }
 
             &:last-of-type a{
-                width:60px;
+                width:100%;
             }
 
             a{
-                padding:5px 0;
-                border:0;
-                text-decoration:none;
-                border:1px solid white;
-                width:30px;
-                display:inline-block;
-                background:white;
+                text-decoration: none;
+                border: 0;
+                width: 100%;
+                display: inline-block;
+                background: white;
+                padding:10px 0;
+
+                @media (max-width: 1100px){
+                    padding:15px 0;
+                }
 
                 &:hover{
                     background:$base-link-color;
@@ -73,12 +82,17 @@
             }
 
             &.inactive{
-                padding:5px 0;
                 color:#9DA5B2;
-                width:30px;
                 display:inline-block;
                 border:1px solid white;
                 background:#F6F7FA;
+                padding:10px 0;
+                width:auto;
+
+                @media (max-width: 1100px){
+                    padding:15px 0;
+                    min-width:50px;
+                }
             }
         }
     }
