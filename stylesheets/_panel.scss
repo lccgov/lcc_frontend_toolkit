@@ -1,0 +1,327 @@
+//panels
+.panel{
+  background:$panel-color;
+  padding:20px;
+  box-shadow:none;
+  border-radius:0;
+  border:0;
+  margin:30px 0;
+
+  &.top{
+    margin-top:0;
+  }
+
+  &.panel-border{
+    background:white;
+    border: 10px solid #E5F1F5;
+  }
+
+  @media (min-width: 641px) {
+      padding:30px;  
+      margin:30px 0;
+  }
+
+  h2:first-child,
+  h3:first-child,
+  h4:first-child{
+    margin-top:0;
+  }
+
+  .media-container{
+    margin:0;
+  }
+
+  p:last-child{
+    margin-bottom:0;
+  }
+
+}
+
+p + .panel{
+    margin:50px 0;
+}
+
+//alternate colored panel
+.panel.alt {
+    background: $hightlight-color;
+    h2,
+    h3,
+    p,
+    .btn,
+    blockquote,
+    blockquote footer {
+        color: $panel-alt-color;
+    }
+    .btn.btn-outline {
+        color: $panel-alt-color !important;
+        border-color: $panel-alt-color !important;
+    }
+}
+
+//panel with image
+.panel.img {
+    position: relative;
+    padding: 0;
+    min-height: 250px;
+    margin:30px 0;
+
+    @media (min-width: 641px){
+        margin:60px 0;
+    }
+
+    .container-fluid{
+        padding:0;
+    }
+
+    hr {
+        border-top: 1px solid #d3d3d3;
+    }
+    .img-container {
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        min-height: 250px;
+        &.right {
+            right: 0px;
+            left: auto;
+        }
+        &.center {
+            right: auto;
+            left: auto;
+            text-align: center;
+        }
+        @media screen and (max-width:990px) {
+            position: relative;
+        }
+    }
+    .content {
+        padding: 30px;
+
+        @media (min-width: 641px){
+            padding: 50px;
+        }
+    }
+
+    //panel with image and event
+    &.event {
+        min-height: auto;
+        font-size: 16px;
+        h3,
+        .heading-medium {
+            margin: 0.2631578947em 0 0 0;
+            font-size: 20px;
+            span {
+                color: $hightlight-color;
+                float: right;
+                @media (max-width: 767px) {
+                    float: none;
+                }
+            }
+        }
+        .img-container {
+            min-height: 150px;
+        }
+        .content {
+            padding: 20px;
+        }
+    }
+    .panel-promo_title{
+        margin:0 0 10px;
+        font-size:27px;
+
+        @media (min-width: 990px){
+            font-size:40px;
+        }
+    }
+
+    .panel-promo_text{
+        margin:0 0 25px;
+        font-size:16px;
+        line-height:1.6;
+
+        @media (min-width: 990px){
+            font-size:21px;
+        }
+    }
+    
+    .btn{
+        margin:0;
+    }
+}
+
+.content-block {
+    margin: 0 auto;
+}
+
+//panel blockquote
+.panel{
+    blockquote{
+        margin:0;
+        font-family:$font-secondary;
+        font-weight:700;
+        font-size:21px;
+        padding:0 0 0 30px;
+        border:0;
+        position:relative;
+
+        &:before{
+            font-family: FontAwesome;
+            content:"\f10d";
+            position:absolute;
+            top:0;
+            left:-10px;
+            opacity:0.5;
+            font-size:25px;
+
+            @media (min-width: 641px){
+                left:-15px;
+                font-size:30px;
+            }
+        }
+
+        footer{
+            font-weight:400;
+            margin-top:15px;
+        }
+
+        @media (min-width: 990px){
+            font-size:32px;
+        }
+    }
+}
+
+//panel event
+.panel-event{
+    .panel-event-title{
+        margin:0 0 15px;
+    }
+    .panel-event-description{
+        margin:0 0 20px;
+    }
+    .panel-event-date{
+        @include gradient-background-half($panel-event-date-background-light, $panel-event-date-background-dark);
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(center);
+        position: absolute;
+
+        @media (max-width: 767px){
+            padding: 20px;
+            top: 0;
+            right: 0;
+        }
+
+        @media (min-width: 767px){
+            position: absolute;
+            min-height:250px;
+        }
+
+        @media (min-width: 990px){
+            height:100%;
+        }
+
+        .panel-event-date-details{
+            color:$panel-event-date-color;
+            text-align:center;
+            font-family:$font-secondary;
+            font-weight:400;
+            line-height:1;
+            margin:0;
+            font-size:14px;
+
+            @media (min-width: 767px){
+                font-size:28px;
+            }
+
+            span{
+                display:block;
+                &.big-number{
+                    font-size:40px;
+                    font-weight:700;
+
+                    @media (min-width: 767px){
+                        font-size:100px;
+                    }
+                }
+            }
+        }
+    }
+
+    .panel-event-info{
+        .panel-event-info-location,
+        .panel-event-info-time{
+            font-weight:700;
+            font-size:14px;
+            margin:0;
+            padding-left:28px;
+            position:relative;
+
+            &:before{
+                font-family: FontAwesome;
+                position:absolute;
+                left:0;
+                top:0;
+                display:block;
+                font-size:16px;
+                width:16px;
+                text-align:center;
+            }
+
+            @media (min-width: 641px){
+                font-size:16px;
+                padding-left:30px;
+
+                &:before{
+                    top:-3px;
+                    font-size:21px;
+                    width:21px;
+                }
+            }
+        }
+        .panel-event-info-location{   
+            color:$base-link-color;
+            margin-bottom:10px;
+
+            &:before{
+                content:"\f041";
+            }
+        }
+        .panel-event-info-time{
+            &:before{
+            	content:"\f017";
+            }
+        }
+        .panel-event-info-date, 
+        strong{
+            @extend .sr-only;
+        }
+    }
+}
+
+//panel event list - the surrounding div
+.panel-event-list{
+    margin:30px 0;
+
+    @media (min-width: 641px){
+        margin:60px 0;
+    }
+
+    h2{
+        margin-top:0;
+    }
+
+    p + .panel-event{
+        margin-top:30px;
+    }
+}
+
+//panel with images spacing
+.panel.img + .panel.img{
+    margin-top:-15px;
+
+    @media (min-width: 641px){
+        margin-top:-30px;
+    }
+}

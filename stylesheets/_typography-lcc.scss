@@ -544,45 +544,6 @@ blockquote {
   }
 }
 
-//panels
-.panel{
-  background:$panel-color;
-  padding:20px;
-  box-shadow:none;
-  border-radius:0;
-  border:0;
-  margin:30px 0;
-
-  &.top{
-    margin-top:0;
-  }
-
-  &.panel-border{
-    background:white;
-    border: 10px solid #E5F1F5;
-  }
-
-  @media (min-width: 641px) {
-      padding:30px;  
-      margin:30px 0;
-  }
-
-  h2:first-child,
-  h3:first-child,
-  h4:first-child{
-    margin-top:0;
-  }
-
-  .media-container{
-    margin:0;
-  }
-
-  p:last-child{
-    margin-bottom:0;
-  }
-
-}
-
 //element spacing
 ul + .text-highlight{
     margin-top:6px;
@@ -659,10 +620,6 @@ h2 + h3{
     p + ul{
         margin-top:15px;
     }
-}
-
-p + .panel{
-    margin:50px 0;
 }
 
 .top-header-margin{

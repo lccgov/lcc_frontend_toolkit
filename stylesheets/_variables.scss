@@ -159,6 +159,13 @@ $group-promo-header-color: #3D414A  !default;
 $group-promo-description-color: #666B76  !default;
 $group-promo-arrow-color: #9DA5B2  !default;
 
+//panel colors
+$panel-event-date-background-light:$base-link-color !default;
+$panel-event-date-background-dark:darken($panel-event-date-background-light,5%) !default;
+$panel-event-date-color:white !default;
+$hightlight-color:$base-link-color !default;
+$panel-alt-color:white !default;
+
 //mixins
 @mixin link-border-bottom($color,$opacity,$visited-color){
     color:$color;
