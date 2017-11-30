@@ -1,8 +1,8 @@
 .pagination-nav {
     display: block;
     margin: 50px 0;
-    border-top: 2px solid #F6F7FA;
-    border-bottom: 2px solid #F6F7FA;
+    border-top: 2px solid $border-color;
+    border-bottom: 2px solid $border-color;
 
     ul{
         margin: 0;
@@ -68,8 +68,8 @@
                 position:relative;
 
                 &:hover{
-                    background:#F6F7FA;
-                    color:$blue;
+                    background:$base-hover-background;
+                    color:$base-link-color;
                 }
 
                 &:before{

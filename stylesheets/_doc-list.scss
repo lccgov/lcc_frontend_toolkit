@@ -17,17 +17,13 @@ docsList
 
         &:hover,
         &:focus {
-            background: #525252;
-            border-color: #525252;
-            span.info {
-                background: #676767;
-                border-color: #676767;
-                color: #fff;
-            }
+            background: $base-hover-background;
+            color: $base-hover-color;
+            border-color: $border-color;
 
             span.thirdInfo {
-                            color:#fff;
-                            }
+                color: $base-hover-color;
+            }
         }
 
 
@@ -42,15 +38,15 @@ docsList
             width: 45px;
             display: block;
             padding: 8px 15px;
-            color: #fff;
+            color: $base-font-color;
             font-size: 22px;
             &:hover {
-                color: #fff !important;
+                color: $base-hover-color !important;
             }
         }
 
         span.info{
-    border-top: 1px solid $content-border-color;
+    border-top: 1px solid $border-color;
     display:inline-block;
     width:100%;
     padding:10px;
@@ -80,34 +76,34 @@ docsList
     position:absolute;
     top:12px;
     right:15px;
-    color:#555;
+    color:$secondary-font-color;
 }
 
     }
 
 .pdf a:before {
   content: '\f1c1';
-  color:#ED1F24;
+  color:$pdf-color;
 
     }   
  .word a:before{
     content: '\f1c2';
-    color:#294BA0;
+    color:$word-color;
 } 
 
 .xl a:before{
     content: '\f1c3';
-    color:#269129;
+    color:$excel-color;
 } 
 
 .external a:before{
     content: '\f08e';
-    color:rgba(0,0,0, 0.5);
+    color:$external-color;
 }
 
 .pp a:before{
     content: '\f1c4';
-    color:orange;
+    color:$powerpoint-color;
 }
 
    .pdf a,  .word a,  .xl a,  .external a, .pp a { 
@@ -157,17 +153,17 @@ docsList
 
     a{
         border:none;
-        border-bottom:1px solid #ddd;
+        border-bottom:1px solid $border-color;
         padding:20px 15px 20px 40px;
         margin:0px;
 
         &:hover{
-            background:#ddd;
+            background:$base-hover-background;
             text-decoration:none;
 
             span.info, &:before,  span.thirdInfo {
                 background:transparent;
-                color:#333;
+                color:$base-font-color;
            
             }
 

@@ -12,8 +12,8 @@
         }
 
         strong{
-            background:$blue;
-            color:white;
+            background:$phase-banner-background;
+            color:$phase-banner-color;
             padding:3px 5px;
             @include border-radius(2px);
             margin-right:3px;

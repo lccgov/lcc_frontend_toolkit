@@ -16,6 +16,8 @@ $font-secondary: Arial !default; // secondary font
 $header-font-color: #333 !default;
 $header-font-weight: 600 !default;
 $red:#c0392b !default;
+$base-hover-color:#333 !default;
+$base-hover-background:#F6F7FA !default;
 
 $base-link-hover-color:#3399BB !default;
 $base-link-visited-color:#4C2C92 !default;
@@ -284,3 +286,14 @@ $responsiveMenuWidth:767px !default;
 
 //bootsrap overrides
 $bootstrap-padding:15px !default;
+
+//doc colors
+$pdf-color:#ED1F24 !default;
+$word-color:#294BA0 !default;
+$excel-color:#269129 !default;
+$external-color:rgba(0,0,0, 0.5) !default;
+$powerpoint-color:orange !default;
+
+//phase banner
+$phase-banner-background:#007299 !default;
+$phase-banner-color:white !default;

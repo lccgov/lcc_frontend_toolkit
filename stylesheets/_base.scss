@@ -1,9 +1,8 @@
-@import 'variables';
+@import 'base_styles/variables';
 @import 'url-helper';
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 
 @import 'base_styles/mixins';
-@import 'base_styles/variables';
 
 @import 'base_styles/base-structure';
 
@@ -17,7 +16,7 @@
 @import 'base_styles/helper-classes';
 
 @import 'base_styles/browser-alert';
-@import 'base_styles/back-to-top';
+@import 'base_styles/back-to-top'; //look at arrow - possibly re-engineer ? - DH & RM
 
 @import 'base_styles/main-menu';
 @import 'base_styles/responsive-menu';
