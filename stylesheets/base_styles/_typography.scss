@@ -297,6 +297,12 @@ p.sharepoint,
   max-width: 35em;
 }
 
+//used on subsites
+.content-block {
+    max-width: 48em;
+    padding-bottom: 2.5em;
+}
+
 .text-description{
   margin-bottom:0;
   font-size:16px;
@@ -387,6 +393,112 @@ p.sharepoint,
 }
 
 //links
+
+//doc styling - needs aligning with doc list stylying
+ a.doc {
+
+        border-bottom:1px solid $border-color;
+        padding:20px 15px 20px 40px;
+        margin:0px;
+        display:block;
+        font-weight:bold;
+        position:relative;
+
+        &:first-of-type{
+          border-top:1px solid $border-color;
+        }
+
+        &:hover{
+          background:$border-color;
+          text-decoration:none;          
+        }
+
+        span{
+            color:$secondary-font-color;
+            margin-left:10px;
+        }
+
+        &:before{
+
+                font-family: FontAwesome;
+                position:absolute;
+                font-weight: normal;
+                top: 17px;
+                left: 10px;
+                height: 25px;
+                margin-top:-5px;
+                width: 25px;
+                display: block;
+                padding:0px;
+                font-size: 22px;
+            
+        }
+
+
+    &.pdf:before {
+  content: '\f1c1';
+  color:#ED1F24;
+
+    }   
+ &.word:before{
+    content: '\f1c2';
+    color:#294BA0;
+} 
+
+&.xl:before{
+    content: '\f1c3';
+    color:#269129;
+} 
+
+&.external:before{
+    content: '\f08e';
+    color:rgba(0,0,0, 0.5);
+}
+
+&.pp:before{
+    content: '\f1c4';
+    color:orange;
+}
+
+   &.pdf,  &.word,  &.xl ,  &.external, &.pp{ 
+       &:hover{
+        &:before{
+            color:#333;
+        }
+    }
+   }
+}
+
+//link variant icons
+a[rel]:after{
+    font-family: FontAwesome;
+    padding:0 5px;
+}
+
+a[rel="xl"]:after,
+a[rel="xsl"]:after,
+a[rel="xslx"]:after {
+      content: "\f1c3"; 
+}
+
+a[rel="pdf"]:after {
+    content: "\f1c1";
+}
+
+a[rel="doc"]:after,
+a[rel="docx"]:after {
+  content: "\f1c2"; 
+}
+
+a[rel="pp"]:after,
+a[rel="pt"]:after {
+  content: "\f1c4"; 
+}
+
+a[rel="external"]:after {
+    content: "\f08e"; 
+}
+
 a {
     text-decoration:underline;
     color:$base-link-color;

@@ -1,4 +1,21 @@
- .promoListWebpart {
+ .listWebpart{
+   ul{
+      margin:0px;
+      padding:0px;
+
+    li{ 
+        list-style: none;
+        float:left;
+              img {
+                    width: 100%;
+                    max-width: 100%;
+                    margin-bottom: 15px;
+               }
+    }
+}
+}
+
+.promoListWebpart {
      // start promo list webpart
      h2 {
          text-align: center;
