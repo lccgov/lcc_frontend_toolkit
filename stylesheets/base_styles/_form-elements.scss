@@ -418,3 +418,11 @@ form{
         color:$secondary-font-color;
     }
 }
+
+//input submit styling
+.form-group{
+    input[type=submit]{
+        @extend .btn;
+        @extend .btn-primary;
+    }
+}

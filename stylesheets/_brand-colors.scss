@@ -1,55 +1,8 @@
 
-/*********************************************
-Base.sass variables
-*********************************************/
+//Base.sass variables
 body{
   background-color:$base-background-color;
 }
-
-.ms-rtestate-field
-{
-  h1,h2,h3,h4,h5
-{
-   &.ms-rteElement-H2
-   {
-        font-family:$font-primary;
-        color:$base-font-color;
-   }
-}    
-}
-
-.btn-primary, .button
-{
-  background:$btn-background-color;
-  box-shadow: inset 0 1px 1px lighten($btn-background-color,10%);
-    &:hover{
-      background:darken($btn-background-color,10%);
-    }
-}
-
-
- .btn, .button
-    {
-      border-color:$btn-background-color;
-      color:#fff;
-
-      &.btn-default, &.alt
-{
-  border-color:$btn-background-color;
-  color:$btn-background-color;
-  &:hover{
-     background:darken($btn-background-color,10%);
-     color:#fff;
-  }
-}
-
-
-    }
-
-.container-fluid{
-    max-width:$base-container-width;
-}
-
 
 .sectionHeader{
   background:$sectionHeader-background-color;
@@ -77,12 +30,7 @@ body{
   background:$sectionFive-background-color;
 }
 
-/*********************************************
- End Base.sass variables
-*********************************************/
-/*********************************************
-globhalSearch.sass variables
-*********************************************/
+//globhalSearch.sass variables
 
 @media (max-width: $responsiveMenuWidth){
 
