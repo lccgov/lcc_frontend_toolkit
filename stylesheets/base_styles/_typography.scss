@@ -2,13 +2,13 @@ body {
   font-family: $font-primary, sans-serif;
   font-weight: 400;
   text-transform: none;
-  font-size: $base-font-size;
+  font-size: $base-font-size-mobile;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   @media (min-width: 641px) {
-    font-size: 19px;
+    font-size: $base-font-size-desktop;
     line-height: 1.4;
   }
 }

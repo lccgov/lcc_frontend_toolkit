@@ -6,7 +6,6 @@ $menu-link-color:#337ab7 !default;
 
 //base.scss
 $base-background-color:#fff !default;
-$base-font-size:16px !default;
 $base-font-color:#333 !default;
 $base-link-color:#133E8D !default;
 $base-container-width:1500px !default;
@@ -19,6 +18,9 @@ $base-font-weight: 400 !default;
 $red:#c0392b !default;
 $base-hover-color:#333 !default;
 $base-hover-background:#F6F7FA !default;
+
+$base-font-size-mobile:16px !default;
+$base-font-size-desktop:19px !default;
 
 $base-link-hover-color:#3399BB !default;
 $base-link-visited-color:#4C2C92 !default;
