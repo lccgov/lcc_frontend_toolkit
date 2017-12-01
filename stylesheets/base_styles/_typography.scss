@@ -3,13 +3,13 @@ body {
   font-weight: $base-font-weight;
   text-transform: none;
   font-size: $base-font-size;
-  line-height: 1.4;
+  line-height: $base-line-height;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   @media (min-width: 641px) {
     font-size: $base-font-size-desktop;
-    line-height: 1.4;
+    line-height: $base-line-height;
   }
 }
 

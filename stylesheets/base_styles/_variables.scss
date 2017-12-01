@@ -10,18 +10,21 @@ $base-font-color:#333 !default;
 $base-link-color:#133E8D !default;
 $base-container-width:1500px !default;
 $btn-background-color:green !default;
-$font-primary: Arial !default; // main font
-$font-secondary: Arial !default; // secondary font
-$header-font-color: #333 !default;
-$header-font-weight: 600 !default;
-$base-font-weight: 400 !default;
 $red:#c0392b !default;
 $base-hover-color:#333 !default;
 $base-hover-background:#F6F7FA !default;
 
-$base-font-size-mobile:16px !default;
+//typography
+$font-primary: Arial !default; // main font
+$font-secondary: Arial !default; // secondary font
+$base-font-size:16px !default;
 $base-font-size-desktop:19px !default;
+$base-line-height: 1.4 !default;
+$header-font-color: #333 !default;
+$header-font-weight: 600 !default;
+$base-font-weight: 400 !default;
 
+//links
 $base-link-hover-color:#3399BB !default;
 $base-link-visited-color:#4C2C92 !default;
 $secondary-link-color:#003F55 !default;
