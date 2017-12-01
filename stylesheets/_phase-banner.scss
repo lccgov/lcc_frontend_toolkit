@@ -1,3 +1,6 @@
+$phase-banner-stage-background:$yellow !default;
+$phase-banner-stage-color:$black !default;
+
 .phase-banner{
     padding:7px 0;
     background:rgba(#FFBF47, 0.5);
@@ -12,12 +15,23 @@
         }
 
         strong{
-            background:$phase-banner-background;
-            color:$phase-banner-color;
-            padding:3px 5px;
+            background:#007299;
+            color:white;
+            padding:1px 5px;
             @include border-radius(2px);
             margin-right:3px;
 
+        }
+    }
+
+    &.page{
+        padding:10px 0;
+        background:transparent;
+        border-bottom:1px solid $border-color;
+
+        strong{
+            background:$phase-banner-stage-background;
+            color:$phase-banner-stage-color;
         }
     }
 }
