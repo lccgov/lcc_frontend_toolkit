@@ -37,7 +37,7 @@ h5,
 .lead,
 .part-title{
   font-family: $font-primary, sans-serif;
-  font-weight: 400;
+  font-weight: $base-font-weight;
   text-transform: none;
   color:$base-font-color;
 
@@ -69,7 +69,7 @@ h5,
 .bold-xsmall,
 .part-title{
   font-family: $font-secondary, sans-serif;
-  font-weight: 700;
+  font-weight: $header-font-weight;
 }
 
 p,
