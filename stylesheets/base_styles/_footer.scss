@@ -47,11 +47,12 @@ footer.main {
     margin-left:0px;
     color:#fff !important; //override shaerpoint corev15
     display:block;
+    text-decoration:none;
 }
 
- a:hover,    a:focus{
+ a:hover{
     background:rgba(0,0,0,0.2);
-    text-decoration:none;
+    text-decoration:underline;
  }
  a.selected{
    background-color:rgba(0,0,0,0.2) !important;  //override shaerpoint corev15
