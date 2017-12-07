@@ -119,13 +119,13 @@
         &.featured {
             width: 100% !important;
             .mega-promo__header {
-                font-size: 32px !important;
+                font-size: 24px !important;
                 margin-bottom: 10px !important;
                 color: $promo-header-color;
             }
             @media (min-width: 600px) {
                 .mega-promo__highlight {
-                    font-size: 20px !important;
+                    font-size: 20px;
                 }
             }
             @media (max-width: 600px) {
@@ -137,7 +137,7 @@
             }
             @media (min-width: 767px) {
                 .mega-promo__header {
-                    font-size: 34px !important;
+                    font-size: 32px !important;
                 }
             }
             @media (min-width: 990px) {
@@ -179,7 +179,7 @@
         &.half {
             @media (min-width: 767px) {
                 .mega-promo__header {
-                    font-size: 32px !important;
+                    font-size: 32px;
                 }
             }
         }
@@ -189,7 +189,7 @@
         &.quarter {
             width: 25% !important;
             .mega-promo__header {
-                font-size: 21px !important;
+                font-size: 21px;
             }
             @media (max-width: 767px) {
                 width: 50% !important;
@@ -232,9 +232,9 @@
                 display: none;
             }
             .mega-promo__header {
-                font-size: 32px !important;
+                font-size: 32px;
                 @media (max-width: 500px) {
-                    font-size: 24px !important;
+                    font-size: 24px;
                 }
             }
             .mega-promo__highlight {
@@ -295,11 +295,11 @@
 .col-md-8 {
     @media (min-width: 767px) {
         .mega-promo .mega-promo__item.two-thirds .mega-promo__header, .mega-promo .mega-promo__item.half .mega-promo__header {
-            font-size: 24px !important;
+            font-size: 24px;
         }
     }
     .mega-promo .mega-promo__item.featured .mega-promo__header {
-        font-size: 32px !important;
+        font-size: 32px;
     }
 }
 
