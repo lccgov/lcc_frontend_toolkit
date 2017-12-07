@@ -1,54 +1,79 @@
 .cd-top {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  position: fixed;
-  bottom: 40px;
-  right: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  /* image replacement properties */
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  background: rgba(0, 0, 0, 0.8) file-url('cd-top-arrow.svg') no-repeat center 50%;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-  -moz-transition: opacity .3s 0s, visibility 0s .3s;
-  -o-transition: opacity .3s 0s, visibility 0s .3s;
-  transition: opacity .3s 0s, visibility 0s .3s;
+    display: inline-block;
+    height: auto;//delete when merging
+    width: auto;//delete when merging
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* image replacement properties */
+    overflow: hidden; //delete when merging
+    text-indent: 0;
+    white-space: nowrap;
+    background: $back-top-background;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    -o-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
     z-index:999;
+    color:$back-top-color;
+    text-align:center;
+    padding:10px;
+    text-decoration:none;
+    font-size:14px;
+    @include border-radius(4px);
+
+    @media only screen and (min-width: 767px) {
+        right: 20px;
+        bottom: 20px;
+        font-size:16px;
+    }
+    @media only screen and (min-width: 1024px) {
+        height: auto;//delete when merging
+        width: auto;//delete when merging
+        right: 30px;
+        bottom: 30px;
+    }
+
+    &:before{
+        font-family: FontAwesome;
+        content:'\f077';
+        display:block;
+        line-height:0;
+        margin:5px 0 10px;
+    }
+
+    &:focus{
+        background:$focus-color;
+        opacity:1;
+    }
+
+    &:hover{
+        text-decoration:none;
+        color:$back-top-hover-color;
+        background:$back-top-hover-background;
+    }
+
+    &.cd-is-visible {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &.cd-fade-out {
+        opacity: .5;
+    }
 }
-.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+.cd-top.cd-is-visible, 
+.cd-top.cd-fade-out, 
+.no-touch .cd-top:hover {
   -webkit-transition: opacity .3s 0s, visibility 0s 0s;
   -moz-transition: opacity .3s 0s, visibility 0s 0s;
   -o-transition: opacity .3s 0s, visibility 0s 0s;
   transition: opacity .3s 0s, visibility 0s 0s;
 }
-.cd-top.cd-is-visible {
-  /* the button becomes visible */
-  visibility: visible;
-  opacity: 1;
-}
-.cd-top.cd-fade-out {
-  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-  opacity: .5;
-}
 .no-touch .cd-top:hover {
-  background-color: rgba(0, 0, 0, 1.0);
+  background-color: $back-top-hover-background;
   opacity: 1;
-}
-@media only screen and (min-width: 767px) {
-  .cd-top {
-    right: 20px;
-    bottom: 20px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .cd-top {
-    height: 60px;
-    width: 60px;
-    right: 30px;
-    bottom: 30px;
-  }
 }

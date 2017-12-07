@@ -1,37 +1,33 @@
-$phase-banner-stage-background:$yellow !default;
-$phase-banner-stage-color:$black !default;
-
 .phase-banner{
     padding:7px 0;
-    background:rgba(#FFBF47, 0.5);
+    background:$panel-color;
 
     p{
         margin:0;
         font-size:16px;
-        line-height:1.6;
+        line-height:1.4;
 
         @media (max-width: 641px){
             font-size:14px;
+            position:relative;
+            @include flexbox();
+            @include align-items(center);
         }
 
         strong{
-            background:#007299;
-            color:white;
+            background:$phase-banner-stage-background;
+            color:$phase-banner-color;
             padding:1px 5px;
             @include border-radius(2px);
-            margin-right:3px;
+            margin-right:7px;
 
+            @media (max-width: 641px){
+                margin-right:10px;
+            }
         }
     }
 
     &.page{
-        padding:10px 0;
-        background:transparent;
-        border-bottom:1px solid $border-color;
-
-        strong{
-            background:$phase-banner-stage-background;
-            color:$phase-banner-stage-color;
-        }
+        padding:10px;
     }
 }
