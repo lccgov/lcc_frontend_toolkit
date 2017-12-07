@@ -1,71 +1,58 @@
-.mega-promo{
+.mega-promo {
     @include flexbox();
     @include flex-wrap(wrap);
     margin: 0 0 0 -15px;
     padding: 30px 0 30px;
-
-    .mega-promo__item{
+    .mega-promo__item {
         padding-left: 15px;
         @include flexbox();
         @include align-items(stretch);
-        margin-bottom:15px;
-        width:100%;
-
-
-             &.external a:after {
-                content: "\f08e";
-            }
-
-
-        a{
+        margin-bottom: 15px;
+        width: 100%;
+        &.external a:after {
+            content: "\f08e";
+        }
+        a {
             display: block;
             width: 100%;
             box-sizing: border-box;
-            background:$promo-background-color;
-            position:relative;
-            text-decoration:none;
-
+            background: $promo-background-color;
+            position: relative;
+            text-decoration: none;
             @media (max-width: 500px) {
-                padding-bottom:30px;
+                padding-bottom: 30px;
             }
-
-            &:focus{
+            &:focus {
                 .mega-promo__header,
                 .mega-promo__secondary,
                 &.external a:after,
-                &:after{
-                    color:#333 !important;
+                &:after {
+                    color: #333 !important;
                 }
             }
-
             &:after {
                 font-family: FontAwesome;
                 content: $promo-arrow;
                 position: absolute;
                 right: 20px;
                 bottom: 20px;
-                color:$promo-arrow-color;
+                color: $promo-arrow-color;
                 font-size: 19px;
-
-                @media (max-width: 600px){
+                @media (max-width: 600px) {
                     font-size: 16px;
                 }
             }
-
-            &:hover{
-                background:darken($promo-background-color, 5%);
-                text-decoration:none;
-
-                .mega-promo__img{
-                    opacity:0.8;
+            &:hover {
+                background: darken($promo-background-color, 5%);
+                text-decoration: none;
+                .mega-promo__img {
+                    opacity: 0.8;
                 }
-
-                .mega-promo__header{
-                    text-decoration:underline;
+                .mega-promo__header {
+                    text-decoration: underline;
                 }
             }
-
-            .mega-promo__img-wrapper{
+            .mega-promo__img-wrapper {
                 display: block;
                 position: relative;
                 z-index: 1;
@@ -74,8 +61,7 @@
                 float: none;
                 margin: 0;
                 width: 100%;
-
-                .mega-promo__img{
+                .mega-promo__img {
                     bottom: 0;
                     left: 0;
                     position: absolute;
@@ -91,219 +77,173 @@
                     background-size: cover;
                 }
             }
-            .mega-promo__content{
-                display:block;
-                padding:20px 60px 20px 20px;
-
+            .mega-promo__content {
+                display: block;
+                padding: 20px 60px 20px 20px;
                 @media (max-width: 500px) {
-                    position:relative;
-                    padding:15px;
+                    position: relative;
+                    padding: 15px;
                 }
-
-                .mega-promo__header{
-                    color:$promo-header-color;
-                    margin:0 0 10px;
-                    font-size:24px;
-                    line-height:30px;
-                    font-weight:$header-font-weight;
-
+                .mega-promo__header {
+                    color: $promo-header-color;
+                    margin: 0 0 10px;
+                    font-size: 24px;
+                    line-height: 1.4;
+                    font-weight: $header-font-weight;
                     @media (max-width: 500px) {
-                        font-size:21px;
-                        line-height:26px;
+                        font-size: 21px;
                     }
                 }
-
-                .mega-promo__secondary{
-                    color:$promo-secondary-color;
-                    margin:0;
-                    font-size:18px;
-                    line-height:24px;
-                    font-weight:$base-font-weight;
-
+                .mega-promo__secondary {
+                    color: $promo-secondary-color;
+                    margin: 0;
+                    font-size: 18px;
+                    font-weight: $base-font-weight;
+                    color: $secondary-font-color;
+                    line-height: 1.6;
                     @media (max-width: 500px) {
-                        font-size:16px;
-                        line-height:20px;
+                        font-size: 16px;
                     }
-
                 }
             }
-
-            .mega-promo__highlight{
-                background:$promo-highlight-background-color;
-                color:$promo-highlight-color;
-                position:absolute;
-                top:0;
-                right:0;
-                z-index:2;
-                padding:10px;
+            .mega-promo__highlight {
+                background: $promo-highlight-background-color;
+                color: $promo-highlight-color;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 2;
+                padding: 10px;
             }
         }
-
-        &.featured{
-            width:100% !important;
-
-            .mega-promo__header{
-                font-size:32px !important;
-                line-height:36px !important;
-                margin-bottom:10px !important;
-                color:$promo-header-color;
+        &.featured {
+            width: 100% !important;
+            .mega-promo__header {
+                font-size: 32px !important;
+                margin-bottom: 10px !important;
+                color: $promo-header-color;
             }
-
             @media (min-width: 600px) {
-
-                    .mega-promo__highlight{
-                        font-size:20px !important;
-                    }
+                .mega-promo__highlight {
+                    font-size: 20px !important;
+                }
             }
-
             @media (max-width: 600px) {
-                margin-left:-15px;
-                margin-right:-15px;
-
-                a{
-                    padding-bottom:50px;
+                margin-left: -15px;
+                margin-right: -15px;
+                a {
+                    padding-bottom: 50px;
                 }
             }
-
             @media (min-width: 767px) {
-                .mega-promo__header{
-                    font-size:40px !important;
-                    line-height:44px !important;
+                .mega-promo__header {
+                    font-size: 34px !important;
                 }
             }
-
             @media (min-width: 990px) {
-
-                a{
+                a {
                     &:after {
                         right: 30px;
                         bottom: 30px;
-                        font-size:32px;
+                        font-size: 32px;
                     }
-
-                    .mega-promo__img-wrapper{
+                    .mega-promo__img-wrapper {
                         display: inline-block;
                         width: 66.66%;
-                        float:left;
-                        padding-bottom:37.5%;
-
-                        .mega-promo__img{
-                            padding-bottom:37.5%;
+                        float: left;
+                        padding-bottom: 37.5%;
+                        .mega-promo__img {
+                            padding-bottom: 37.5%;
                         }
                     }
-
-                    .mega-promo__content{
-                        float:right;
-                        display:inline-block;
-                        width:33.33%;
-                        padding:30px;
+                    .mega-promo__content {
+                        float: right;
+                        display: inline-block;
+                        width: 33.33%;
+                        padding: 30px;
                     }
-
-                    .mega-promo__highlight{
-                        right:auto;
-                        left:0;
+                    .mega-promo__highlight {
+                        right: auto;
+                        left: 0;
                     }
                 }
             }
-
         }
-
-        &.two-thirds{
-            width:66.66% !important;
+        &.two-thirds {
+            width: 66.66% !important;
         }
-
-        &.half{
-            width:50% !important;
+        &.half {
+            width: 50% !important;
         }
-
         &.two-thirds,
-        &.half{
-
+        &.half {
             @media (min-width: 767px) {
-                .mega-promo__header{
-                    font-size:32px !important;
+                .mega-promo__header {
+                    font-size: 32px !important;
                 }
             }
         }
-
-        &.third{
-            width:33.33% !important;
+        &.third {
+            width: 33.33% !important;
         }
-
-        &.quarter{
-            width:25% !important;
-
-            .mega-promo__header{
-                font-size:21px !important;
-                line-height:26px !important;
+        &.quarter {
+            width: 25% !important;
+            .mega-promo__header {
+                font-size: 21px !important;
             }
-
             @media (max-width: 767px) {
-                width:50% !important;
+                width: 50% !important;
             }
-
             @media (max-width: 500px) {
-                width:100% !important;
+                width: 100% !important;
             }
         }
-
-        @media (max-width: 767px){
-
+        @media (max-width: 767px) {
             &.two-thirds,
             &.half,
-            &.third{
-                width:100% !important;
+            &.third {
+                width: 100% !important;
             }
         }
-
-        @media (min-width: 767px){
-
+        @media (min-width: 767px) {
             &.third,
-            &.quarter{
-                a{
-                    padding-bottom:50px;
-
-                    .mega-promo__content{
-                        padding:20px;
+            &.quarter {
+                a {
+                    padding-bottom: 50px;
+                    .mega-promo__content {
+                        padding: 20px;
                     }
                 }
             }
         }
-
-        &.no-img{
+        &.no-img {
             &.third,
             &.quarter {
-                a{
-                    padding-bottom:0 !important;
+                a {
+                    padding-bottom: 0 !important;
                 }
             }
-
-            a{
-                &:after{
-                    display:none;
+            a {
+                &:after {
+                    display: none;
                 }
             }
-
-            .mega-promo__img-wrapper{
-                display:none;
+            .mega-promo__img-wrapper {
+                display: none;
             }
-
-            .mega-promo__header{
-                font-size:32px !important;
-                line-height:36px !important;
-
+            .mega-promo__header {
+                font-size: 32px !important;
                 @media (max-width: 500px) {
-                    font-size:24px !important;
-                    line-height:30px !important;
+                    font-size: 24px !important;
                 }
             }
-            .mega-promo__highlight{
-                position:relative;
-                top:auto;
-                right:auto;
-                padding:10px;
-                display:inline-block;
-                margin:-5px 0 20px 20px;
+            .mega-promo__highlight {
+                position: relative;
+                top: auto;
+                right: auto;
+                padding: 10px;
+                display: inline-block;
+                margin: -5px 0 20px 20px;
             }
         }
     }
@@ -311,50 +251,101 @@
 
 //colors
 @mixin mega-promo-colors($promo-background-color, $promo-header-color, $promo-secondary-color, $promo-arrow-color, $promo-highlight-background-color, $promo-highlight-color) {
-    a{
-        background:$promo-background-color;
-
+    a {
+        background: $promo-background-color;
         &:after {
-            color:$promo-arrow-color;
+            color: $promo-arrow-color;
         }
-
-        &:hover{
-            background:darken($promo-background-color, 5%);
+        &:hover {
+            background: darken($promo-background-color, 5%);
         }
-
-        .mega-promo__content{
-
+        .mega-promo__content {
             @media (max-width: 500px) {
-                &:after{
-                    color:$promo-arrow-color;
+                &:after {
+                    color: $promo-arrow-color;
                 }
             }
-
-            .mega-promo__header{
-                color:$promo-header-color;
+            .mega-promo__header {
+                color: $promo-header-color;
             }
-
-            .mega-promo__secondary{
-                color:$promo-secondary-color;
+            .mega-promo__secondary {
+                color: $promo-secondary-color;
             }
         }
-
-        .mega-promo__highlight{
-            background:$promo-highlight-background-color;
-            color:$promo-highlight-color;
+        .mega-promo__highlight {
+            background: $promo-highlight-background-color;
+            color: $promo-highlight-color;
         }
     }
 }
 
 //no flexbox fallback - mega promo
-.no-flexbox .mega-promo .mega-promo__item{
-    display:inline-block;
-    float:left;
-
-    &.featured{
-        a{
-            display:inline-block;
-            width:100%;
+.no-flexbox .mega-promo .mega-promo__item {
+    display: inline-block;
+    float: left;
+    &.featured {
+        a {
+            display: inline-block;
+            width: 100%;
         }
+    }
+}
+
+//font size fixes - should move to front-end toolkit? 
+.col-md-8 {
+    @media (min-width: 767px) {
+        .mega-promo .mega-promo__item.two-thirds .mega-promo__header, .mega-promo .mega-promo__item.half .mega-promo__header {
+            font-size: 24px !important;
+        }
+    }
+    .mega-promo .mega-promo__item.featured .mega-promo__header {
+        font-size: 32px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .mega-promo .mega-promo__item.featured {
+        width: auto !important;
+    }
+}
+
+//mega promo fix - should move to front-end toolkit?
+@media (min-width: 767px) {
+    .mega-promo .mega-promo__item a .mega-promo__content {
+        display: block;
+    }
+    .mega-promo .mega-promo__item a {
+        padding-bottom: 50px;
+    }
+    .mega-promo .mega-promo__item.featured a {
+        padding-bottom: 0px;
+    }
+}
+
+.mega-promo .mega-promo__item a {
+    &:after {
+        right: 30px;
+        bottom: 30px;
+        @media (max-width: 767px) {
+            right: 20px;
+            bottom: 20px;
+        }
+    }
+    .mega-promo__content {
+        padding: 30px !important;
+        @media (max-width: 767px) {
+            padding: 20px !important;
+        }
+    }
+}
+
+.mega-promo .mega-promo__item.third a,
+.mega-promo .mega-promo__item.quarter a {
+    padding-bottom: 50px;
+}
+
+@media (max-width: 990px) {
+    .mega-promo .mega-promo__item.featured a {
+        padding-bottom: 50px;
     }
 }
