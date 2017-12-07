@@ -301,7 +301,8 @@ $external-color:rgba(0,0,0, 0.5) !default;
 $powerpoint-color:orange !default;
 
 //phase banner
-$phase-banner-background:#007299 !default;
+$phase-banner-background:$panel-color !default;
+$phase-banner-stage-background:#007299 !default;
 $phase-banner-color:white !default;
 
 //back to top colors
