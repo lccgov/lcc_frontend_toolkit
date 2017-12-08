@@ -219,3 +219,47 @@ $header-height-mobile:50px !default;
         }
     }
 }
+
+//header no flex
+.no-flexbox .sectionHeader {
+    .container-fluid {
+        .header-wrapper {
+            display:table;
+            width:100%;
+            .header-logo {
+                display: table-cell;
+                vertical-align: middle;
+                padding:12px 0;
+                .logo {
+                    background-image: url(../images/logo.png);
+                }
+            }
+            .header-content {
+                display: table-cell;
+                vertical-align: middle;
+                .header-custom {
+                    display: table-cell;
+                    vertical-align: middle;
+                    float:left;
+                    .header-button {
+                        padding:15px 0;
+                        .btn-account{
+                            font-size:19px;
+                        }
+                    }
+                }
+                .header-nav {
+                    float:right;
+                    #nav-search{
+                        padding:10px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//header search ie8
+.ie8 a.search{
+    display:none;
+}

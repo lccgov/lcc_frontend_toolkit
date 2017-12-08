@@ -145,3 +145,12 @@
         margin:20px 0 15px;
     }
 }
+
+//subsection no flex
+.no-flexbox .sub-section-nav {
+    margin:0;
+    .sub-section{
+        width:100%;
+        margin:15px 0;
+    }
+}

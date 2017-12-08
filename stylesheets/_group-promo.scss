@@ -289,4 +289,12 @@
     }
 }
 
+//group promo no flex
+.no-flexbox .groupPromo ul li{
+    width:100% !important;
+    a{
+        width:100% !important;
+        min-height:0 !important;
+    }
+}
 

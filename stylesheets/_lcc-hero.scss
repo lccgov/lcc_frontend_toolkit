@@ -311,3 +311,13 @@
         }
     }
 }
+
+//lcc-hero no flex
+.no-flexbox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item{
+    width:auto !important;
+}
+
+.ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input{
+    line-height:55px;
+    padding-left:60px !important;
+}

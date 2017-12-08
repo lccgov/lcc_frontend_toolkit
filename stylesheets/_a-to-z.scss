@@ -138,3 +138,9 @@
         }
     }
 }
+
+//a to z no flex
+.no-flexbox .atoz ul li,
+.no-flexbox .atoz ul li.inactive{
+    width:6.5%;
+}
