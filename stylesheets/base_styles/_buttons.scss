@@ -1,4 +1,8 @@
-.btn{
+.btn,
+.form-group input[type=button],
+.form-group input.btn.btn-primary,
+.form-group input[type=submit],
+.limitedrte-Style-BUTTON{
     font-weight:400;
     font-size:19px;
     border:0;
@@ -12,165 +16,150 @@
     text-align:left;
     line-height:1.3em;
     position:relative;
-
     @media (max-width: 641px) {
         margin:5px 0 15px;
         padding:15px 20px;
         font-size:16px;
       }
-
-    &.bottom{
-        margin-bottom:0 !important;
-    }
-
     &:after{
       display:none;
     }
-
     &:focus{
         background:$focus-color;
         color:$black;
         border-color:$focus-color !important;
     }
+}
 
-    &.btn-arrow{
-        padding-right:60px;
-
-        &:before{
-            height:100%;
-            width:36px;
-            position:absolute;
-            background: rgba(0, 0, 0, 0.1);
-            right: 0px;
-            top: 0px;
-            z-index:5;
-            display:block;
-            content:"";
-        }
-
-        &:after{
-            display:block;
-            font-family: FontAwesome;
-            content: "\f105";
-            position: absolute;
-            right: 0px;
-            height: auto;
-            background: transparent;
-            padding: 0;
-            top: 50%;
-            font-size: 22px;
-            content: "\f105";
-            padding: 0;
-            text-align: center;
-            line-height:0;
-            width:36px;
-        }
-
-        @media (max-width: 767px) {
-            padding-right:50px;
-        }
+.btn-arrow,
+.btn[rel=external]{
+    padding-right:60px;
+    &:before{
+        height:100%;
+        width:36px;
+        position:absolute;
+        background: rgba(0, 0, 0, 0.1);
+        right: 0px;
+        top: 0px;
+        z-index:5;
+        display:block;
+        content:"";
     }
-
-    &.btn-small{
-        font-size:16px;
-        padding:10px;
-
-        @media (max-width: 767px) {
-            font-size:14px;
-        }
+    &:after{
+        display:block;
+        font-family: FontAwesome;
+        content: "\f105";
+        position: absolute;
+        right: 0px;
+        height: auto;
+        background: transparent;
+        padding: 0;
+        top: 50%;
+        font-size: 22px;
+        content: "\f105";
+        padding: 0;
+        text-align: center;
+        line-height:0;
+        width:36px;
     }
+    @media (max-width: 767px) {
+        padding-right:50px;
+    }
+}
 
+.btn[rel=external] {
+    margin: 0 0 20px;
+    &:after{
+        content: "\f08e";
+        width: 41px;
+    }
+}
+
+.btn.bottom{
+    margin-bottom:0 !important;
+}
+
+.btn-small,
+.form-group input[type=button].btn-small{
+    font-size:16px;
+    padding:10px;
+    @media (max-width: 767px) {
+        font-size:14px;
+    }
 }
 
 .btn-default{
     background-color:$light-grey;
     color:white;
-
     &:hover{
         background:darken($light-grey, 5%);
         color:white;
     }
-
     &:visited{
         color:white;
     }
 }
 
-.btn-primary{
+.btn-primary,
+.form-group input[type=button],
+.form-group input.btn.btn-primary,
+.form-group input[type=submit],
+.limitedrte-Style-BUTTON{
     background-color:$primary-button-background-color;
     color:$primary-button-color;
     border-color:$primary-button-background-color;
-
     &:hover{
         background:lighten($primary-button-background-color, 5%);
         color:$primary-button-color;
         border-color:lighten($primary-button-background-color, 5%);
     }
-
     &:active{
         background:darken($primary-button-background-color, 10%) !important;
         color:$primary-button-color !important;
         border-color:darken($primary-button-background-color, 10%) !important;
     }
-
     &:visited{
         color:$primary-button-color;
     }
 }
 
-.btn-secondary{
+.btn-secondary,
+.form-group input[type=button].btn-secondary{
     background-color:$secondary-button-background-color;
     color:$secondary-button-color;
     border-color:$secondary-button-background-color;
-
     &:hover{
         background:lighten($secondary-button-background-color, 5%);
         color:$secondary-button-color;
         border-color:lighten($secondary-button-background-color, 5%)
     }
-
     &:active{
         background:darken($secondary-button-background-color, 10%) !important;
         color:$secondary-button-color !important;
         border-color:darken($secondary-button-background-color, 10%) !important;
     }
-
     &:visited{
         color:$secondary-button-color;
     }
 }
 
-.btn-outline{
+.btn-outline,
+.form-group input[type=button].btn-outline{
     color:$outline-button-color !important;
     border-color:$outline-button-border-color !important;
     background:transparent !important;
-
     &:hover{
         background-color:darken(white,5%) !important;
         border-color:darken($outline-button-border-color, 5%)
     }
-
     &:active{
         background-color:darken(white,10%) !important;
         border-color:darken($outline-button-border-color, 10%)
     }
-
     &:after{
         background: rgba(0, 0, 0, 0.05);
     }
-
     &:visited{
         color:$outline-button-color !important;
-    }
-
-}
-
-.btn[rel=external] {
-    @extend .btn-arrow;
-    margin: 0 0 20px;
-
-    &:after{
-        content: "\f08e";
-        width: 41px;
     }
 }

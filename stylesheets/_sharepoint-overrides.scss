@@ -80,7 +80,7 @@ ul.cbs-List {
 
     p, 
     p.ms-rteElement-P {
-        @extend .paragraph !optional;
+        @include body-text-margin();
     }
 }
 

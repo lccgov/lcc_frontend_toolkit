@@ -70,25 +70,6 @@ form{
             }
         }
     }
-
-    //form button styles
-    input[type=button]{
-        @extend .btn;
-        @extend .btn-primary;
-        margin:0 !important;
-    }
-
-    input[type=button].btn-secondary{
-        @extend .btn-secondary;
-    }
-
-    input[type=button].btn-outline{
-        @extend .btn-outline;
-    }
-
-    input[type=button].btn-small{
-        @extend .btn-small;
-    }
 }
 
 input.form-control,
@@ -358,8 +339,6 @@ form{
 //button input fix
 .form-group{
     input.btn.btn-primary{
-        @extend .btn;
-        @extend .btn-primary;
         width: auto;
         max-width: 100%;
     }
@@ -416,13 +395,5 @@ form{
         width:50%;
         float:right;
         color:$secondary-font-color;
-    }
-}
-
-//input submit styling
-.form-group{
-    input[type=submit]{
-        @extend .btn;
-        @extend .btn-primary;
     }
 }
