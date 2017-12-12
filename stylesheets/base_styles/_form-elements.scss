@@ -117,7 +117,7 @@ textarea.form-control{
     }
 
     &:focus{
-        @extend .input-focus;
+        @include input-focus();
         outline:0;
     }
 }
@@ -264,7 +264,7 @@ input[type=submit], button{
 
 //fieldset
 legend {
-    @extend .heading-medium;
+    @include heading-medium();
     border-bottom: 0;
 }
 
@@ -380,7 +380,7 @@ form{
 }
 
 .scopeNote{
-    @extend .font-xsmall;
+    @include font-xsmall();
 }
 
 //form styles

@@ -107,7 +107,7 @@
         padding-left:10px;
 
         h2{
-            @extend .heading-medium;
+            @include heading-medium();
             margin:20px 0 5px -10px;
         }
         

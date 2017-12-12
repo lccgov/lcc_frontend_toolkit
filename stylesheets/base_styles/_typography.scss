@@ -88,157 +88,75 @@ ul{
 
 //h1 to h5 sizes - fallback for migration of old content
 h1{
-  @extend .heading-xlarge;
+  @include heading-xlarge();
 }
 
 h2{
-  @extend .heading-large;
+  @include heading-large();
 }
 
 h3{
-  @extend .heading-medium;
+  @include heading-medium();
 }
 
 h4{
-  @extend .heading-small;
+  @include heading-small();
 }
 
 //sizes - line-height - margins
 .font-xxlarge {
-  font-size: 53px;
-  line-height: 1.0377358491;
-
-  @media (min-width: 641px) {
-    font-size: 80px;
-    line-height: 1;
-  }
+  @include font-xxlarge();
 }
 
 .font-xlarge {
-  font-size: 32px;
-  line-height: 1.09375;
-
-  @media (min-width: 641px) {
-    font-size: 48px;
-    line-height: 1.0416666667;
-  }
+  @include font-xlarge();
 }
 
 .font-large {
-  font-size: 24px;
-  line-height: 1.0416666667;
-
-  @media (min-width: 641px) {
-      font-size: 36px;
-      line-height: 1.1111111111;
-    }
+  @include font-large();
 }
 
 .font-medium {
-  font-size: 19px;
-  line-height: 1.2;
-
-  @media (min-width: 641px) {
-    font-size: 24px;
-    line-height: 1.25;
-  }
+  @include font-medium();
 }
 
 .font-small {
-  font-size: 16px;
-  line-height: 1.25;
-
-  @media (min-width: 641px) {
-    font-size: 19px;
-    line-height: 1.3157894737;
-  }
+  @include font-small();
 }
 
 .font-xsmall {
-  font-size: 14px;
-  line-height: 1.1428571429;
-
-  @media (min-width: 641px) {
-    font-size: 16px;
-    line-height: 1.25;
-  }
+  @include font-xsmall();
 }
 
 .heading-xlarge {
-  font-size: 36px;
-  line-height: 1.15;
-  margin:30px 0;
-
-  @media (min-width: 641px) {
-    font-size: 50px;
-    line-height: 1.15;
-    margin:50px 0;
-  }
+  @include heading-xlarge();
 }
 
 .heading-large {
-  font-size: 24px;
-  line-height: 1.25;
-  margin-top: 30px;
-  margin-bottom: 0.5em;
-
-  @media (min-width: 641px) {
-    font-size: 32px;
-    line-height: 1.25;
-    margin-top: 50px;
-    margin-bottom: 0.7em;
-  }
+  @include heading-large();
 }
 
 .heading-medium {
-  font-size: 19px;
-  line-height: 1.2;
-  margin-top: 30px;
-  margin-bottom: 0.5em;
-
-  @media (min-width: 641px) {
-    font-size: 24px;
-    line-height: 1.25;
-    margin-top: 40px;
-    margin-bottom: 0.7em;
-  }
+  @include heading-medium();
 }
 
 .heading-small {
-  font-size: 16px;
-  line-height: 1.25;
-  margin-top: 25px;
-  margin-bottom: 0.7em;
-
-  @media (min-width: 641px) {
-    font-size: 19px;
-    line-height: 1.3157894737;
-    margin-top: 30px;
-  }
+  @include heading-small();
 }
 
 .part-title{
-    font-size: 20px;
-    line-height: 1.25;
-    margin-bottom: 15px;
-
-  @media (min-width: 641px) {
-    font-size: 27px;
-    line-height: 1.25;
-    margin-bottom: 20px;
-  }
-
+  @include part-title();
 } 
 
 .part-content{
-    @extend .text;
+    @include text();
 
     .part-title {
-        @extend .heading-large;
+        @include heading-large();
     }
 
     h2{
-        @extend .heading-medium;
+        @include heading-medium();
     }
 }  
 
@@ -255,13 +173,7 @@ p.sharepoint,
 .link-back,
 .hidden-text,
 .text-link.reveal {
-  margin-top: 0.25em;
-  margin-bottom: 1em;
-
-  @media (min-width: 641px) {
-    margin-top: 0.2631578947em;
-    margin-bottom: 1.0526315789em;
-  }
+  @include body-text-margin();
 }
 
 .hidden-text{
@@ -270,7 +182,7 @@ p.sharepoint,
   }
 
   a.reveal{
-    @extend .border-link;
+    @include border-link();
   }
 }
 
@@ -295,7 +207,7 @@ p.sharepoint,
 
 //text-wrapper for usability reasons (recommeneded max 75 characters)
 .text {
-  max-width: 35em;
+  @include text();
 }
 
 //used on subsites
@@ -570,7 +482,7 @@ a[rel="external"]{
 }
 
 .link-small{
-    @extend .font-xsmall;
+    @include font-xsmall();
     color:$base-link-color;
 }
 
@@ -581,29 +493,19 @@ ol {
 }
 
 .list {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 15px;
-  display: inline-block;
-  width: 100%;
-
-  @media (min-width: 641px){
-    margin-bottom: 17px;
-  }
-
-  li {
-    margin-bottom: 7px;
-  }
+  @include list();
 }
 
 .list-bullet {
-  list-style-type: disc;
-  padding-left: 20px;
+  @include list-bullet();
 }
 
 .list-number {
-  list-style-type: decimal;
-  padding-left: 20px;
+  @include list-number();
+}
+
+.list-nav{
+  @include list-nav();
 }
 
 .heading-contents {
@@ -612,24 +514,6 @@ ol {
 
 .list-contents{
     font-size:16px;
-}
-
-.list-nav{
-    font-size:16px;
-    width:100%;
-
-    @media (min-width: 641px) {
-      font-size:19px;  
-  }
-
-  li{
-    margin-bottom: 10px;
-    line-height:1.7;
-
-    a{
-      @extend .border-link;
-    }
-  }
 }
 
 //blockquote
@@ -793,7 +677,7 @@ h2 + h3{
     }
 
     .additionalInfo{
-        @extend .font-xsmall;
+        @include font-xsmall();
         display:block;
         font-weight:400;
     }

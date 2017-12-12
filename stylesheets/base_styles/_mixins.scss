@@ -204,8 +204,129 @@ color: $list-webpart-font-color;
             } 
 
 //mixins
-.input-focus{
+@mixin input-focus(){
     -webkit-box-shadow: 0 0 0 4px #FFBF47;
     -moz-box-shadow: 0 0 0 4px #FFBF47;
     box-shadow: 0 0 0 4px #FFBF47;
+}
+
+//typography mixins
+@mixin font-sizing($mobile-size,$mobile-line,$desktop-size,$desktop-line){
+  font-size: $mobile-size;
+  line-height: $mobile-line;
+  @media (min-width: 641px) {
+    font-size: $desktop-size;
+    line-height: $desktop-line;
+  }
+}
+
+@mixin heading-sizing($mobile-size,$mobile-line,$mobile-margin,$desktop-size,$desktop-line,$desktop-margin){
+  font-size: $mobile-size;
+  line-height: $mobile-line;
+  margin: $mobile-margin;
+  @media (min-width: 641px) {
+    font-size: $desktop-size;
+    line-height: $desktop-line;
+    margin: $desktop-margin;
+  }
+}
+
+@mixin font-margin($mobile-margin,$desktop-margin){
+  margin: $mobile-margin;
+  @media (min-width: 641px) {
+    margin: $desktop-margin;
+  }
+}
+
+@mixin font-xxlarge() {
+  @include font-sizing(53px,1.1,80px,1.1);
+}
+
+@mixin font-xlarge() {
+  @include font-sizing(32px,1.1,48px,1.1);
+}
+
+@mixin font-large() {
+  @include font-sizing(24px,1.1,36px,1.2);
+}
+
+@mixin font-medium() {
+  @include font-sizing(19px,1.2,24px,1.25);
+}
+
+@mixin font-small() {
+  @include font-sizing(16px,1.25,19px,1.3);
+}
+
+@mixin font-small() {
+  @include font-sizing(14px,1.2,16px,1.25);
+}
+
+@mixin heading-xlarge() {
+  @include heading-sizing(36px,1.2,30px 0,50px,1.2,50px 0);
+}
+
+@mixin heading-large() {
+  @include heading-sizing(24px,1.25,30px 15px,32px,1.25,50px 25px);
+}
+
+@mixin heading-medium() {
+  @include heading-sizing(19px,1.2,30px 15px,32px,1.25,40px 20px);
+}
+
+@mixin heading-small() {
+  @include heading-sizing(16px,1.25,25px 12px,19px,1.3,30px 15px);
+}
+
+@mixin part-title() {
+  @include heading-sizing(20px,1.25,30px 15px,27px,1.3,40px 20px);
+}
+
+@mixin body-text-margin{
+  @include font-margin(0.25em 1em,0.3em 1.1em);
+}
+
+@mixin text() {
+  max-width: 35em;
+}
+
+
+@mixin list(){
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 100%;
+  @media (min-width: 641px){
+    margin-bottom: 17px;
+  }
+  li {
+    margin-bottom: 7px;
+  }
+}
+
+@mixin list-bullet(){
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+@mixin list-number(){
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+@mixin list-nav(){
+    font-size:16px;
+    width:100%;
+
+    @media (min-width: 641px) {
+      font-size:19px;  
+  }
+  li{
+    margin-bottom: 10px;
+    line-height:1.7;
+    a{
+      @include border-link();
+    }
+  }
 }

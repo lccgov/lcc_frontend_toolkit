@@ -11,7 +11,7 @@
 
     nav {
         ol{
-            @extend .two-columns;
+            @include two-columns();
             padding:0;
 
             li{

@@ -194,7 +194,7 @@ $panel-alt-color:white !default;
     }
 }
 
-.border-link{
+@mixin border-link(){
     border-bottom:1px solid rgba($base-link-color,0.3);
     text-decoration:none !important;
 
@@ -219,7 +219,7 @@ $panel-alt-color:white !default;
     column-gap: $val;
 }
 
-.three-columns{
+@mixin three-columns{
     @include column-count(3);
     @include column-gap(30px);
 
@@ -232,7 +232,7 @@ $panel-alt-color:white !default;
     }
 }
 
-.two-columns{
+@mixin two-columns(){
     @include column-count(2);
     @include column-gap(30px);
 

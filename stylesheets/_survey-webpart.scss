@@ -13,7 +13,7 @@
 
         .survey-easy{
             h4{
-                @extend .heading-small;
+                @include heading-small();
             }
         }
     }

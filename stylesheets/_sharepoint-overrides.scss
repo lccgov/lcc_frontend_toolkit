@@ -48,7 +48,7 @@ ul.cbs-List {
 
     h1,
     h1.ms-rteElement-H2{
-        @extend .heading-xlarge;
+        @include heading-xlarge();
     }
 
     h2,
@@ -57,7 +57,7 @@ ul.cbs-List {
     h2.heading-large,
     h3.heading-large,
     h4.heading-large{
-        @extend .heading-large;
+        @include heading-large();
     }
 
     h3,
@@ -66,7 +66,7 @@ ul.cbs-List {
     h2.heading-medium,
     h3.heading-medium,
     h4.heading-medium{
-        @extend .heading-medium;
+        @include heading-medium();
     }
 
     h4,
@@ -75,7 +75,7 @@ ul.cbs-List {
     h2.heading-small,
     h3.medium-small,
     h4.medium-small{
-        @extend .heading-small;
+        @include heading-small();
     }
 
     p, 

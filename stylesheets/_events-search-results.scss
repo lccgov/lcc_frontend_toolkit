@@ -39,7 +39,7 @@
                                     }
                                 }
                                 p{
-                                    @extend .font-xsmall;
+                                    @include font-xsmall();
                                     margin-bottom:0;
                                     color:$secondary-font-color;
                         

@@ -108,7 +108,7 @@
                                 font-size: 14px;
                             }
                             &:focus {
-                                @extend .input-focus;
+                                @include input-focus();
                             }
                         }
                         .btn {
