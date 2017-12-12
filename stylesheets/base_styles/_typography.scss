@@ -228,7 +228,8 @@ p.sharepoint,
 }
 
 //inset text
-.text-highlight{
+.text-highlight,
+.text-block{
   border-left: 15px solid #B3D9E6;
   padding:20px;
   width:100%;
@@ -277,7 +278,6 @@ p.sharepoint,
 
 //text block
 .text-block{
-  @extend .text-highlight;
   margin:0 0 30px;
   padding-top:0;
   padding-bottom:0;
@@ -412,7 +412,8 @@ a[rel="external"]:after {
     content: "\f08e"; 
 }
 
-a {
+a,
+.link {
     text-decoration:underline;
     color:$base-link-color;
 
@@ -426,7 +427,6 @@ a {
 }
 
 .link{
-  @extend a;
   border:0 !important;
   padding:0 !important;
 }

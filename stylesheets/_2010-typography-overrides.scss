@@ -78,9 +78,19 @@ table.styledTable td,
 
 //images
 .limitedrte-Style-image-right{
-    @extend .img-content;
-    @extend .img-right;
+    display: block;
+    max-width: 100%;
+    width:100%;
+    height: auto;
+    float:right;
     padding:0;
+    width:50%;
+
+    @media (max-width: 641px){
+        width:100%;
+        float:none;
+        padding:0;
+    }
 }
 
 //lists

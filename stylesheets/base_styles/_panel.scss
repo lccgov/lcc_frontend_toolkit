@@ -295,7 +295,7 @@ p + .panel{
         }
         .panel-event-info-date, 
         strong{
-            @extend .sr-only;
+           @include sr-only();
         }
     }
 }
