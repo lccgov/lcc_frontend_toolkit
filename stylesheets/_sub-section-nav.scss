@@ -78,10 +78,10 @@
     margin: -15px 0 0 -15px;
 
     .sub-section{
-        @extend .panel;
+        @include panel();
         width: calc(100% * (1/4) - 16px);
         margin: 15px 0 0 15px;
-        background:$lighter-grey;
+        background:$border-color;
 
         @media (max-width: 990px) {
             width: calc(100% * (1/2) - 16px);
@@ -93,9 +93,16 @@
 
         a{
             .sub-section-heading{
-                @extend .sub-section-heading;
+                border-bottom:5px solid #F6F7FA;
+                margin:0 0 15px;
+                padding-bottom:10px;
+                font-size:24px;
                 border:0;
                 margin-bottom:10px !important;
+                @media (max-width: 767px) {
+                    font-size:19px;
+                }
+                
             }
         }
 

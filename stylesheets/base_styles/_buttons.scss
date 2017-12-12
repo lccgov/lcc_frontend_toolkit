@@ -3,32 +3,7 @@
 .form-group input.btn.btn-primary,
 .form-group input[type=submit],
 .limitedrte-Style-BUTTON{
-    font-weight:400;
-    font-size:19px;
-    border:0;
-    @include border-radius(4px);
-    white-space: normal;
-    border:1px solid $border-color;
-    box-shadow:none;
-    margin:0 0 20px;
-    text-decoration:none!important;
-    padding:20px 25px;
-    text-align:left;
-    line-height:1.3em;
-    position:relative;
-    @media (max-width: 641px) {
-        margin:5px 0 15px;
-        padding:15px 20px;
-        font-size:16px;
-      }
-    &:after{
-      display:none;
-    }
-    &:focus{
-        background:$focus-color;
-        color:$black;
-        border-color:$focus-color !important;
-    }
+    @include btn();
 }
 
 .btn-arrow,
@@ -89,10 +64,10 @@
 }
 
 .btn-default{
-    background-color:$light-grey;
+    background-color:$border-color;
     color:white;
     &:hover{
-        background:darken($light-grey, 5%);
+        background:darken($border-color, 5%);
         color:white;
     }
     &:visited{
@@ -105,61 +80,16 @@
 .form-group input.btn.btn-primary,
 .form-group input[type=submit],
 .limitedrte-Style-BUTTON{
-    background-color:$primary-button-background-color;
-    color:$primary-button-color;
-    border-color:$primary-button-background-color;
-    &:hover{
-        background:lighten($primary-button-background-color, 5%);
-        color:$primary-button-color;
-        border-color:lighten($primary-button-background-color, 5%);
-    }
-    &:active{
-        background:darken($primary-button-background-color, 10%) !important;
-        color:$primary-button-color !important;
-        border-color:darken($primary-button-background-color, 10%) !important;
-    }
-    &:visited{
-        color:$primary-button-color;
-    }
+    @include btn-color($primary-button-background-color,$primary-button-color);
 }
 
 .btn-secondary,
 .form-group input[type=button].btn-secondary{
-    background-color:$secondary-button-background-color;
-    color:$secondary-button-color;
-    border-color:$secondary-button-background-color;
-    &:hover{
-        background:lighten($secondary-button-background-color, 5%);
-        color:$secondary-button-color;
-        border-color:lighten($secondary-button-background-color, 5%)
-    }
-    &:active{
-        background:darken($secondary-button-background-color, 10%) !important;
-        color:$secondary-button-color !important;
-        border-color:darken($secondary-button-background-color, 10%) !important;
-    }
-    &:visited{
-        color:$secondary-button-color;
-    }
+    @include btn-color($secondary-button-background-color,$secondary-button-color);
 }
 
 .btn-outline,
 .form-group input[type=button].btn-outline{
-    color:$outline-button-color !important;
-    border-color:$outline-button-border-color !important;
+    @include btn-color($outline-button-background-color,$outline-button-color);
     background:transparent !important;
-    &:hover{
-        background-color:darken(white,5%) !important;
-        border-color:darken($outline-button-border-color, 5%)
-    }
-    &:active{
-        background-color:darken(white,10%) !important;
-        border-color:darken($outline-button-border-color, 10%)
-    }
-    &:after{
-        background: rgba(0, 0, 0, 0.05);
-    }
-    &:visited{
-        color:$outline-button-color !important;
-    }
 }

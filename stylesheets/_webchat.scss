@@ -57,8 +57,8 @@
             text-decoration:none !important;
 
             #myChatLinkInfo{
-                @extend .btn;
-                @extend .btn-primary;
+                @include btn();
+                @include btn-color($primary-button-background-color,$primary-button-color);
 
                 &:before{
                     color:white;

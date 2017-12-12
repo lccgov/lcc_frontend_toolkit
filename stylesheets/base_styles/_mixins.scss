@@ -341,3 +341,87 @@ color: $list-webpart-font-color;
     clip: rect(0,0,0,0);
     border: 0;
 }
+
+//panel
+@mixin panel(){
+  background:$panel-color;
+  padding:20px;
+  box-shadow:none;
+  border-radius:0;
+  border:0;
+  margin:30px 0;
+
+  @media (min-width: 641px) {
+      padding:30px;  
+      margin:30px 0;
+  }
+
+  h2:first-child,
+  h3:first-child,
+  h4:first-child{
+    margin-top:0;
+  }
+
+  p:last-child{
+    margin-bottom:0;
+  }
+
+  .media-container{
+    margin:0;
+  }
+}
+
+//search panel 
+@mixin search-panel() {
+    @include panel();
+    padding-bottom: 10px;
+}
+
+//buttons
+@mixin btn(){
+    font-weight:400;
+    font-size:19px;
+    border:0;
+    @include border-radius(4px);
+    white-space: normal;
+    border:1px solid $border-color;
+    box-shadow:none;
+    margin:0 0 20px;
+    text-decoration:none!important;
+    padding:20px 25px;
+    text-align:left;
+    line-height:1.3em;
+    position:relative;
+    @media (max-width: 641px) {
+        margin:5px 0 15px;
+        padding:15px 20px;
+        font-size:16px;
+      }
+    &:after{
+      display:none;
+    }
+    &:focus{
+        background:$focus-color;
+        color:$black;
+        border-color:$focus-color !important;
+    }
+}
+
+@mixin btn-color($btn-bg-color,$btn-color){
+    background-color:$btn-bg-color;
+    color:$btn-color;
+    border-color:$btn-bg-color;
+    &:hover{
+        background:lighten($btn-bg-color, 5%);
+        color:$btn-color;
+        border-color:lighten($btn-bg-color, 5%);
+    }
+    &:active{
+        background:darken($btn-bg-color, 10%) !important;
+        color:$btn-color !important;
+        border-color:darken($btn-bg-color, 10%) !important;
+    }
+    &:visited{
+        color:$btn-color;
+    }
+}
