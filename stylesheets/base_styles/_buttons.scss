@@ -90,6 +90,6 @@
 
 .btn-outline,
 .form-group input[type=button].btn-outline{
-    @include btn-color($outline-button-background-color,$outline-button-color);
+    @include btn-color($outline-button-border-color,$outline-button-color);
     background:transparent !important;
 }
