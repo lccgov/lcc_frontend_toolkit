@@ -1,4 +1,4 @@
-@mixin btn(){
+.btn{
     font-weight:400;
     font-size:19px;
     border:0;
@@ -27,15 +27,13 @@
       display:none;
     }
 
-    &:focus,
-    &:active{
+    &:focus{
         background:$focus-color;
         color:$black;
         border-color:$focus-color !important;
     }
-}
 
-@mixin btn-arrow(){
+    &.btn-arrow{
         padding-right:60px;
 
         &:before{
@@ -71,13 +69,6 @@
         @media (max-width: 767px) {
             padding-right:50px;
         }
-}
-
-.btn{
-    @include btn();
-
-    &.btn-arrow{
-        @include btn-arrow();
     }
 
     &.btn-small{
