@@ -1,0 +1,44 @@
+.lcc-search-box{
+    .input-group{
+        .form-control{
+            width:100% !important;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            height:45px;
+            @media (min-width: 641px) {
+                height:55px;
+            }
+        }
+        .btn{
+            padding:0;
+            height:45px;
+            width:45px;
+            margin:0;
+            text-align:center;
+            background:$base-link-color;
+            border:1px solid $base-link-color;
+            @media (min-width: 641px) {
+                height:55px;
+                width:55px;
+            }
+            &:hover{
+                background: darken($base-link-color,5%);
+                border-color: darken($base-link-color,5%);
+            }
+            &:active,
+            &:focus{
+                box-shadow:none;
+                &:before{
+                    color:$base-font-color;
+                }
+            }
+            &:before{
+                font-family: "FontAwesome";
+                font-size: 28px;
+                content: "\f002";
+                margin: 0;
+                color:white;
+            }
+        }
+    }
+}
