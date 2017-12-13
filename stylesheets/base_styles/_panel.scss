@@ -18,18 +18,24 @@ p + .panel{
 
 //alternate colored panel
 .panel.alt {
-    background: $hightlight-color;
+    background: $panel-alt-background-color;
     h2,
     h3,
     p,
     .btn,
     blockquote,
-    blockquote footer {
+    blockquote footer,
+    a {
         color: $panel-alt-color;
     }
     .btn.btn-outline {
         color: $panel-alt-color !important;
         border-color: $panel-alt-color !important;
+    }
+    a{
+        &:hover{
+            color: lighten($panel-alt-color,10%);
+        }
     }
 }
 

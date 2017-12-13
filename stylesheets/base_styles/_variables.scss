@@ -33,6 +33,11 @@ $secondary-font-color:#666B76 !default;
 //panel colours
 $panel-color:#F6F7FA !default;
 $panel-color-secondary: darken(#F6F7FA,5%) !default;
+$panel-alt-background-color:$base-link-color !default;
+$panel-alt-color:white !default;
+$panel-event-date-background-light:$base-link-color !default;
+$panel-event-date-background-dark:darken($panel-event-date-background-light,5%) !default;
+$panel-event-date-color:white !default;
 
 //global used on all partials to get a uniform spacing between elements
 $base-margin-bottom:1.875em !default;
@@ -166,13 +171,6 @@ $group-promo-background-color: #F6F7FA  !default;
 $group-promo-header-color: #3D414A  !default;
 $group-promo-description-color: #666B76  !default;
 $group-promo-arrow-color: #9DA5B2  !default;
-
-//panel colors
-$panel-event-date-background-light:$base-link-color !default;
-$panel-event-date-background-dark:darken($panel-event-date-background-light,5%) !default;
-$panel-event-date-color:white !default;
-$hightlight-color:$base-link-color !default;
-$panel-alt-color:white !default;
 
 //mixins
 @mixin link-border-bottom($color,$opacity,$visited-color){
