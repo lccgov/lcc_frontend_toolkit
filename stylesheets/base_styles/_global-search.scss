@@ -23,16 +23,15 @@
     right: -1px;
     top: 0px;
     width: 40px !important;
-    height: 38px;
-    min-height: 38px;
+    height: 39px;
+    min-height: 39px;
     margin: 1px;
     padding: 0 0;
     display: block;
     color: $main-nav-background;
     background: #F3F3F4;
-    @media screen and (max-width: 768px) {
-        top: -1px;
-    }
+    top: -1px;
+  
 }
 
 .ms-srch-sb > .ms-srch-sb-searchLink:hover,
