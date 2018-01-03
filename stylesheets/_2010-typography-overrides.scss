@@ -98,14 +98,14 @@ table.styledTable td,
 #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField,
 #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField{
      ul{
-        @include list;
-        @include list-bullet;
+        //@include list;
+        //@include list-bullet;
         list-style-type: disc;
      }
 
      ol{
-        @include list;
-        @include list-number;
+       // @include list;
+       // @include list-number;
         list-style-type: decimal;
     }
 }
