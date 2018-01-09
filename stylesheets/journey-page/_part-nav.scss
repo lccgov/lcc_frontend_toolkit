@@ -2,18 +2,15 @@
     margin-top:30px;
     padding-bottom:8px;
     margin-bottom:45px;
-    border-bottom:2px solid #F6F7FA;
-
+    border-bottom:1px solid $border-color;
     @media (max-width: 640px){
         padding-bottom:3px;
         margin-bottom:30px;
     }
-
     nav {
         ol{
             @include two-columns();
             padding:0;
-
             li{
                 font-size:16px;
                 margin-bottom:12px;

@@ -1,13 +1,11 @@
 .pagination-nav {
     display: block;
     margin: 50px 0;
-    border-top: 2px solid $border-color;
-    border-bottom: 2px solid $border-color;
-
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
     ul{
         margin: 0;
         padding: 0;
-
         li{
             font-size: 16px;
             line-height: 1.14286;
@@ -17,15 +15,11 @@
             margin: 0;
             padding: 0;
             width: 49%;
-
             &.pagination-nav__previous-page{
                 float: left;
                 text-align: left;
-
-
                 a{
                     padding: 0.75em 0 0.75em 3em;
-
                     &:before{
                         content: '\f104';
                         left: 7px;
@@ -33,17 +27,13 @@
                         color:$base-link-hover-color;
                     }
                 }
-
             }
-
             &.pagination-nav__next-page{
                 float: right;
                 text-align: right;
-
                 a{
                     text-align: right;
                     padding: 0.75em 3em 0.75em 0;
-
                     &:before{
                         content: '\f105';
                         right: 7px;
@@ -52,7 +42,6 @@
                     }
                 }
             }
-
             &.pagination-nav__previous-page,
             &.pagination-nav__next-page{
                 @media (max-width: 640px){
@@ -60,37 +49,31 @@
                     width:100%;
                 }
             }
-
             a{
                 display: block;
                 text-decoration: none;
                 border:0;
                 position:relative;
-
                 &:hover{
                     background:$base-hover-background;
                     color:$base-link-color;
                 }
-
                 &:before{
                     font-family: FontAwesome;
                     position: absolute;
                     color: lighten($base-font-color,10%);
                     font-size:60px;
                 }
-
                 .pagination-nav__part-title{
                     font-size: 24px;
                     line-height: 1.11111;
                     margin-bottom: 0.1em;
                     display: block;
-
                     @media (min-width: 641px){
                         font-size: 32px;
                         line-height: 1.25;
                     }
                 }
-
                 .pagination-nav__label{
                     color:$base-font-color;
                 }
