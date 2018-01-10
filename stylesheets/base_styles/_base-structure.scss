@@ -37,3 +37,11 @@
         padding-right: 15px;
     }
 }
+
+.three-columns{
+    @include three-columns;
+}
+
+.two-columns{
+    @include two-columns;
+}
