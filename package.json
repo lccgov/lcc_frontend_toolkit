@@ -1,6 +1,6 @@
 {
   "name": "lcc_frontend_toolkit",
-  "version": "0.162.0",
+  "version": "0.161.0",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
