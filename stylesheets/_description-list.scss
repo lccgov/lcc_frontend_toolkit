@@ -1,32 +1,30 @@
 .description-list{
     margin:10px 0 30px;
-
     .description-list__item{
         border-bottom:1px solid $border-color;
-
         h3{
-            font-size:19px;
+            font-size:16px;
             margin:0;
             padding-top: 1rem;
+            line-height:1.6;
 
             @media (min-width: 641px) {
+                font-size:19px;
                 float:left;
                 width:25%;
-                padding: 1rem .75rem;
+                padding: 1rem .75rem 1rem 0;
+                line-height:1.6;
             }
         }
-
         .description-list__item-content{
             margin: 0;
             padding-bottom: 1rem;
             padding-top: .25rem;
-
             @media (min-width: 641px) {
                 float:left;
                 width:75%;
                 padding: 1rem .75rem;
             }
-
             p,
             ul,
             li,
@@ -41,7 +39,6 @@
                     }
                 }
             }
-
             ul{
                 li{
                     .day{
@@ -53,18 +50,16 @@
                             margin-right: 5px;
                         }
                     }
-
                     .hours{
                         display: inline-block;
                     }
                 }
             }
-
             p{
                 margin-bottom:10px;
             }
             .text-highlight{
-                margin:10px 0;
+                margin:15px 0;
             }
         }
     }
