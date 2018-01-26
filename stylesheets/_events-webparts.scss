@@ -66,6 +66,7 @@ CHECKBOXES EVENTS FILTERS
     background:$link-primary-color;
     border-color:$link-primary-color;
     box-shadow: inset 0 0px 0px;
+    text-align:center;
 
     &:hover{
        background:darken($link-primary-color,20%);  
@@ -187,6 +188,7 @@ CHECKBOXES EVENTS FILTERS
         background:$link-primary-color;
         border-color:$link-primary-color;
         box-shadow: inset 0 0 0;
+        text-align: center;
         
          &:hover, &:focus
     {
@@ -946,6 +948,7 @@ img{
         background:$link-primary-color;
         border-color:$link-primary-color;
         box-shadow: inset 0 0 0;
+        text-align:center;
         
          &:hover, &:focus
     {
@@ -981,10 +984,6 @@ img{
     .eventsFilterType .mapToggle{
     margin:20px 0 5px 0;    
 	}
-    
-    .mapToggle a.btn {
-    width: 50%;
-}
 
 	.hide800{
 		display:none;
@@ -2447,3 +2446,20 @@ margin-bottom:0px !important;
 .eventListOnly{
     margin-bottom:$base-margin-bottom;
 }
+
+.eventsFilterType input.form-control, .eventsFilterType select, .venuesFilterType input.form-control, .venuesFilterType select {
+    width:100% !important;
+    border: 1px solid #e0e0e0 !important;
+}
+
+#date-range h4{
+    padding-top:40px;
+}
+
+@media (max-width: 641px)
+{
+.eventsFilterType .btn {
+     margin:0px;
+    padding: 15px 20px;
+    font-size: 16px;
+}}
