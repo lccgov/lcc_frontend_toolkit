@@ -121,8 +121,8 @@ $sectionFive-background-color:darken($base-background-color, 5%) !default;
 $eventsfilter-hightlight-color:#000 !default;
 
 //accordion
-$accordion-color:blue !default;
-$accordion-border-color:#dedede !default;
+$accordion-color:$base-link-color !default;
+$accordion-border-color:$border-color !default;
 
 //news
 $news-button-background: green !default;
