@@ -1,0 +1,155 @@
+//ARIA ACCORDION
+.accordion {
+	list-style: none;
+	margin: 0 0 -1px;
+	padding: 0;
+    border-bottom: 1px solid $accordion-border-color;
+}
+
+.accordion > li {
+	margin: 0;
+}
+
+/**
+ * Add zero-width space. needed to ensure Safari + VO respect list semantics.
+ * Set the before content to position absolute to negate any visible space
+ * the before content could add to the document.
+ */
+.accordion > li:before {
+	content: "\200B";
+	position: absolute;
+}
+
+/**
+ * Accordion Heading
+ */
+.js .accordion__heading {
+	border-top: 1px solid $accordion-border-color;
+	margin: -1px 0 0;
+    position:relative;
+}
+
+.js .accordion__trigger {
+	-webkit-appearance: none;
+	background-color: white;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	color: $accordion-color;
+	cursor: pointer;
+	display: block;
+	font-size: inherit;
+	padding: 1em .5em;
+	position: relative;
+	text-align: left;
+	width: 100%;
+	z-index: 2;
+    font-size:16px;
+    padding-left:2.500em;
+    border-left:5px solid transparent;
+    @media (min-width: 641px){
+        font-size:19px;
+        padding-left:3.158em;
+    }
+    &:after{
+        font-family: FontAwesome;
+        font-size: 16px;
+        content: "\f067";
+        position: absolute;
+        right: auto;
+        left: 0.625em;
+        top: 1em;
+        margin-top: 0;
+        color: $accordion-color;
+        font-weight: 400;
+        @media (min-width: 641px){
+            font-size:19px;
+            left: 1.053em;
+        }
+    }
+}
+
+/**
+ * This is needed to allow a double tap iOS 11
+ * Safari + VO to function correctly, if there
+ * are multiple elements (wrapper spans) to layout
+ * text nodes within the accordion button.
+
+	-- This is not needed if a button only contains text
+	   and no other child nodes wrapping the text --
+
+.accordion__trigger > * {
+	pointer-events: none;
+}
+ */
+
+.js .accordion__trigger:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+	color: $accordion-color;
+	outline: none;
+    border-color:$accordion-color;
+}
+
+.js .accordion__trigger:focus {
+	background-color: $focus-color;
+	color: $base-font-color;
+	outline: none;
+    &:after{
+	    color: $base-font-color;
+    }
+}
+
+.accordion__trigger[aria-disabled="true"]:hover {
+	cursor: not-allowed;
+}
+
+.accordion__trigger[aria-disabled="true"]:focus {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.accordion__trigger[aria-expanded="true"] {
+    border-color:$accordion-color;
+    &:after{
+	    content: "\f068";
+    }
+}
+
+.js .accordion__panel {
+	background-color: inherit;
+	max-height: 0vh;
+	overflow: hidden;
+	padding: .05em 1.25em;
+	position: relative;
+	visibility: hidden;
+	z-index: 1;
+    border-bottom: 1px solid $accordion-border-color;
+    &:last-of-type{
+        border-bottom:0;
+    }
+    p{
+        margin-top:0;
+    }
+}
+
+.js .accordion__panel {
+	margin-top: -.1em;
+}
+
+.js .accordion__panel > :last-child {
+	margin-bottom: 0;
+}
+.js .accordion__panel[aria-hidden="true"] {
+    border-bottom: 1px solid $accordion-border-color;
+}
+.js .accordion__panel[aria-hidden="false"] {
+	max-height: 100vh;
+	overflow: auto;
+	padding: 1.5em .5em;
+	visibility: visible;
+    padding-left:3.158em;
+    border-left:5px solid $accordion-color;
+    padding-left:2.500em;
+    @media (min-width: 641px){
+        padding-left:3.158em;
+    }
+}
