@@ -14,6 +14,21 @@ $red:#c0392b !default;
 $base-hover-color:#333 !default;
 $base-hover-background:#F6F7FA !default;
 
+//extra colours
+$focus-color:#FFBF47 !default;
+$secondary-link-color:#003F55 !default;
+$secondary-font-color:#666B76 !default;
+$border-color:#DCDEE1 !default;
+$panel-color:darken(#F6F7FA,3%) !default;
+$button-hover-color:lighten(#008000,5%) !default;
+$base-link-hover-color:#3399BB !default;
+$black:#212224 !default;
+$light-black:#3D414A !default;
+$dark-grey:#666B76 !default;
+$grey:#9DA5B2 !default;
+$light-grey:#DCDEE1 !default;
+$lighter-grey:#F6F7FA !default;
+
 //typography
 $font-primary: Arial !default; // main font
 $font-secondary: Arial !default; // secondary font
@@ -262,21 +277,6 @@ $group-promo-arrow-color: #9DA5B2  !default;
     background: -moz-radial-gradient($top, $bottom); /* For Firefox 3.6 to 15 */
     background: radial-gradient($top, $bottom); /* Standard syntax */
 }
-
-//extra colours
-$focus-color:#FFBF47 !default;
-$secondary-link-color:#003F55 !default;
-$secondary-font-color:#666B76 !default;
-$border-color:#DCDEE1 !default;
-$panel-color:darken(#F6F7FA,3%) !default;
-$button-hover-color:lighten(#008000,5%) !default;
-$base-link-hover-color:#3399BB !default;
-$black:#212224 !default;
-$light-black:#3D414A !default;
-$dark-grey:#666B76 !default;
-$grey:#9DA5B2 !default;
-$light-grey:#DCDEE1 !default;
-$lighter-grey:#F6F7FA !default;
 
 //form colours
 $input-color:#212224 !default;
