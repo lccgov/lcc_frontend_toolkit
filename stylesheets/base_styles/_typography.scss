@@ -503,6 +503,10 @@ ol {
   @include list-number();
 }
 
+.list-step{
+  @include list-step();
+}
+
 .list-nav{
   @include list-nav();
 }
@@ -538,6 +542,34 @@ blockquote {
       font-size:16px !important;
     }
   }
+}
+
+//text-highlight content spacing
+.text-highlight{
+    *{
+        margin:15px 0 0;
+    }
+    li{
+        margin:7px 0 0;
+        &:first-child{
+            margin-top:0;
+        }
+    }
+    *:first-child { 
+        margin-top: 0 !important; 
+    }
+    *:last-child { 
+        margin-bottom: 0 !important; 
+    }
+    pre{
+        margin-top:15px;
+    }
+}
+
+@media (max-width: 641px){
+.text-highlight h2, .text-highlight h3, .text-highlight h4, .text-block h2, .text-block h3, .text-block h4 {
+    margin-bottom: 15px;
+}
 }
 
 //element spacing
@@ -610,12 +642,6 @@ ul + p{
 
 h2 + h3{
     margin-top:0;
-}
-
-.text-highlight {
-    p + ul{
-        margin-top:15px;
-    }
 }
 
 .top-header-margin{

@@ -491,3 +491,33 @@ h1 .form-progress{
         margin:0 0 15px;
     }
 }
+
+//errors and validation 
+.error-summary{
+    border: 5px solid #cc0000;
+    padding:30px;
+    *{
+        margin:15px 0 0;
+    }
+    li{
+        margin:7px 0 0;
+        &:first-child{
+            margin-top:0;
+        }
+    }
+    *:first-child { 
+        margin-top: 0 !important; 
+    }
+    *:last-child { 
+        margin-bottom: 0 !important; 
+    }
+    .error-summary-list{
+        padding:0;
+        li{
+            a{
+                color:#cc0000;
+                font-weight:bold;
+            }
+        }
+    }
+}
