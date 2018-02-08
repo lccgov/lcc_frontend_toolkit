@@ -425,3 +425,92 @@ color: $list-webpart-font-color;
         color:$btn-color;
     }
 }
+
+//mixins
+@mixin link-border-bottom($color,$opacity,$visited-color){
+    color:$color;
+    border-bottom:1px solid rgba($color,$opacity);
+    text-decoration:none;
+    cursor:pointer;
+
+    &:hover{
+        color:darken($color,10%);
+        border-color:darken($color,10%);
+        text-decoration:none;
+    }
+
+    &:visited{
+        color:$visited-color;
+        border-color:rgba($visited-color,$opacity);
+        text-decoration:none;
+    }
+}
+
+@mixin border-link(){
+    border-bottom:1px solid rgba($base-link-color,0.3);
+    text-decoration:none !important;
+
+    &:hover{
+        border-color:rgba($base-link-hover-color,0.3) !important;
+    }
+
+    &:visited{
+        border-color:rgba($base-link-visited-color,0.3);
+    }
+}
+
+@mixin column-count($val) {
+    -webkit-column-count: $val;
+    -moz-column-count: $val;
+    column-count: $val;
+}
+
+@mixin column-gap($val) {
+    -webkit-column-gap: $val;
+    -moz-column-gap: $val;
+    column-gap: $val;
+}
+
+@mixin three-columns{
+    @include column-count(3);
+    @include column-gap(30px);
+
+    @media (max-width: 990px) {
+        @include column-count(2);
+    }
+
+    @media (max-width: 767px) {
+        @include column-count(1);
+    }
+}
+
+@mixin two-columns(){
+    @include column-count(2);
+    @include column-gap(30px);
+
+    @media (max-width: 767px) {
+        @include column-count(1);
+    }
+}
+
+@mixin background-size($val) {
+    -webkit-background-size: $val;
+    -moz-background-size: $val;
+    -o-background-size: $val;
+    background-size: $val;
+}
+
+@mixin background-size($val) {
+    -webkit-background-size: $val;
+    -moz-background-size: $val;
+    -o-background-size: $val;
+    background-size: $val;
+}
+
+@mixin background-radial($top,$bottom,$base) {
+    background: $base;
+    background: -webkit-radial-gradient($top, $bottom); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient($top, $bottom); /* For Opera 11.1 to 12.0 */
+    background: -moz-radial-gradient($top, $bottom); /* For Firefox 3.6 to 15 */
+    background: radial-gradient($top, $bottom); /* Standard syntax */
+}
