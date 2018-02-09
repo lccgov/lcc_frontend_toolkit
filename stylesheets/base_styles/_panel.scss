@@ -126,10 +126,6 @@ p + .panel{
             font-size:21px;
         }
     }
-    
-    .btn{
-        margin:0;
-    }
 }
 
 .content-block.center {
@@ -313,11 +309,7 @@ p + .panel{
     }
 }
 
-
-//panels - needs looking at
-$panel-padding:30px;
-
-/*.panel{
+.panel{
     h2,
     h3,
     h4{
@@ -342,20 +334,3 @@ $panel-padding:30px;
         margin-bottom:0;
     }
 }
-
-.panel.img .content {
-    @media (min-width: 641px){
-        padding: $panel-padding;
-    }
-}
-
-.panel blockquote {
-    @media (min-width: 990px){
-        font-size: 24px;
-        line-height:1.25;
-    }
-}
-
-.panel blockquote:before {
-    left: -5px;
-}*/

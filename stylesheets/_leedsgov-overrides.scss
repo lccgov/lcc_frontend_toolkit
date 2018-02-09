@@ -73,7 +73,6 @@ aside.col-md-4 {
     }
 }
 
-
 //video container
 .media-container {
     margin: 30px 0;
@@ -84,33 +83,22 @@ aside.col-md-4 {
     line-height: 1.5;
 }
 
-//increased line-height for body content
-.paragraph,
-p,
-p.sharepoint,
-.link-back,
-.hidden-text,
-.text-link.reveal,
-ul.list {
-  line-height:1.6;
+//panel - integrate with panels?
+$panel-padding:30px;
+
+.panel.img .content {
+    @media (min-width: 641px){
+        padding: $panel-padding;
+    }
 }
 
-//lead text
-.lead {
-  font-size: 19px;
-  line-height: 1.6;
+.panel blockquote {
+    @media (min-width: 990px){
+        font-size: 24px;
+        line-height:1.25;
+    }
+}
 
-  @media (min-width: 641px) {
-    font-size: 24px;
-    line-height: 1.6;
-    margin-top: 1.0526315789em;
-  }
-
-  &.header{
-    margin-bottom:50px;
-  }
-
-  a[rel="external"] {
-      margin-right: 32px;
-  }
+.panel blockquote:before {
+    left: -5px;
 }
