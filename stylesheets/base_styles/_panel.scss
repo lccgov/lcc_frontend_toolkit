@@ -307,4 +307,55 @@ p + .panel{
     }
 }
 
+@media (max-width: 990px) {
+    .panel .media-container {
+        margin-top: 15px;
+    }
+}
 
+
+//panels - needs looking at
+$panel-padding:30px;
+
+/*.panel{
+    h2,
+    h3,
+    h4{
+        margin-bottom:10px;
+        @media (min-width: 641px){
+            margin-bottom:15px; 
+        }
+        + p{
+            margin-top:0;
+        }
+    }
+
+    p{
+        margin-bottom:15px;
+
+        + .btn{
+            margin-top:5px !important;
+        }
+    }
+
+    .btn{
+        margin-bottom:0;
+    }
+}
+
+.panel.img .content {
+    @media (min-width: 641px){
+        padding: $panel-padding;
+    }
+}
+
+.panel blockquote {
+    @media (min-width: 990px){
+        font-size: 24px;
+        line-height:1.25;
+    }
+}
+
+.panel blockquote:before {
+    left: -5px;
+}*/

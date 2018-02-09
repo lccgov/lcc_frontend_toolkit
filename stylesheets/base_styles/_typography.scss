@@ -230,12 +230,13 @@ p.sharepoint,
 .text-highlight,
 .text-block{
   border-left: 15px solid #B3D9E6;
-  padding:20px;
+  padding:15px;
   width:100%;
   margin: 30px 0;
 
   @media (min-width: 641px){
     margin: 30px 0;
+    padding:15px 30px;
   }
 
   h2,
@@ -278,10 +279,12 @@ p.sharepoint,
 //text block
 .text-block{
   margin:0 0 30px;
-  padding-top:0;
-  padding-bottom:0;
   border:0;
   border-left: 1px solid #B3D9E6;
+  padding:0 15px;
+    @media (min-width: 641px){
+        padding:0 30px;
+    }
 }
 
 //typography - notice
@@ -522,12 +525,15 @@ ol {
 //blockquote
 blockquote {
     border-left: 15px solid $base-link-hover-color;
-
+    padding:15px;
     p{
       font-size:24px !important;
 
       @media (max-width: 641px) {
         font-size:19px !important;
+      }
+      @media (min-width: 641px){
+        padding:30px;
       }
     }
 
