@@ -91,12 +91,13 @@ table.styledTable td,
     }
 }
 
-//lists
+//to make the bullet points / numbers appear for ul elements without the .list class and .list-bullet and .list-number 
 #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField,
 #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField,
 #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField,
 #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField,
-#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField{
+#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField,
+.accordion .accordion-drawer .content-block{
      ul{
         @include list();
         @include list-bullet();
