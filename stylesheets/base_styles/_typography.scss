@@ -180,6 +180,22 @@ p.sharepoint,
 .hidden-text{
   .panel{
     margin-top:10px;
+    *{
+        margin:15px 0 0;
+        @include text();
+    }
+    li{
+        margin:7px 0 0;
+        &:first-child{
+            margin-top:0;
+        }
+    }
+    *:first-child { 
+        margin-top: 0 !important; 
+    }
+    *:last-child { 
+        margin-bottom: 0 !important; 
+    }
   }
 
   a.reveal{
@@ -524,11 +540,28 @@ ol {
 
 //blockquote
 blockquote {
-    border-left: 15px solid $base-link-hover-color;
-    padding:15px;
+    font-family:$font-secondary;
+    font-weight:bold;
+    position:relative;
+    padding:0 30px 0 80px;
+    margin:30px 0;
+    border-left: 5px solid $border-color;
+    @media (min-width: 641px){
+        margin:60px 0;
+    }
+    &:before{
+        font-family: FontAwesome;
+        content: "\f10d";
+        position: absolute;
+        top: 0;
+        left: 30px;
+        opacity: 0.5;
+        font-size: 32px;
+    }
     p{
       font-size:24px !important;
-
+      margin:0 0 15px;
+      padding:0;
       @media (max-width: 641px) {
         font-size:19px !important;
       }
@@ -547,6 +580,14 @@ blockquote {
     @media (max-width: 641px) {
       font-size:16px !important;
     }
+  }
+  .blockquote-footer,
+  cite{
+      color:$secondary-font-color;
+      font-weight:normal;
+      font-style:normal;
+      font-size:16px;
+      line-height:1.6;
   }
 }
 

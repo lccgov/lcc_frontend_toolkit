@@ -119,7 +119,7 @@ textarea.form-control{
 
 .form-label{
     display:block;
-    font-weight:bold;
+    font-weight:400;
     font-size:19px;
 
     @media (min-width: 641px) {
@@ -247,6 +247,7 @@ input[type=submit], button{
 legend {
     @include heading-medium();
     border-bottom: 0;
+    line-height:1.6;
 }
 
 form{
@@ -263,12 +264,14 @@ form{
         margin-right: 20px;
         margin-bottom: 0;
         clear: none; 
-
+        margin-top:10px;
+        @media (min-width: 641px){
+            width: 65px;
+        }
         label {
             display: block;
             padding-bottom: 2px; 
         }
-
         input {
             width: 100% !important; 
         }
@@ -276,6 +279,9 @@ form{
 
     .form-group-year {
         width: 70px; 
+        @media (min-width: 641px){
+            width: 100px;
+        }
     }
 }
 
@@ -494,7 +500,7 @@ h1 .form-progress{
 
 //errors and validation 
 .error-summary{
-    border: 5px solid #cc0000;
+    border: 5px solid $red;
     padding:30px;
     *{
         margin:15px 0 0;
