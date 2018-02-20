@@ -1,17 +1,29 @@
 //black and greys
-$black:#212224 !default;
-$light-black:#3D414A !default;
-$dark-grey:#666B76 !default;
-$grey:#9DA5B2 !default;
-$light-grey:#DCDEE1 !default;
-$lighter-grey:#F6F7FA !default;
+$black:#263238 !default;
+$light-black:#37474f !default;
+$dark-grey:#455a64 !default;
+$grey:#90a4ae !default;
+$light-grey:#eceff1 !default;
+$lighter-grey:#f8f9fa !default;
 
 //colours
-$red:#c0392b !default;
 $blue:#007299 !default;
 $dark-blue: #003F55 !default;
 $light-blue: #3399BB !default;
-$pale-blue: #b3d9e6 !default;
+$lighter-blue: #E5F1F5 !default;
+$white:#FFFFFF !default;
+$green:#2e7d32 !default;
+$dark-green:#005005 !default;
+$light-green:#60ad5e !default;
+$lighter-green:lighten($green,60%) !default;
+$yellow:#fbc02d !default;
+$dark-yellow:#c49000 !default;
+$light-yellow:#fff263 !default;
+$lighter-yellow:lighten($yellow,40%) !default;
+$red:#d32f2f !default;
+$dark-red:#9a0007 !default;
+$light-red:#ff6659 !default;
+$lighter-red:lighten($red,45%) !default;
 
 // masterhead.scss
 $head-background: #ffffff !default;
@@ -24,7 +36,7 @@ $base-background-color:#fff !default;
 $base-font-color:$black !default;
 $base-link-color:$blue !default;
 $base-container-width:1500px !default;
-$btn-background-color:#008000 !default;
+$btn-background-color:$green !default;
 $base-hover-color:$dark-grey !default;
 $base-hover-background:$lighter-grey !default;
 
@@ -33,8 +45,7 @@ $focus-color:#FFBF47 !default;
 $secondary-link-color:$dark-blue !default;
 $secondary-font-color:$dark-grey !default;
 $border-color:$light-grey !default;
-$panel-color:#E5F1F5 !default;
-$button-hover-color:#009A00 !default;
+$button-hover-color:$light-green !default;
 $base-link-hover-color:$light-blue !default;
 
 //typography
@@ -54,8 +65,8 @@ $secondary-link-color:$dark-blue !default;
 $secondary-font-color:$dark-grey !default;
 
 //panel colours
-$panel-color:#F6F7FA !default;
-$panel-color-secondary: darken(#F6F7FA,5%) !default;
+$panel-color:$lighter-blue !default;
+$panel-color-secondary: $lighter-grey !default;
 $panel-alt-background-color:$base-link-color !default;
 $panel-alt-color:white !default;
 $panel-event-date-background-light:$base-link-color !default;
@@ -68,8 +79,8 @@ $hightlight-color:$base-link-color !default;
 $base-margin-bottom:1.875em !default;
 
 //headerTop
-$search-link-background:#F3F3F4 !default;
-$search-link:#333 !default;
+$search-link-background:$lighter-grey !default;
+$search-link:$black !default;
 
 // mainNav.scss
 $main-nav-background:lighten($blue,3%) !default;
@@ -89,16 +100,16 @@ $footer-list-item-width:23%  !default;
 $footer-gutter-width:0 1% !default;
 
 //sectionSubsite.scss - socialamedia.scss
-$section-Background:#efefef !default;
+$section-Background:$lighter-grey !default;
 
 //socialamedia.scss
-$social-link-color:#337ab7 !default;
+$social-link-color:$light-blue !default;
 
 //sideNavigation.scss
 $side-nav-active-background:$blue !default;
 
 //carousel.scss
-$carousel-active-background:#000 !default;
+$carousel-active-background:$black !default;
 $carousel-indicators-active-background:#ccc !default;
 $carousel-caption-background: rgba(0,0,0,0.6) !default;
 $carousel-caption-font-color:#fff !default;
@@ -119,14 +130,12 @@ $span-info-hover:#131A22 !default;
 $span-info-secondary-color:#fff !default;
 $span-arrow-base:darken($span-info-color, 10%) !default;
 $span-third-info-base:#f6f6f6 !default;
-$third-info-font-color:#333 !default;
+$third-info-font-color:$black !default;
 $arrow-color:#fff !default;
-$contentFontColor:#333 !default;
+$contentFontColor:$black !default;
 $content-arrow-color:$blue !default;
-$content-border-color:#ddd !default;
-$green:#009999 !default;
+$content-border-color:$light-grey !default;
 $lime:#CCCC00 !default;
-$yellow:#FFCC33 !default;
 $orange:#FF6666 !default;
 $magenta:#CC6699 !default;
 $pink:#FF6699 !default;
@@ -141,20 +150,20 @@ $sectionFour-background-color:lighten($base-background-color, 5%) !default;
 $sectionFive-background-color:darken($base-background-color, 5%) !default;
 
 //eventwebparts
-$eventsfilter-hightlight-color:#000 !default;
+$eventsfilter-hightlight-color:$black !default;
 
 //accordion
 $accordion-color:$base-link-color !default;
 $accordion-border-color:$border-color !default;
 
 //news
-$news-button-background: #008000 !default;
-$news-pod-back:#F7F9F9 !default;
+$news-button-background: $green !default;
+$news-pod-back:$lighter-grey !default;
 $news-pod-border-color:#fff !default;
 
 //list display webpart 
-$list-webpart-back:#ddd !default;
-$list-webpart-font-color:#333 !default;
+$list-webpart-back:$light-grey !default;
+$list-webpart-font-color:$black !default;
 
 //SideNav
 $sidenav-active-color:#E67E22 !default;
@@ -164,19 +173,19 @@ $promo-span-back:rgba(0,0,0,0.6) !default;
 $promo-span-color:#fff !default;
 
 //Block quote
-$blockquoteBorderColor:#bbcada !default;
-$blockquoteQuoteColor:#333 !default;
-$blockquoteQuoteFooterColor:#000!default;
+$blockquoteBorderColor:$border-color !default;
+$blockquoteQuoteColor:$black !default;
+$blockquoteQuoteFooterColor:$light-black !default;
 
 //highlighted box in contentAssets
-$highlighted-background-color:#333 !default;
+$highlighted-background-color:$black !default;
 $highlighted-font-color:#fff !default;
-$highlighted-alt-background-color:#f6f6f6 !default;
-$highlighted-alt-font-color:#333 !default;
+$highlighted-alt-background-color:$lighter-grey !default;
+$highlighted-alt-font-color:$black  !default;
 
 //mega-promo
 $promo-background-color:$lighter-grey !default;
-$promo-arrow-color:#9DA5B2 !default;
+$promo-arrow-color:$grey !default;
 $promo-header-color:$blue !default;
 $promo-secondary-color:$black !default;
 $promo-highlight-background-color:$blue !default;
@@ -184,7 +193,7 @@ $promo-highlight-color:#FFFFFF !default;
 $promo-arrow:"\f054" !default;
 
 //button colours
-$primary-button-background-color:#008000 !default;
+$primary-button-background-color:$green !default;
 $primary-button-color:white !default;
 $secondary-button-background-color:$blue !default;
 $secondary-button-color:white !default;
@@ -193,17 +202,17 @@ $outline-button-color:$blue !default;
 
 //group promo colours
 $group-promo-background-color: $lighter-grey  !default;
-$group-promo-header-color: $blue  !default;
+$group-promo-header-color: $blue !default;
 $group-promo-description-color: $black !default;
-$group-promo-arrow-color: $grey  !default;
+$group-promo-arrow-color: $grey !default;
 
 //form colours
 $input-color:$black !default;
 $input-border-color:$grey !default;
 
 //Arrow Link
-$ArrowLinkBorderColor:#bbcada !default;
-$ArrowLinkColor:#333 !default;
+$ArrowLinkBorderColor:$grey !default;
+$ArrowLinkColor:$black!default;
 
 //responsive menu width
 $responsiveMenuWidth:767px !default;
@@ -220,11 +229,11 @@ $powerpoint-color:orange !default;
 
 //phase banner
 $phase-banner-background:$panel-color !default;
-$phase-banner-stage-background:#007299 !default;
+$phase-banner-stage-background:$light-blue !default;
 $phase-banner-color:white !default;
 
 //back to top colors
 $back-top-color:white !default;
 $back-top-hover-color:white !default;
-$back-top-background:black !default;
-$back-top-hover-background:grey !default;
+$back-top-background:$black !default;
+$back-top-hover-background:$light-black !default;
