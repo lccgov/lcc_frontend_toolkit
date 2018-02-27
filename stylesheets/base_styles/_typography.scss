@@ -296,11 +296,12 @@ p.sharepoint,
 }
 }
 
-@media (min-width: 641px){
-  .text-highlight--red,
-  .text-highlight--blue,
-  .text-highlight--green {
-      padding: 30px;
+
+.text-highlight--red,
+.text-highlight--blue,
+.text-highlight--green {
+  @media (min-width: 641px){
+    padding: 30px;
   }
 }
 
@@ -527,6 +528,7 @@ ol {
             margin-bottom:0;
         }
     }
+  }
 }
 
 .list {
@@ -776,7 +778,7 @@ h2 + h3{
           }
       }
   }
-    .list-nav{
+  .list-nav{
       li{
           border-left:3px solid $lighter-grey;
           a{
@@ -829,13 +831,14 @@ h2 + h3{
     }
 }
 
+
 .sr-only{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }
