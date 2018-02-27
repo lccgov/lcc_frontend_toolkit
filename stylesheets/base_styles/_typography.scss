@@ -245,7 +245,7 @@ p.sharepoint,
 //inset text
 .text-highlight,
 .text-block{
-  border-left: 15px solid #B3D9E6;
+  border-left: 15px solid $panel-color;
   padding:15px;
   width:100%;
   margin: 30px 0;
@@ -253,6 +253,10 @@ p.sharepoint,
   @media (min-width: 641px){
     margin: 30px 0;
     padding:15px 30px;
+  }
+
+  &.top{
+      margin-top:0;
   }
 
   h2,
@@ -292,11 +296,19 @@ p.sharepoint,
 }
 }
 
+@media (min-width: 641px){
+  .text-highlight--red,
+  .text-highlight--blue,
+  .text-highlight--green {
+      padding: 30px;
+  }
+}
+
 //text block
 .text-block{
   margin:0 0 30px;
   border:0;
-  border-left: 1px solid #B3D9E6;
+  border-left: 1px solid $panel-color;
   padding:0 15px;
     @media (min-width: 641px){
         padding:0 30px;
@@ -508,6 +520,13 @@ a[rel="external"]{
 ul,
 ol {
   list-style-type: none;
+  &.bottom{
+    margin-bottom:0;
+    li{
+        &:last-of-type{
+            margin-bottom:0;
+        }
+    }
 }
 
 .list {
@@ -728,7 +747,6 @@ h2 + h3{
             width: 100%;
         }
     }
-
     h2,
     h3,
     h4{
@@ -736,18 +754,74 @@ h2 + h3{
             margin-top:0;
         }
     }
+    &.other{
+      margin-bottom:0;
+      padding-bottom:0;
+      p{
+          color:$secondary-font-color;
+          margin:0 0 10px;
+      }
+      .box-layout-item{
+          &:last-of-type{
+              padding-bottom:0;
+          }
+      }
+  }
+  &.main{
+      &.transparent{
+          .box-layout-item{
+              @media (max-width: 641px){
+                  padding:0 0 15px 0;
+              }
+          }
+      }
+  }
+    .list-nav{
+      li{
+          border-left:3px solid $lighter-grey;
+          a{
+              border:0;
+              padding-left:15px;
+              text-decoration:underline !important;
+              display: inline-block;
+          }
+          &:last-child{
+              margin:0;
+          }
+      }
+  }
+  &.transparent{
+      .box-layout-item{
+          background:transparent;
+          padding:0 30px 15px 0;
+          @media (max-width: 641px){
+              width: 100%;
+              padding:0 0 5px 0;
+          }
+      }
+  }
 }
 
 //contact page
 .telephone{
     font-weight:700;
-
+    position:relative;
+    padding-left:27px;
+    margin:5px 0 10px;
+    font-size:21px;
+    @media (max-width: 641px){  
+        padding-left:22px;  
+        margin:0 0 10px;
+        font-size:19px;
+    }
     &:before{
         font-family: FontAwesome;
         content: "\f095";
-        margin-right:10px;
+        margin-right:0;
+        color:$grey;
+        position:absolute;
+        left:0;
     }
-
     .additionalInfo{
         @include font-xsmall();
         display:block;

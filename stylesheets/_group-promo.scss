@@ -211,6 +211,13 @@
             }
             }
         }
+
+        &.three ul li {
+            width: 100% !important;
+            @media (min-width: 990px){
+                width: calc(100% * (1/3) - 5px) !important;
+            }
+        }
     }
 
 

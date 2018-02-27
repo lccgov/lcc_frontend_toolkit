@@ -16,6 +16,7 @@ form{
     input[type=file]{
         font-size:16px;
         border:0;
+        padding: 10px 0 0;
     }
 
     .btn{
@@ -191,25 +192,19 @@ input[type=submit], button{
 
 //block label
 .block-label {
-  display: block;
-  float: none;
-  clear: left;
-  position: relative;
-  background: #DCDEE1;
-  border: 1px solid #DCDEE1;
-  padding: 18px 25px 15px 54px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  @include border-radius(4px);
-}
-
-@media (min-width: 641px) {
-  .block-label {
-    float: left;
-  }
-}
-
-.block-label {
+    display: block;
+    float: none;
+    clear: left;
+    position: relative;
+    background: $light-grey;
+    border: 1px solid $light-grey;
+    padding: 18px 25px 15px 54px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    @include border-radius(4px);
+    @media (min-width: 641px) {
+        float: left;
+    }
     input {
         position: absolute;
         top: 15px;
@@ -220,10 +215,10 @@ input[type=submit], button{
         height: 29px;
     }
 
-    &.active{
-        border-color: #9DA5B2;
-        background:white;
-    }
+&.active{
+    border-color: $grey;
+    background:white;
+}
 }
 
 .block-label.active + .panel{
@@ -232,7 +227,7 @@ input[type=submit], button{
 }
 
 .block-label:hover {
-  border-color: #9DA5B2;
+  border-color: $grey;
 }
 
 .inline{
@@ -247,7 +242,7 @@ input[type=submit], button{
 legend {
     @include heading-medium();
     border-bottom: 0;
-    line-height:1.6;
+    line-height:1.6 !important;
 }
 
 form{
@@ -504,6 +499,7 @@ h1 .form-progress{
     padding:30px;
     *{
         margin:15px 0 0;
+        @include text();
     }
     li{
         margin:7px 0 0;

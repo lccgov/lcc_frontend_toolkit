@@ -11,7 +11,7 @@
             font-size:14px;
             position:relative;
             @include flexbox();
-            @include align-items(center);
+            @include align-items(flex-start);
         }
 
         strong{

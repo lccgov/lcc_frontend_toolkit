@@ -20,11 +20,24 @@ footer.main {
                 li {
                     margin-bottom: 10px;
                     a {
-                        @include link-border-bottom($white, 0.3, $white);
                         font-size: 19px;
-                        font-weight: 300;
+                        font-weight: 400;
+                        color:$lighter-blue;
+                        border:0;
+                        text-decoration:underline;
                         @media (max-width: 641px) {
                             font-size: 16px;
+                        }
+                        &:hover{
+                            opacity:0.7;
+                            text-decoration:underline;
+                        }
+                        &.active{
+                            a{
+                                font-weight:bold;
+                                color:white;
+                                text-decoration:none;
+                            }
                         }
                     }
                     @media (max-width: 400px) {
