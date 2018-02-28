@@ -8,11 +8,11 @@
 
     h1, h2, h3, h4, p {
         color:#212224;
-        color:$base-link-color;
     }
 
     a{
         font-weight:bold;
+        color:$base-link-color;
     }
 
     .alertInner{
@@ -37,9 +37,9 @@
         background:#B3D9E6;
 
         a{
-            color:$secondary-link-color;
+            color:$base-link-color;
             &:hover{
-                color:lighten($secondary-link-color,5%);
+                color:lighten($base-link-color,5%);
             }
         }
     }
