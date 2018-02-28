@@ -128,3 +128,13 @@ footer.main {
         background: url(../images/logo-bsl.png) no-repeat !important;
     }
 }
+
+
+.lcc-third-party{
+    footer{
+        margin-top:30px !important;
+        @media (min-width: 641px){
+            margin-top:50px !important;
+        }
+    } 
+}
