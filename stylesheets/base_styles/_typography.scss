@@ -780,7 +780,7 @@ h2 + h3{
   }
   .list-nav{
       li{
-          border-left:3px solid $lighter-grey;
+        border-left: 3px solid darken($light-grey,5%);
           a{
               border:0;
               padding-left:15px;
@@ -800,6 +800,9 @@ h2 + h3{
               width: 100%;
               padding:0 0 5px 0;
           }
+          .list-nav li {
+            border-left:3px solid $lighter-grey;
+        }
       }
   }
 }
