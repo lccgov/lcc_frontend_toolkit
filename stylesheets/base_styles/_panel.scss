@@ -338,3 +338,14 @@ p + .panel{
 .panel p + .btn {
     margin-top: 10px !important;
 }
+
+.panel{
+    .text-block{
+        border-color:darken($panel-color,20%);
+    }
+    &.alt{
+        .text-block{
+            border-color:darken($panel-alt-background-color,15%);
+        }
+    }
+}
