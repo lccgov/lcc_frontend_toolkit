@@ -128,6 +128,18 @@ textarea.form-control{
     }
 }
 
+.form-label-bold{
+    font-weight:bold;
+}
+
+.form-label-large{
+    font-size:19px;
+    font-weight:bold;
+    @media (min-width: 641px) {
+        font-size:24px;
+    }
+}
+
 .label-small{
     .block-label {
         padding: 8px 15px 8px 38px;
@@ -521,5 +533,48 @@ h1 .form-progress{
                 font-weight:bold;
             }
         }
+    }
+}
+
+//search-group
+.search-group{
+    @media (min-width: 641px) {
+        width:50% !important;
+    }
+    &.postcode-lookup{
+        max-width:20em !important;
+        margin-bottom:15px;
+        @media (min-width: 641px) {
+            width:20em !important;
+            margin-bottom:20px;
+        }
+    }
+    .form-control{
+        width:100% !important;
+        @include border-radius(4px 0 0 4px !important);
+    }
+    .btn{
+        height:45px;
+        background:$primary-button-background-color;
+        color:$primary-button-color;
+        border:1px solid $primary-button-background-color;
+        border-bottom-color:darken($primary-button-background-color,15%);
+        margin:0;
+        padding: 10px 15px;
+        font-size:16px;
+        box-shadow:none !important;
+        &:hover{
+            background:lighten($primary-button-background-color,5%);
+        }
+    }
+}
+
+.search-group-link{
+    display:block;
+    margin:5px 0 0 !important;
+    font-size:16px;
+    line-height:1.6;
+    @media (min-width: 641px) {
+        font-size:19px;
     }
 }

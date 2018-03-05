@@ -1,6 +1,7 @@
+$a-to-z-background:#F6F7FA !default;
 
 .atoz{
-    background:#F6F7FA;
+    background:$a-to-z-background;
     padding:20px 0 26px;
     width:100%;
     text-transform:uppercase;
@@ -41,7 +42,7 @@
             padding:0;
             margin:0 4px 4px 0;
             @include flex(auto);
-            border: 1px solid #F6F7FA;
+            border: 1px solid $a-to-z-background;
             background: white;
 
             @media (max-width: 1100px){

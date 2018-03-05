@@ -149,7 +149,7 @@ p + .panel{
             position:absolute;
             top:0;
             left:-10px;
-            opacity:0.5;
+            opacity: 0.2;
             font-size:25px;
 
             @media (min-width: 641px){
@@ -333,4 +333,8 @@ p + .panel{
     .btn{
         margin-bottom:0;
     }
+}
+
+.panel p + .btn {
+    margin-top: 10px !important;
 }

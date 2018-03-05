@@ -29,7 +29,7 @@
         }
 
         .sub-section-heading{
-            border-bottom:5px solid #F6F7FA;
+            border-bottom:5px solid $border-color;
             margin:0 0 15px;
             padding-bottom:10px;
             font-size:24px;
@@ -93,7 +93,7 @@
 
         a{
             .sub-section-heading{
-                border-bottom:5px solid #F6F7FA;
+                border-bottom:5px solid $border-color;
                 margin:0 0 15px;
                 padding-bottom:10px;
                 font-size:24px;
@@ -142,7 +142,7 @@
 
 //sub section sp styling for summary links
 .sub-section-heading{
-    border-bottom:5px solid #F6F7FA;
+    border-bottom:5px solid $border-color;
     margin:30px 0 15px;
     padding-bottom:10px;
     font-size:24px;

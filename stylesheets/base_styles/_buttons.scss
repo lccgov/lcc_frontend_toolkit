@@ -21,21 +21,19 @@
         content:"";
     }
     &:after{
-        display:block;
-        font-family: FontAwesome;
         content: "\f105";
+        font-family: FontAwesome;
+        display:block;
         position: absolute;
         right: 0px;
         height: auto;
         background: transparent;
         padding: 0;
         top: 50%;
-        font-size: 22px;
-        content: "\f105";
-        padding: 0;
         text-align: center;
         line-height:0;
         width:36px;
+        font-size: 30px;
     }
     @media (max-width: 767px) {
         padding-right:50px;
@@ -47,6 +45,8 @@
     &:after{
         content: "\f08e";
         width: 41px;
+        font-size: 14px;
+        opacity:0.8;
     }
 }
 

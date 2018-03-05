@@ -11,11 +11,13 @@ $breadcrumb-background:transparent !default;
         font-size: 14px;
     }
 
-    ul{
+    ul,
+    ol{
         padding:0;
-
+        list-style:none;
+        display:inline;
         li{
-
+            display:inline;
             a{
             position:relative;
             margin-right:16px;
@@ -37,18 +39,9 @@ $breadcrumb-background:transparent !default;
     display: none !important;
 }
 
-
-ul{
-    list-style:none;
-    display:inline;
-
-    li{
-        display:inline;
-    }
-}
 }
 
-/*could be coded better*/
+//SP override
 .breadcrumb ul:first-child{
   margin-left:0;
 }
