@@ -1,5 +1,7 @@
 install: npm install
+before_script: npm install -g gulp
 script:
+- gulp
 - chmod +x ./bin/deploy.sh
 - "./bin/deploy.sh"
 branches:
