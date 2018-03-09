@@ -19,9 +19,19 @@
         position:relative;
         padding: 30px 15px 23px;
         margin:0 -15px;
-
         @media (max-width: 641px){
             padding: 15px 15px 8px;
+        }
+        ul,
+        ol{
+            color:#212224;
+            @include list();
+        }
+        ul{
+            @include list-bullet();
+        }
+        ol{
+            @include list-number();
         }
     }
     

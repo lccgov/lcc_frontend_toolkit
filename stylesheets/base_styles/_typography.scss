@@ -493,23 +493,21 @@ a[rel="external"]{
 }
 
 .link-back{
-  text-decoration:none !important;
-  border-bottom:1px solid $base-link-color;
-  display:inline-block;
-
-   &:before{
-    font-family: FontAwesome;
-    content: "\f0d9";
-    margin-right:5px;
-  }
-
-  &:hover{
-    border-bottom:1px solid $base-link-hover-color;
-  }
-
-  &:visited{
-    color:$base-link-color !important;
-  }
+    text-decoration:none !important;
+    border-bottom:1px solid $base-link-color;
+    display:inline-block;
+    margin: 10px 0 0;
+    &:before{
+        font-family: FontAwesome;
+        content: "\f0d9";
+        margin-right:5px;
+    }
+    &:hover{
+        border-bottom:1px solid $base-link-hover-color;
+    }
+    &:visited{
+        color:$base-link-color !important;
+    }
 }
 
 .link-small{

@@ -135,6 +135,7 @@ textarea.form-control{
 .form-label-large{
     font-size:19px;
     font-weight:bold;
+    margin-bottom:10px;
     @media (min-width: 641px) {
         font-size:24px;
     }
@@ -160,6 +161,7 @@ textarea.form-control{
     clear: both;
     display: inline-block;
     float: none;
+    margin-right:10px;
 }
 
 //input sizes
@@ -576,5 +578,38 @@ h1 .form-progress{
     line-height:1.6;
     @media (min-width: 641px) {
         font-size:19px;
+    }
+}
+
+.form-group-link{
+    margin-top:15px;
+    display:inline-block;
+}
+
+.postcode-completed{
+    p,
+    a{
+        float:left;
+        padding:0;
+        line-height:1;
+    }
+    label{
+        display:block;
+    }
+    p{
+        margin:0 15px 0 0;
+    }
+    a{
+        margin:0;
+    }
+    @media (max-width: 340px) {
+        label{
+            display:block;
+            margin:0 0 10px 0;
+            float:none;
+        }
+        p{
+            margin:0 10px 0 0;
+        }
     }
 }

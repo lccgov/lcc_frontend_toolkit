@@ -6,7 +6,6 @@ $header-height-mobile:50px !default;
 .sectionHeader {
     .container-fluid {
         .header-wrapper {
-            position:relative;
             height: $header-height;
             @include flexbox();
             @include justify-content(space-between);
