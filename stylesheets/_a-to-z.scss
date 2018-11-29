@@ -72,8 +72,9 @@ $a-to-z-background:#F6F7FA !default;
                 }
 
                 &:hover{
-                    background:$base-link-color;
-                    color:white;
+                    background: white;
+                    color:$blue;
+                    border: 1px solid $blue;
                 }
             }
 
