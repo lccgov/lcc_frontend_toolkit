@@ -1,0 +1,28 @@
+.example {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid $light-grey;
+    padding: 60px 15px 15px;
+    margin: 30px 0;
+    background: $white; 
+    .example-title {
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        padding: 10px 15px;
+        font-weight: 700;
+        font-size: 12px;
+        background: $white;
+        color: $dark-grey;
+        border: 1px solid $light-grey; 
+        text-transform: uppercase;
+    }
+}
+@media (min-width: 641px) {
+    .example {
+        padding: 60px 30px 30px; 
+        .example-title {
+            font-size: 14px; 
+        } 
+    }
+}
