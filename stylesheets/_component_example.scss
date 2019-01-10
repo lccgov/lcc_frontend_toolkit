@@ -1,7 +1,7 @@
 .example {
     position: relative;
     overflow: hidden;
-    border: 1px solid $light-grey;
+    border: 1px solid $grey;
     padding: 60px 15px 15px;
     margin: 30px 0;
     background: $white; 
@@ -14,7 +14,7 @@
         font-size: 12px;
         background: $white;
         color: $dark-grey;
-        border: 1px solid $light-grey; 
+        border: 1px solid $grey; 
         text-transform: uppercase;
     }
 }
