@@ -16,6 +16,7 @@
                 flex-wrap: wrap;
                 @include flexbox();
                 @include flex-wrap(wrap);
+                @include flex-direction(row !important);
             }
             li{
                 font-size:16px;

@@ -294,8 +294,10 @@ color: $list-webpart-font-color;
 @mixin list(){
   padding: 0;
   margin-top: 0;
-  margin-bottom: 15px;
-  display: inline-block;
+  margin-bottom: 15px;  
+  @include flexbox();
+  @include flex-direction(column);
+  @include flex-wrap(wrap);
   width: 100%;
   @media (min-width: 641px){
     margin-bottom: 17px;
