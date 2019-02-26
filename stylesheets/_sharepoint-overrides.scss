@@ -82,6 +82,12 @@ ul.cbs-List {
     p.ms-rteElement-P {
         @include body-text-margin();
     }
+
+    .phase-banner {
+        p {
+            margin: 0;
+        }
+    }
 }
 
 input[type=button], 
