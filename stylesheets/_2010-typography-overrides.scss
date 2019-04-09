@@ -108,16 +108,12 @@ table.styledTable td,
         @include list-number();
     }
     ul.accordion,
-    ol.list-step,
-    .docList ul{
-        list-style-type: none;
+    ol.list-step{
+        list-style-type: none;        
     }
-}
-
-.accordion .accordion-drawer .content-block .docList {
-    ul {
+    .docList ul:not(.accordion):not(.list):not(.list-bullet):not(.list-number):not(.list-step){
+        list-style-type: none;
         padding-left: 0;
-        list-style: none;
         li {
             margin-bottom: 0;
         }
