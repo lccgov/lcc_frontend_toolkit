@@ -4,18 +4,13 @@ ul.accordion {
     margin:30px 0;
     border-top:1px solid $border-color;
 
-    li{
+    > li{
         border-color:$border-color;
         border-bottom:1px solid $border-color;
         border-left:5px solid transparent !important;
 
         &:hover{
             border-left:5px solid $base-link-color !important;
-        }
-
-        ul li,
-        ul li:hover{
-            border:0 !important;
         }
 
         a.header{
@@ -74,17 +69,17 @@ ul.accordion {
             &:visited{ 
                 color: $base-link-color;
             }
-        }   
-
-        div{
-            padding:0 !important;
-        }
+        }  
 
         div.content-block{
-            padding:15px 20px 5px 60px !important;
+            padding:15px 20px 5px 60px;
 
             @media (max-width: 641px){
-                padding: 10px 10px 5px 35px !important;
+                padding: 10px 10px 5px 35px;
+            }
+            
+            div {
+                display: block !important;
             }
         }
     }
