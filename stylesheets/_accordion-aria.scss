@@ -119,7 +119,6 @@
 }
 
 .js .accordion__panel {
-	@include text();
 	background-color: inherit;
 	max-height: 0vh;
 	overflow: hidden;
