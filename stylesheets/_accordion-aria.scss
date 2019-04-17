@@ -144,7 +144,7 @@
 }
 
 .js .accordion__panel[aria-hidden="false"] {
-	max-height: fit-content;
+	max-height: 100%;
 	overflow: auto;
 	padding: 1.5em .5em;
 	visibility: visible;
