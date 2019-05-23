@@ -1,3 +1,7 @@
+$footer-font-color:#ffffff !default;
+$footer-nav-selected-link: $blue !default;
+$footer-list-item-width: 23%  !default;
+$footer-gutter-width: 0 1% !default;
 $footer-bg-color: #007299 !default;
 
 // footer.scss
@@ -16,22 +20,24 @@ footer.main {
         }
     }
     .container-fluid {
-        padding-top: 25px;
-        padding-bottom: 25px;   
+        padding-top: 30px;
+        padding-bottom: 30px;   
+        @media (min-width: 768px) {
+            padding-top: 45px;
+            padding-bottom: 45px;   
+        }
         nav {
             padding-bottom: 30px;
-            @media (min-width: 768px) {
-                padding-bottom: 50px;
-            }
             ul {
+                @include ulStyle();                
                 li {
                     margin-bottom: 10px;
                     a {
                         font-size: 19px;
                         font-weight: 400;
-                        color:$lighter-blue;
                         border:0;
                         text-decoration:underline;
+                        color: $footer-font-color;
                         @media (max-width: 641px) {
                             font-size: 16px;
                         }
@@ -60,6 +66,11 @@ footer.main {
                             display: none;
                         }
                     }
+                    &:after {
+                        color: $footer-font-color;
+                        content: '|';
+                        padding: 0 0.625em;
+                    } 
                     &:last-child:after {
                         display: none;
                     }
@@ -71,20 +82,30 @@ footer.main {
             @media (min-width: 768px) {
                 padding-bottom: 0;
             }
+            span {
+                background: url('../images/lcc-logo-white-01.svg') center center/100% 100% no-repeat;
+                display: block;
+                margin: 0 0 15px 0;
+                width: 220px;
+                height: 66px;
+            }
             p {
                 margin-bottom: 0;
                 font-weight: 300;
                 margin-top: 15px;
-                color: #ffffff;
+                color: $footer-font-color;
                 font-size: 16px;
                 &:last-of-type {
-                    margin-bottom: 0;
+                    margin-top: 5px;
                 }
             }
         }
         .text-right {
             .socialBookmarks {
-                margin: 0;                    
+                margin: 0;     
+                background: transparent;
+                padding: 0px;
+                margin: 0 0 1.875em;               
                 ul {
                     -ms-flex-wrap: wrap;
                     flex-wrap: wrap;
@@ -101,19 +122,34 @@ footer.main {
                     }
                     li {
                         margin: 0 10px 0 0;
+                        h2 {
+                            color: #ffffff;
+                        }
                         a {
-                            &:hover {
-                                text-decoration: none !important;
-                            }
+                            
                             &.facebook:after,
                             &.twitter:after,
                             &.youtube:after,
                             &.email:after,
                             &.instagram:after {
+                                border-radius: 50%;
+                                font-family: FontAwesome;
                                 font-size: 30px;
                                 width: 70px;
                                 height: 70px;
                                 padding-top: 15px;
+                                border: 1px solid $footer-font-color;
+                                color: $footer-font-color;
+                                display: block;
+                                text-align: center;
+                                padding-top: 15px;
+                            }
+                            &:hover {
+                                text-decoration: none !important;
+                                &:after{
+                                    background: $footer-font-color;
+                                    color: $main-nav-background;
+                                }
                             }
                         }
                         &:first-of-type {
@@ -124,72 +160,5 @@ footer.main {
                 }
             }        
         }        
-    }
-       
-    .socialBookmarks {
-        background: transparent;
-        padding: 0px;
-        margin: 0 0 1.875em;
-        h2 {
-            color: #fff;
-        }
-        @media (max-width:991px) {
-            ul li:first-of-type {
-                display: block;
-                padding-bottom: 0.65em;
-            }
-        }
-        .facebook:after,
-        .twitter:after,
-        .youtube:after,
-        .email:after,
-        .instagram:after,
-        .flickr:after {
-            font-family: FontAwesome;
-            font-size: 25px;
-            border-radius: 50%;
-            width: 42px;
-            height: 42px;
-            display: block;
-            text-align: center;
-            padding-top: 3px;
-        }
-        a:hover:after {
-            background: #fff;
-            color: #133E8D;
-            text-decoration: none;
-        }
-    }
-    @media (max-width:767px) {
-        .text-right {
-            text-align: left;
-        }
-    }    
-    .footerGlobal {
-        background: darken( #133E8D, 4%);
-    }
-}
-
-.footerGlobal nav ul {
-    @include ulStyle();
-    padding: 1.875em 0;
-    li:after {
-        content: '|';
-        color: #fff;
-        padding: 0 0.625em;
-    }
-    a {
-        color: #fff;
-    }
-}
-
-.logo-footer span {
-    background: url('../images/lcc-logo-white-01.svg') center center/100% 100% no-repeat;
-    display: block;
-    margin: 0 0 1.25em 0;
-    width: 220px;
-    height: 66px;
-    @media (max-width: 500px) {
-        margin: 0 0 20px;
-    }    
+    }          
 }
