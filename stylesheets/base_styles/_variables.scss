@@ -94,10 +94,11 @@ $main-nav-flyout-background:$blue !default;
 $main-nav-flyout-link:#fff !default;
 
 //footer.scss
-$footer-font-color:#fff !default;
-$footer-nav-selected-link:$blue !default;
-$footer-list-item-width:23%  !default;
-$footer-gutter-width:0 1% !default;
+$footer-font-color:#ffffff !default;
+$footer-nav-selected-link: $blue !default;
+$footer-list-item-width: 23%  !default;
+$footer-gutter-width: 0 1% !default;
+$footer-bg-color: $blue !default;
 
 //sectionSubsite.scss - socialamedia.scss
 $section-Background:$lighter-grey !default;
