@@ -124,7 +124,7 @@ ul ul  {
 
 
 
- li:hover > ul {
+ li:hover > ul, li:focus > ul {
     display: block;
 }
 
