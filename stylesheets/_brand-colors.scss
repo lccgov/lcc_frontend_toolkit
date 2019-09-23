@@ -201,7 +201,11 @@ body{
   &.search.active,
   &.search:hover,
   &.search:focus{
-      background:#bdc3c7 !important;
+    //   background:#bdc3c7 !important;
+    background:$focus-color !important;
+    color: #212224!important;
+    text-decoration: none;
+    outline: 0;
   }
   
   &.main-menu {
@@ -213,11 +217,14 @@ body{
   }
   
   &.main-menu:hover,
-  &.main-menu:focus,
   &.main-menu.active{
       background:darken($main-nav-background, 8%);
-  
-      
+  }
+  &.main-menu:focus {
+    background:$focus-color !important;
+    color: #212224!important;
+    text-decoration: none;
+    outline: 0;
   }
   
   
