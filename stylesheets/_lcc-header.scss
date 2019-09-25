@@ -80,7 +80,7 @@ $header-height-mobile:50px !default;
                 }
             }
             span {
-                display: none;
+                &:not(.sr-only) {display: none;}
             }
         }
     }
