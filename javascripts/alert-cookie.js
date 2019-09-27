@@ -1,5 +1,7 @@
 (function( $ ) {
     
+    function alertStorage() {
+
     // Create session storage for removing cancelled alerts
     function alerts() {
         var alertNumber = $(this).attr('data-alert'),
@@ -36,6 +38,8 @@
 
             $('html').find('button[data-alert="'+item.seen+'"]').closest('.alert').remove();
         });        
+    }
+
     }
 
 })( jQuery );
