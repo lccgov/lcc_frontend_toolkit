@@ -1,45 +1,63 @@
-(function( $ ) {
-    
-    function alertStorage() {
+(function (global, $) {
 
+    var LCC = global.LCC || {};
+	LCC.AlertStorage = LCC.AlertStorage || {};
+	
     // Create session storage for removing cancelled alerts
-    function alerts() {
-        var alertNumber = $(this).attr('data-alert'),
-            alertsObj = new Object();
 
-        alertsObj.seen = alertNumber;
+    LCC.AlertStorage.closeAlert = function () {
 
-        if( sessionStorage.alerts ) {
-            alerts = JSON.parse(sessionStorage.getItem('alerts'));
-        } else {
-            alerts = [];
-        }
-        alerts.push(alertsObj);
-        sessionStorage.setItem('alerts', JSON.stringify(alerts));
+		$('.alert').on('click', '.close', function() {
+			var alertNumber = $(this).attr('data-alert'),
 
-        var retrieveObject = sessionStorage.getItem('alerts');
-        
-        // Debug
-        // console.log(alerts);
-        // console.log('retrievedObject', JSON.parse(retrieveObject));
+			alertsObj = new Object();
 
-    }
-    $('.alert').on('click', '.close', alerts );
+			alertsObj.seen = alertNumber;
 
-    // Remove alerts that have been cancelled
-    if( sessionStorage.alerts ) {
-        var retrieveObject = sessionStorage.getItem('alerts'),
-            data = JSON.parse(retrieveObject);
-        
-        $.each(data, function(i, item) {
+			if( sessionStorage.alerts ) {
 
-            // Debug
-            // console.log(item.seen);
+				alerts = JSON.parse(sessionStorage.getItem('alerts'));
 
-            $('html').find('button[data-alert="'+item.seen+'"]').closest('.alert').remove();
-        });        
-    }
+			} else {
 
-    }
+				alerts = [];
 
-})( jQuery );
+			}
+
+			alerts.push(alertsObj);
+
+			sessionStorage.setItem('alerts', JSON.stringify(alerts));
+
+			//var retrieveObject = sessionStorage.getItem('alerts');
+
+			// Debug
+
+			// console.log(alerts);
+
+			// console.log('retrievedObject', JSON.parse(retrieveObject));
+		});
+
+	}
+	
+	LCC.AlertStorage.removeAlerts = function () {
+	// Remove alerts that have been cancelled
+		if( sessionStorage.alerts ) {
+
+			var retrieveObject = sessionStorage.getItem('alerts'),
+
+				data = JSON.parse(retrieveObject);
+
+			$.each(data, function(i, item) {
+
+				// Debug
+
+				// console.log(item.seen);
+
+				$('html').find('button[data-alert="'+item.seen+'"]').closest('.alert').remove();
+			});        
+
+		}
+	}
+
+    global.LCC = LCC;
+})(window, jQuery);
