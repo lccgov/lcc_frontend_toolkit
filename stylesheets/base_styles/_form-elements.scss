@@ -238,6 +238,10 @@ input[type=submit], button{
 .block-label.active + .panel{
     display:block;
     visibility:visible;
+
+    .form-group + .form-group {
+        margin-top:20px;
+    }
 }
 
 .block-label:hover {
