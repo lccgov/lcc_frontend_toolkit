@@ -1,97 +1,96 @@
-.socialBookmarks
-{
-    background:$section-Background;
-    padding:20px;
-    margin-bottom:20px;
+.socialBookmarks {
+   background: $section-Background;
+   padding: 20px;
+   margin-bottom: 20px;
 
-    h2 {
-        margin:0px;
-        font-size:22px;
-    }
+   h2 {
+      margin: 0px;
+      font-size: 22px;
+   }
 
- ul {
-    display: block;
-    list-style: none outside none;
-    padding: 0;
-    margin:0px;
+   ul {
+      display: block;
+      list-style: none outside none;
+      padding: 0;
+      margin: 0px;
 
- li {
-    display:inline-block;
-    margin:0 5px 0 0;
-    padding: 0;
+      li {
+         display: inline-block;
+         margin: 0 5px 0 0;
+         padding: 0;
 
- a {
-      
-   
-      text-decoration:none;
-      display:block;
-     
-     span{
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0,0,0,0);
-        border: 0;
-     }
-
-    &.facebook:after, &.twitter:after, &.youtube:after, &.email:after, &.instagram:after, &.flickr:after
-    {
-    font-family: FontAwesome;
-    font-size:25px;
-    border-radius:50%;
-    border:1px solid $social-link-color;
-    width:42px;
-    height:42px;
-    display:block;
-    text-align: center;
-    padding-top:3px;
-    color:$social-link-color;
-
-     
-    }
-
-      &:hover:after{
-          background:$social-link-color;
-          color:#fff;
-          text-decoration:none;
-       }
+         a {
 
 
-     &.facebook:after {
-    content: "\f09a"; 
+            text-decoration: none;
+            display: block;
 
- }
+            span {
+               position: absolute;
+               width: 1px;
+               height: 1px;
+               padding: 0;
+               margin: -1px;
+               overflow: hidden;
+               clip: rect(0, 0, 0, 0);
+               border: 0;
+            }
 
-      &.twitter:after {
-    content: "\f099"; 
+            &.facebook:after,
+            &.twitter:after,
+            &.youtube:after,
+            &.email:after,
+            &.instagram:after,
+            &.flickr:after {
+               font-family: FontAwesome;
+               font-size: 25px;
+               border-radius: 50%;
+               border: 1px solid $social-link-color;
+               width: 42px;
+               height: 42px;
+               display: block;
+               text-align: center;
+               padding-top: 3px;
+               color: $social-link-color;
+            }
 
- }
+            &:hover:after {
+               background: $social-link-color;
+               color: #fff;
+               text-decoration: none;
+            }
 
-      &.youtube:after {
-    content: "\f167"; 
-  
- }
+
+            &.facebook:after {
+               content: "\f09a";
+
+            }
+
+            &.twitter:after {
+               content: "\f099";
+
+            }
+
+            &.youtube:after {
+               content: "\f167";
+
+            }
 
 
-       &.instagram:after {
-    content: "\f16d"; 
- }
+            &.instagram:after {
+               content: "\f16d";
+            }
 
-       &.email:after {
-    content: "\f0e0";
-  
- }
-  
-       &.flickr:after {
-    content: "\f16e";
-  
- }
+            &.email:after {
+               content: "\f0e0";
+
+            }
+
+            &.flickr:after {
+               content: "\f16e";
+
+            }
+         }
+      }
+   }
 }
-}
-}
-}
-
-

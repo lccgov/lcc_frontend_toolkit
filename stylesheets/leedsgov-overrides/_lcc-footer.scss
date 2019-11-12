@@ -17,6 +17,13 @@
     }
 }
 
+.socialBookmarks ul li a {
+    &:focus {
+        outline: #fbc02d solid 5px;
+        background: none !important;
+    }
+}
+
 .ie8 .footer-bsl-logo {
     background: url(../images/logo-bsl.png) no-repeat;
     &:focus {
