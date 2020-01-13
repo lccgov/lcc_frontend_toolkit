@@ -235,6 +235,7 @@
                             }
                             &[rel=external]:after {
                                 content:"\f08e";
+                                margin-top: 3px;
                             }
                             @media (min-width: 767px) {
                                 font-size: 19px;
