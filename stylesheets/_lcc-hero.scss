@@ -233,6 +233,9 @@
                             &:after {
                                 z-index: 5;
                             }
+                            &[rel=external]:after {
+                                content:"\f08e";
+                            }
                             @media (min-width: 767px) {
                                 font-size: 19px;
                                 padding: 17px 70px 17px 15px;
