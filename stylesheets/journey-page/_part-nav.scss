@@ -31,31 +31,6 @@
                 }                
             }
         }
-        ul {
-            li {
-                position: relative; 
-                padding-left:30px; 
-                margin:0 0 10px;
-                list-style: none;
-                @media (min-width: 768px){
-                    width: 50%;
-                }
-                &:before {
-                    content:'';
-                    width:15px; 
-                    height:2px; 
-                    background:#007299; 
-                    position: absolute;
-                    left:0;
-                    top:50%; 
-                    transform:translateY(-50%);}
-                &.active {
-                    &:before {
-                        background:#263238;
-                    }
-                }
-            }
-        }
     }  
 }
 
@@ -63,7 +38,7 @@
 .part-navigation__container {
     nav.part-navigation {
         &--a {
-            ul { 
+            ul, ol { 
                 padding:0;
                 li {
                     position: relative; 
@@ -87,12 +62,6 @@
                             background:#263238;
                         }
                     }
-                }
-            }
-            ol {
-                li {
-                    width: 100%;
-                    list-style: decimal;
                 }
             }
         }
