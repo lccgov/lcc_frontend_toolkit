@@ -93,3 +93,7 @@
     @include btn-color($outline-button-border-color,$outline-button-color);
     background:transparent !important;
 }
+
+.btn--print {
+    display: none;
+}
