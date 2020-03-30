@@ -1,3 +1,8 @@
+.btn--print {
+    margin:15px 0;
+    display:none;
+}
+
 @media print {
     #containerSiteStatement {
         display:none !important;
@@ -82,7 +87,7 @@
     #scopedByScopedPolyfill_1 {
         display:none;
     }
-    .btn-print {
+    .btn--print {
         display: none;
     }
     a[href]:after {
