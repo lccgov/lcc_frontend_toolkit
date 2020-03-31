@@ -54,12 +54,12 @@
         }
     }
     &-permanent {
+        background:#FFBF47;
+        
         .alertInner {padding:15px !important;}
 
         h2 {
-            margin:0 !important; 
-            padding:0; 
-            line-height:1em;
+            display:none !important;
 
             a {
                 color:black;
@@ -71,22 +71,20 @@
                 }
             }
         }
-        a {
+        a.btn-default {
             color:black;
             font-size:16px;
             display:inline-block;
             background: none;
             padding: 0;
+            margin:0;
             line-height: 1em;
             border: 0;
             text-decoration:underline !important;
 
-            @media (min-width: 641px){
-                font-size:20px;
-            }
-
             &:hover {
                 text-decoration:none !important;
+                background:none;
             }
         }
         .close {
