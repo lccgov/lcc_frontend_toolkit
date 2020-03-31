@@ -351,3 +351,11 @@ p + .panel{
         }
     }
 }
+
+//panel alert
+.panel {
+    &--alert { background:#FFBF47; color:#000; }
+    &.panel-border {
+        &--alert { border-color:#FFBF47; color:#000; }
+    }
+}
