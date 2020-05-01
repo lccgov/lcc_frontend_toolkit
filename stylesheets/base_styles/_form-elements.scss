@@ -242,6 +242,11 @@ input[type=submit], button{
     .form-group + .form-group {
         margin-top:20px;
     }
+    .form-group + .form-group {
+        &-day, &-month, &-year {
+            margin-top:0;
+        }
+    }
 }
 
 .block-label:hover {
