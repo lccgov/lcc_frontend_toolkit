@@ -37,6 +37,14 @@ p + .panel{
             color: lighten($panel-alt-color,10%);
         }
     }
+
+    //media play in panel
+    .media-container .media-player .control-bar .current-time,
+    .media-container .media-player .control-bar .volume-controls .mute,
+    .media-container .media-player .control-bar .volume-controls .vol-down, 
+    .media-container .media-player .control-bar .volume-controls .vol-up {
+        color:#ffffff;
+    }
 }
 
 //panel with image
