@@ -1,14 +1,24 @@
 .form-group-inline {
+    fieldset {
+        width: 100%;
+    }
     .block-label {
         min-height: 60px;
         padding-left: 60px; 
         background-color: #eceff1;   
         background-repeat: no-repeat;
         border-width: 2px;
-        &:focus-within, &.active {
+        word-break: break-word;
+        &:focus-within {
             border-color: #FFBF47;
             background-color: #ffffff;
+            outline: none;
         }   
+        &.active {
+            border-color: #2e7d32;            
+            outline: none;
+            background-color: #ffffff;
+        }
         &.emoji-angry {
             background-image: url(../images/angry.png);
         }    
@@ -34,6 +44,8 @@
         }
     }    
     @media only screen and (min-width: 641px) {  
+        
+        
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -43,12 +55,20 @@
         flex-direction: row;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;    
-        justify-content: space-between;
+        justify-content: flex-start;
+        .form-group-inline {
+            margin-left: -7px;
+        }
         .block-label {
-            width: calc(20% - 7px);
+            float: none;
+            display: inline-block;   
+            vertical-align: top;         
+            width: calc(20% - 14px);
             padding-top: 110px;
             padding-left: 10px;
             padding-right: 10px;
+            margin-left: 7px;
+            margin-right: 7px;
             text-align: center;            
             &.emoji-angry, 
             &.emoji-frown, 
