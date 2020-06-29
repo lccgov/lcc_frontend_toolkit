@@ -291,7 +291,7 @@ p.sharepoint,
   }
 
   &.text-highlight--red {
-    border-color: $red;
+    border-color: $red !important;
     background: rgba($red,0.1);
 }
 }
