@@ -9,7 +9,13 @@
     margin: 0;
     padding: 0;
     border-bottom: dotted;
-	color: #007299;
+    color: #007299;
+    font-size:1em;
+    &:hover {
+		background:none !important;
+		border-style:solid;
+		border-color:#007299 !important;
+	}
 	&:focus {
 		background-color: #FFBF47 !important;
         color: #212224 !important;
