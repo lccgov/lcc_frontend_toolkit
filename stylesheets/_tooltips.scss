@@ -1,0 +1,50 @@
+.toggletip-container {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip__button {
+	background: no-repeat;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-bottom: dotted;
+	color: #007299;
+	&:focus {
+		background-color: #FFBF47 !important;
+        color: #212224 !important;
+        text-decoration: none;
+        outline: 0;
+	}
+}
+
+.toggletip-bubble {
+
+	display: inline-block;
+	position: absolute;
+	background: #fafafa;
+	border-radius: 3px;
+	border: 5px solid #007299;
+	padding: 1em 1.25em;
+    font-family: "Open Sans", sans-serif, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 18px;
+	border-radius: 0;
+	min-width:250px;
+	z-index:1;
+
+	@media screen and (min-width:400px) {
+		&.push-right {
+			right: 0;
+			left: auto;
+			top: 100%;
+		}
+	}
+
+	@media screen and (max-width:400px) {
+		bottom:0;
+		position:fixed;
+		top:auto;
+	}
+}
