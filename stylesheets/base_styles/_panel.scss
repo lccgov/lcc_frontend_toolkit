@@ -367,3 +367,29 @@ p + .panel{
         &--alert { border-color:#FFBF47; color:#000; }
     }
 }
+
+.panel {
+    &__dodont {
+        position: relative;
+
+        &--do {
+            border-color:#34804E;
+        }
+
+        &--dont {
+            border-color:#CC5353;
+        }
+
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        svg.dodont {
+            position:absolute;
+            left:-39px;
+            top:-39px;
+        }
+
+    }
+}
