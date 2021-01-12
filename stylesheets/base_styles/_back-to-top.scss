@@ -61,12 +61,8 @@
         opacity: 1;
     }
 
-    &.cd-fade-out {
-        opacity: .5;
-    }
 }
 .cd-top.cd-is-visible, 
-.cd-top.cd-fade-out, 
 .no-touch .cd-top:hover {
   -webkit-transition: opacity .3s 0s, visibility 0s 0s;
   -moz-transition: opacity .3s 0s, visibility 0s 0s;
