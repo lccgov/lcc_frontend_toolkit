@@ -424,7 +424,13 @@ p + .panel{
                     max-height:80px;
                     width:auto;
                 }
-                
+
+                img + h2 {
+                    @media (min-width: 641px) {
+                        margin-top:25px;
+                    }
+                }
+
             }
 
         }
