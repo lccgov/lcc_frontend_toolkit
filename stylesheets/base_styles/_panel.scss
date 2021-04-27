@@ -419,8 +419,12 @@ p + .panel{
 
             &--lmic {
                 border-color: #8CC63F;
-                max-height:80px;
-                width:auto;
+                
+                img {
+                    max-height:80px;
+                    width:auto;
+                }
+                
             }
 
         }
