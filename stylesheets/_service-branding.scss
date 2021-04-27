@@ -32,6 +32,11 @@
                 padding-left: 15px;
             }
 
+            @media (min-width: 1330px) {
+                padding-right: 0;
+                padding-left: 0;
+            }
+
             .meta {
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
