@@ -5,6 +5,12 @@
 
     &__landing {
         position: relative;
+        margin-bottom:25px;
+        
+        @media (min-width: 768px) {
+            margin-bottom:50px;
+        }
+
     }
 
     &__container {
@@ -41,7 +47,7 @@
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
                 background: #fff;
-                padding: 20px 20px 0;
+                padding: 15px 15px 0;
 
                 @media (min-width: 768px) {
                     max-width: 620px;
