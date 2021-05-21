@@ -187,4 +187,26 @@
 
     }
 
+    &--bipc {
+
+        &.serv-brand__border {
+            border-color: #1A1257;
+
+            .serv-brand__wrapper {
+                background-color: #1A1257;
+
+                span {
+                    color:#ffffff;
+                }
+                
+            }
+
+        }
+
+        &.serv-brand__landing {
+            background-color:#1A1257;
+        }
+
+    }
+
 }
